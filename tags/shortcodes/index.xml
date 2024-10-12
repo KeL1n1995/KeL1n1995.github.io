@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shortcodes on KeLin&#39;s Homepage</title>
+    <link>https://kel1n1995.github.io/tags/shortcodes/</link>
+    <description>Recent content in Shortcodes on KeLin&#39;s Homepage</description>
+    <generator>Hugo</generator>
+    <language>en-AU</language>
+    <copyright>&amp;copy; 2024 Kelin | Zhao-Lab</copyright>
+    <lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kel1n1995.github.io/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Icons</title>
+      <link>https://kel1n1995.github.io/samples/icons/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://kel1n1995.github.io/samples/icons/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shortcodes</title>
+      <link>https://kel1n1995.github.io/docs/shortcodes/</link>
+      <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://kel1n1995.github.io/docs/shortcodes/</guid>
+      <description>Congo includes several shortcodes for adding rich content to articles including images, charts, diagrams, buttons and more.</description>
+    </item>
+    <item>
+      <title>Mathematical notation</title>
+      <link>https://kel1n1995.github.io/samples/mathematical-notation/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://kel1n1995.github.io/samples/mathematical-notation/</guid>
+      <description>&lt;p&gt;KaTeX can be used to render mathematical notation within articles.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Charts</title>
+      <link>https://kel1n1995.github.io/samples/charts/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://kel1n1995.github.io/samples/charts/</guid>
+      <description>Congo includes Chart.js for powerful charts and data visualisations.</description>
+    </item>
+    <item>
+      <title>Diagrams and Flowcharts</title>
+      <link>https://kel1n1995.github.io/samples/diagrams-flowcharts/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://kel1n1995.github.io/samples/diagrams-flowcharts/</guid>
+      <description>It&amp;rsquo;s easy to add diagrams and flowcharts to articles using Mermaid.</description>
+    </item>
+  </channel>
+</rss>

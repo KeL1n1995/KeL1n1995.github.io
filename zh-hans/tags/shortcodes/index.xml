@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shortcodes on 科林的个人主页</title>
+    <link>https://kel1n1995.github.io/zh-hans/tags/shortcodes/</link>
+    <description>Recent content in Shortcodes on 科林的个人主页</description>
+    <generator>Hugo</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2024 Congo contributors</copyright>
+    <lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kel1n1995.github.io/zh-hans/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>图标</title>
+      <link>https://kel1n1995.github.io/zh-hans/samples/icons/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://kel1n1995.github.io/zh-hans/samples/icons/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>短代码</title>
+      <link>https://kel1n1995.github.io/zh-hans/docs/shortcodes/</link>
+      <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://kel1n1995.github.io/zh-hans/docs/shortcodes/</guid>
+      <description>Congo提供了多个短代码，可用于向文章添加丰富的内容，包括图像、图表、图表、按钮等。</description>
+    </item>
+    <item>
+      <title>数学符号</title>
+      <link>https://kel1n1995.github.io/zh-hans/samples/mathematical-notation/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://kel1n1995.github.io/zh-hans/samples/mathematical-notation/</guid>
+      <description>&lt;p&gt;KaTeX可以用于在文章中呈现数学符号。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>表格</title>
+      <link>https://kel1n1995.github.io/zh-hans/samples/charts/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://kel1n1995.github.io/zh-hans/samples/charts/</guid>
+      <description>Congo使用chart.js来提供强大的表格支持和数据可视化。</description>
+    </item>
+    <item>
+      <title>图表和流程图</title>
+      <link>https://kel1n1995.github.io/zh-hans/samples/diagrams-flowcharts/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://kel1n1995.github.io/zh-hans/samples/diagrams-flowcharts/</guid>
+      <description>使用Mermaid来绘制图表和流程图是非常简单的</description>
+    </item>
+  </channel>
+</rss>
