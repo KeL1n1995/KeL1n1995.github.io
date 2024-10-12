@@ -17,13 +17,6 @@
       <description></description>
     </item>
     <item>
-      <title>What&#39;s New in 2.0 ✨</title>
-      <link>https://kel1n1995.github.io/docs/version-2/_index.ja/</link>
-      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://kel1n1995.github.io/docs/version-2/_index.ja/</guid>
-      <description>Version 2.0では、Congoを新たな高みへと導き、その軽量さを維持しながらも、テーマをさらに強力なものにしています。</description>
-    </item>
-    <item>
       <title>Installation</title>
       <link>https://kel1n1995.github.io/docs/installation/</link>
       <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
@@ -158,51 +151,9 @@
     </item>
     <item>
       <title>advanced</title>
-      <link>https://kel1n1995.github.io/tags/advanced/_index.ja/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kel1n1995.github.io/tags/advanced/_index.ja/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>advanced</title>
       <link>https://kel1n1995.github.io/tags/advanced/_index.zh-cn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kel1n1995.github.io/tags/advanced/_index.zh-cn/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Avanzada</title>
-      <link>https://kel1n1995.github.io/tags/advanced/_index.es/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kel1n1995.github.io/tags/advanced/_index.es/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Beispiele für Inhalte</title>
-      <link>https://kel1n1995.github.io/samples/_index.de/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kel1n1995.github.io/samples/_index.de/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Etiquetas</title>
-      <link>https://kel1n1995.github.io/tags/_index.es/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kel1n1995.github.io/tags/_index.es/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Páginas de ejemplo</title>
-      <link>https://kel1n1995.github.io/samples/_index.es/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kel1n1995.github.io/samples/_index.es/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tags</title>
-      <link>https://kel1n1995.github.io/tags/_index.ja/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kel1n1995.github.io/tags/_index.ja/</guid>
       <description></description>
     </item>
     <item>
@@ -210,20 +161,6 @@
       <link>https://kel1n1995.github.io/tags/_index.zh-cn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kel1n1995.github.io/tags/_index.zh-cn/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>サンプル</title>
-      <link>https://kel1n1995.github.io/samples/_index.ja/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kel1n1995.github.io/samples/_index.ja/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ドキュメント</title>
-      <link>https://kel1n1995.github.io/docs/_index.ja/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kel1n1995.github.io/docs/_index.ja/</guid>
       <description></description>
     </item>
   </channel>

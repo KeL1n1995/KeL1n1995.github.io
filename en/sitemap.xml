@@ -3,37 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     
-      <url>
-            <loc>https://kel1n1995.github.io/literature/</loc>
-            <lastmod>2024-10-12T19:21:25+08:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://kel1n1995.github.io/literature/readnote/</loc>
-            <lastmod>2024-10-12T19:21:25+08:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://kel1n1995.github.io/</loc>
-            <lastmod>2024-10-12T19:21:25+08:00</lastmod>
-            <xhtml:link
-              rel="alternate"
-              hreflang="zh-hans"
-              href="https://kel1n1995.github.io/zh-hans/"
-              />
-            <xhtml:link
-              rel="alternate"
-              hreflang="en"
-              href="https://kel1n1995.github.io/"
-              />
-          </url>
-    
-  
-    
   
     
       <url>
@@ -75,8 +44,18 @@
   
     
       <url>
-            <loc>https://kel1n1995.github.io/docs/version-2/_index.ja/</loc>
-            <lastmod>2022-01-19T00:00:00+00:00</lastmod>
+            <loc>https://kel1n1995.github.io/</loc>
+            <lastmod>2023-01-23T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://kel1n1995.github.io/zh-hans/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://kel1n1995.github.io/"
+              />
           </url>
     
   
@@ -487,7 +466,17 @@
   
     
       <url>
-            <loc>https://kel1n1995.github.io/tags/advanced/_index.ja/</loc>
+            <loc>https://kel1n1995.github.io/literature/</loc>
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://kel1n1995.github.io/zh-hans/literature/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://kel1n1995.github.io/literature/"
+              />
           </url>
     
   
@@ -498,52 +487,10 @@
     
   
     
-      <url>
-            <loc>https://kel1n1995.github.io/tags/advanced/_index.es/</loc>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://kel1n1995.github.io/samples/_index.de/</loc>
-          </url>
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://kel1n1995.github.io/tags/_index.es/</loc>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://kel1n1995.github.io/samples/_index.es/</loc>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://kel1n1995.github.io/tags/_index.ja/</loc>
-          </url>
-    
   
     
       <url>
             <loc>https://kel1n1995.github.io/tags/_index.zh-cn/</loc>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://kel1n1995.github.io/samples/_index.ja/</loc>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://kel1n1995.github.io/docs/_index.ja/</loc>
           </url>
     
   

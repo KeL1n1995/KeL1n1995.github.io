@@ -65,26 +65,5 @@
       <guid></guid>
       <description>The &lt;code&gt;externalUrl&lt;/code&gt; front matter parameter can link to any URL. This article looks just like any other, but will link to a post that is outside the Hugo project.</description>
     </item>
-    <item>
-      <title>Beispiele für Inhalte</title>
-      <link>https://kel1n1995.github.io/samples/_index.de/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kel1n1995.github.io/samples/_index.de/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Páginas de ejemplo</title>
-      <link>https://kel1n1995.github.io/samples/_index.es/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kel1n1995.github.io/samples/_index.es/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>サンプル</title>
-      <link>https://kel1n1995.github.io/samples/_index.ja/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kel1n1995.github.io/samples/_index.ja/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>

@@ -461,5 +461,21 @@
     
   
     
+      <url>
+            <loc>https://kel1n1995.github.io/zh-hans/literature/</loc>
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://kel1n1995.github.io/literature/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://kel1n1995.github.io/zh-hans/literature/"
+              />
+          </url>
+    
+  
+    
   
 </urlset>
