@@ -246,7 +246,7 @@
             <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
               
                 <a
-                  href="/zh-hans/docs/"
+                  href="/zh-hans/article/"
                   title=""
                   
                   ><span
@@ -262,7 +262,7 @@
             <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
               
                 <a
-                  href="/zh-hans/samples/"
+                  href="/zh-hans/research/"
                   title=""
                   
                   ><span
@@ -278,7 +278,7 @@
             <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
               
                 <a
-                  href="/zh-hans/users/"
+                  href="/zh-hans/learn/"
                   title=""
                   
                   ><span
@@ -491,6 +491,42 @@
     </header>
     <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
       
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    目录
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#analytics">Analytics</a>
+      <ul>
+        <li><a href="#fathom-analytics">Fathom Analytics</a></li>
+        <li><a href="#plausible-analytics">Plausible Analytics</a></li>
+        <li><a href="#google-analytics">Google Analytics</a></li>
+        <li><a href="#自定义分析提供商">自定义分析提供商</a></li>
+      </ul>
+    </li>
+    <li><a href="#评论">评论</a></li>
+    <li><a href="#网站图标">网站图标</a></li>
+    <li><a href="#图标">图标</a></li>
+    <li><a href="#扩展">扩展</a>
+      <ul>
+        <li><a href="#文章链接">文章链接</a></li>
+        <li><a href="#头部和页脚">头部和页脚</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
       <div class="min-h-0 min-w-0 max-w-prose grow">
         <h2 id="analytics" class="relative group">Analytics <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#analytics" aria-label="锚点">#</a></span></h2><p>Congo内置支持Fathom Analytics和Google Analytics。Fathom是Google Analytics的付费替代方案，尊重用户隐私。如果您感兴趣，可以使用此<a href="https://usefathom.com/ref/RLAJSV" target="_blank" rel="noreferrer">推广链接</a>获得$10的信用并尝试该服务。</p>
 <h3 id="fathom-analytics" class="relative group">Fathom Analytics <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#fathom-analytics" aria-label="锚点">#</a></span></h3><p>要启用Fathom Analytics支持，只需在 <code>config/_default/params.toml</code> 文件中提供您的Fathom站点代码。如果您还使用Fathom的自定义域功能，并希望从您的域提供其脚本，还可以提供<code>domain</code>配置值。如果不提供<code>domain</code>值，则脚本将直接从Fathom DNS加载。</p>
@@ -603,6 +639,10 @@
   
 
 
+      
+        
+          
+        
       
     </footer>
   </article>

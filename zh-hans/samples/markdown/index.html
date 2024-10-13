@@ -113,7 +113,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "articleSection": "研究",
+    "articleSection": "Samples",
     "name": "Markdown",
     "headline": "Markdown",
     "description": "展示基本的Markdown语法和HTML元素格式的示例文章。",
@@ -151,7 +151,7 @@
      {
        "@type": "ListItem",
        "item": "https://kel1n1995.github.io/zh-hans/samples/",
-       "name": "研究",
+       "name": "Samples",
        "position": 2
      },
      {
@@ -244,7 +244,7 @@
             <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
               
                 <a
-                  href="/zh-hans/docs/"
+                  href="/zh-hans/article/"
                   title=""
                   
                   ><span
@@ -260,7 +260,7 @@
             <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
               
                 <a
-                  href="/zh-hans/samples/"
+                  href="/zh-hans/research/"
                   title=""
                   
                   ><span
@@ -276,7 +276,7 @@
             <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
               
                 <a
-                  href="/zh-hans/users/"
+                  href="/zh-hans/learn/"
                   title=""
                   
                   ><span
@@ -469,32 +469,12 @@
   
 
   
-    
-  
 
 
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2019-03-11 00:00:00 &#43;0000 UTC">2019年3月11日</time><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span>
-
-
-  
-    
-  
-  
-
-<span class="mb-[2px]">
-  <a
-    href="#/samples/markdown/index.zh-Hans.md"
-    class="text-lg hover:text-primary-500"
-    rel="noopener noreferrer"
-    target="_blank"
-    title="编辑内容"
-    ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M490.3 40.4C512.2 62.27 512.2 97.73 490.3 119.6L460.3 149.7L362.3 51.72L392.4 21.66C414.3-.2135 449.7-.2135 471.6 21.66L490.3 40.4zM172.4 241.7L339.7 74.34L437.7 172.3L270.3 339.6C264.2 345.8 256.7 350.4 248.4 353.2L159.6 382.8C150.1 385.6 141.5 383.4 135 376.1C128.6 370.5 126.4 361 129.2 352.4L158.8 263.6C161.6 255.3 166.2 247.8 172.4 241.7V241.7zM192 63.1C209.7 63.1 224 78.33 224 95.1C224 113.7 209.7 127.1 192 127.1H96C78.33 127.1 64 142.3 64 159.1V416C64 433.7 78.33 448 96 448H352C369.7 448 384 433.7 384 416V319.1C384 302.3 398.3 287.1 416 287.1C433.7 287.1 448 302.3 448 319.1V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V159.1C0 106.1 42.98 63.1 96 63.1H192z"/></svg>
-</span></a
-  >
-</span>
+      <time datetime="2019-03-11 00:00:00 &#43;0000 UTC">2019年3月11日</time><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
     
 
     
@@ -510,6 +490,65 @@
       
     </header>
     <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    目录
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#标题">标题</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#h2">H2</a>
+      <ul>
+        <li><a href="#h3">H3</a>
+          <ul>
+            <li><a href="#h4">H4</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#段落">段落</a></li>
+    <li><a href="#引用">引用</a>
+      <ul>
+        <li><a href="#无引用的引用块">无引用的引用块</a></li>
+        <li><a href="#带引用的引用块">带引用的引用块</a></li>
+      </ul>
+    </li>
+    <li><a href="#表格">表格</a>
+      <ul>
+        <li><a href="#表格内的行内markdown">表格内的行内Markdown</a></li>
+      </ul>
+    </li>
+    <li><a href="#代码块">代码块</a>
+      <ul>
+        <li><a href="#使用反引号的代码块">使用反引号的代码块</a></li>
+        <li><a href="#缩进四个空格的代码块">缩进四个空格的代码块</a></li>
+        <li><a href="#使用hugo内置的代码块高亮shortcode">使用Hugo内置的代码块高亮shortcode</a></li>
+      </ul>
+    </li>
+    <li><a href="#列表类型">列表类型</a>
+      <ul>
+        <li><a href="#有序列表">有序列表</a></li>
+        <li><a href="#无序列表">无序列表</a></li>
+        <li><a href="#嵌套列表">嵌套列表</a></li>
+      </ul>
+    </li>
+    <li><a href="#其他元素--缩写下标上标键盘标记">其他元素 — 缩写、下标、上标、键盘、标记</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
       
       <div class="min-h-0 min-w-0 max-w-prose grow">
         <p>这篇文章提供了一些在Congo中可用的基本Markdown格式的示例，同时展示了如何装饰一些基本的HTML元素。</p>
@@ -807,6 +846,10 @@
   
 
 
+      
+        
+          
+        
       
     </footer>
   </article>

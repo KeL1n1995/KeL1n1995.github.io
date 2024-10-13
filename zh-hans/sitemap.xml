@@ -119,6 +119,21 @@
     
   
     
+      <url>
+            <loc>https://kel1n1995.github.io/zh-hans/samples/</loc>
+            <lastmod>2023-01-23T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://kel1n1995.github.io/samples/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://kel1n1995.github.io/zh-hans/samples/"
+              />
+          </url>
+    
   
     
   
@@ -152,40 +167,6 @@
               rel="alternate"
               hreflang="zh-hans"
               href="https://kel1n1995.github.io/zh-hans/samples/icons/"
-              />
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://kel1n1995.github.io/zh-hans/samples/</loc>
-            <lastmod>2023-01-23T00:00:00+00:00</lastmod>
-            <xhtml:link
-              rel="alternate"
-              hreflang="en"
-              href="https://kel1n1995.github.io/samples/"
-              />
-            <xhtml:link
-              rel="alternate"
-              hreflang="zh-hans"
-              href="https://kel1n1995.github.io/zh-hans/samples/"
-              />
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://kel1n1995.github.io/zh-hans/users/</loc>
-            <lastmod>2020-08-14T00:00:00+00:00</lastmod>
-            <xhtml:link
-              rel="alternate"
-              hreflang="en"
-              href="https://kel1n1995.github.io/users/"
-              />
-            <xhtml:link
-              rel="alternate"
-              hreflang="zh-hans"
-              href="https://kel1n1995.github.io/zh-hans/users/"
               />
           </url>
     
@@ -476,6 +457,54 @@
           </url>
     
   
+    
+  
+    
+      <url>
+            <loc>https://kel1n1995.github.io/zh-hans/article/</loc>
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://kel1n1995.github.io/article/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://kel1n1995.github.io/zh-hans/article/"
+              />
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://kel1n1995.github.io/zh-hans/learn/</loc>
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://kel1n1995.github.io/learn/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://kel1n1995.github.io/zh-hans/learn/"
+              />
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://kel1n1995.github.io/zh-hans/research/</loc>
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://kel1n1995.github.io/research/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://kel1n1995.github.io/zh-hans/research/"
+              />
+          </url>
     
   
 </urlset>

@@ -113,7 +113,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "articleSection": "研究",
+    "articleSection": "Samples",
     "name": "表格",
     "headline": "表格",
     "description": "Chart.js在Congo中的用法",
@@ -151,7 +151,7 @@
      {
        "@type": "ListItem",
        "item": "https://kel1n1995.github.io/zh-hans/samples/",
-       "name": "研究",
+       "name": "Samples",
        "position": 2
      },
      {
@@ -255,7 +255,7 @@
             <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
               
                 <a
-                  href="/zh-hans/docs/"
+                  href="/zh-hans/article/"
                   title=""
                   
                   ><span
@@ -271,7 +271,7 @@
             <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
               
                 <a
-                  href="/zh-hans/samples/"
+                  href="/zh-hans/research/"
                   title=""
                   
                   ><span
@@ -287,7 +287,7 @@
             <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
               
                 <a
-                  href="/zh-hans/users/"
+                  href="/zh-hans/learn/"
                   title=""
                   
                   ><span
@@ -480,32 +480,12 @@
   
 
   
-    
-  
 
 
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2019-03-06 00:00:00 &#43;0000 UTC">2019年3月6日</time><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span>
-
-
-  
-    
-  
-  
-
-<span class="mb-[2px]">
-  <a
-    href="#/samples/charts/index.zh-Hans.md"
-    class="text-lg hover:text-primary-500"
-    rel="noopener noreferrer"
-    target="_blank"
-    title="编辑内容"
-    ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M490.3 40.4C512.2 62.27 512.2 97.73 490.3 119.6L460.3 149.7L362.3 51.72L392.4 21.66C414.3-.2135 449.7-.2135 471.6 21.66L490.3 40.4zM172.4 241.7L339.7 74.34L437.7 172.3L270.3 339.6C264.2 345.8 256.7 350.4 248.4 353.2L159.6 382.8C150.1 385.6 141.5 383.4 135 376.1C128.6 370.5 126.4 361 129.2 352.4L158.8 263.6C161.6 255.3 166.2 247.8 172.4 241.7V241.7zM192 63.1C209.7 63.1 224 78.33 224 95.1C224 113.7 209.7 127.1 192 127.1H96C78.33 127.1 64 142.3 64 159.1V416C64 433.7 78.33 448 96 448H352C369.7 448 384 433.7 384 416V319.1C384 302.3 398.3 287.1 416 287.1C433.7 287.1 448 302.3 448 319.1V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V159.1C0 106.1 42.98 63.1 96 63.1H192z"/></svg>
-</span></a
-  >
-</span>
+      <time datetime="2019-03-06 00:00:00 &#43;0000 UTC">2019年3月6日</time><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
     
 
     
@@ -522,6 +502,28 @@
     </header>
     <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
       
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    目录
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#柱状图">柱状图</a></li>
+    <li><a href="#折线图">折线图</a></li>
+    <li><a href="#圆环图">圆环图</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
       <div class="min-h-0 min-w-0 max-w-prose grow">
         <p>Congo 包含对 Chart.js 的支持，使用 <code>chart</code> 短代码即可。只需将图表标记包裹在短代码内。Congo 会自动根据配置的 <code>colorScheme</code> 参数为图表添加主题，但颜色可以使用常规的 Chart.js 语法进行自定义。</p>
 <p>有关更多详细信息，请参阅 <a href="https://kel1n1995.github.io/zh-hans/docs/shortcodes/#chart">chart 短代码</a> 文档。</p>
@@ -529,10 +531,10 @@
 <h2 id="柱状图" class="relative group">柱状图 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%9f%b1%e7%8a%b6%e5%9b%be" aria-label="锚点">#</a></span></h2><!-- prettier-ignore-start -->
 <div class="chart">
   
-  <canvas id="734125896"></canvas>
+  <canvas id="728593164"></canvas>
   <script type="text/javascript">
     window.addEventListener("DOMContentLoaded", (event) => {
-      const ctx = document.getElementById("734125896");
+      const ctx = document.getElementById("728593164");
       const chart = new Chart(ctx, {
         
 type: 'bar',
@@ -572,10 +574,10 @@ data: {
 <h2 id="折线图" class="relative group">折线图 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%8a%98%e7%ba%bf%e5%9b%be" aria-label="锚点">#</a></span></h2><!-- prettier-ignore-start -->
 <div class="chart">
   
-  <canvas id="974658132"></canvas>
+  <canvas id="649583712"></canvas>
   <script type="text/javascript">
     window.addEventListener("DOMContentLoaded", (event) => {
-      const ctx = document.getElementById("974658132");
+      const ctx = document.getElementById("649583712");
       const chart = new Chart(ctx, {
         
 type: 'line',
@@ -597,10 +599,10 @@ data: {
 <h2 id="圆环图" class="relative group">圆环图 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%9c%86%e7%8e%af%e5%9b%be" aria-label="锚点">#</a></span></h2><!-- prettier-ignore-start -->
 <div class="chart">
   
-  <canvas id="496523187"></canvas>
+  <canvas id="493275186"></canvas>
   <script type="text/javascript">
     window.addEventListener("DOMContentLoaded", (event) => {
-      const ctx = document.getElementById("496523187");
+      const ctx = document.getElementById("493275186");
       const chart = new Chart(ctx, {
         
 type: 'doughnut',
@@ -784,6 +786,10 @@ data: {
   
 
 
+      
+        
+          
+        
       
     </footer>
   </article>

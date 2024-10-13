@@ -113,7 +113,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "articleSection": "Research",
+    "articleSection": "Samples",
     "name": "Charts",
     "headline": "Charts",
     "description": "Guide to Chart.js usage in Congo",
@@ -122,7 +122,7 @@
     "url" : "https:\/\/kel1n1995.github.io\/samples\/charts\/",
     "author" : {
       "@type": "Person",
-      "name": "Cheng KeLin"
+      "name": "KeLin Cheng"
     },
     "copyrightYear": "2019",
     "dateCreated": "2019-03-06T00:00:00\u002b00:00",
@@ -151,7 +151,7 @@
      {
        "@type": "ListItem",
        "item": "https://kel1n1995.github.io/samples/",
-       "name": "Research",
+       "name": "Samples",
        "position": 2
      },
      {
@@ -164,7 +164,7 @@
   </script>
 
   
-  <meta name="author" content="Cheng KeLin" />
+  <meta name="author" content="KeLin Cheng" />
   
     
       <link href="https://github.com/KeL1n1995/" rel="me" />
@@ -255,7 +255,7 @@
             <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
               
                 <a
-                  href="/docs/"
+                  href="/article/"
                   title=""
                   
                   ><span
@@ -271,7 +271,7 @@
             <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
               
                 <a
-                  href="/samples/"
+                  href="/research/"
                   title=""
                   
                   ><span
@@ -287,7 +287,7 @@
             <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
               
                 <a
-                  href="/users/"
+                  href="/learn/"
                   title=""
                   
                   ><span
@@ -480,32 +480,12 @@
   
 
   
-    
-  
 
 
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2019-03-06 00:00:00 &#43;0000 UTC">2019-03-06</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span><span class="px-2 text-primary-500">&middot;</span>
-
-
-  
-    
-  
-  
-
-<span class="mb-[2px]">
-  <a
-    href="#/samples/charts/index.md"
-    class="text-lg hover:text-primary-500"
-    rel="noopener noreferrer"
-    target="_blank"
-    title="Edit content"
-    ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M490.3 40.4C512.2 62.27 512.2 97.73 490.3 119.6L460.3 149.7L362.3 51.72L392.4 21.66C414.3-.2135 449.7-.2135 471.6 21.66L490.3 40.4zM172.4 241.7L339.7 74.34L437.7 172.3L270.3 339.6C264.2 345.8 256.7 350.4 248.4 353.2L159.6 382.8C150.1 385.6 141.5 383.4 135 376.1C128.6 370.5 126.4 361 129.2 352.4L158.8 263.6C161.6 255.3 166.2 247.8 172.4 241.7V241.7zM192 63.1C209.7 63.1 224 78.33 224 95.1C224 113.7 209.7 127.1 192 127.1H96C78.33 127.1 64 142.3 64 159.1V416C64 433.7 78.33 448 96 448H352C369.7 448 384 433.7 384 416V319.1C384 302.3 398.3 287.1 416 287.1C433.7 287.1 448 302.3 448 319.1V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V159.1C0 106.1 42.98 63.1 96 63.1H192z"/></svg>
-</span></a
-  >
-</span>
+      <time datetime="2019-03-06 00:00:00 &#43;0000 UTC">2019-03-06</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
     
 
     
@@ -522,6 +502,28 @@
     </header>
     <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
       
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Table of Contents
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#bar-chart">Bar chart</a></li>
+    <li><a href="#line-chart">Line chart</a></li>
+    <li><a href="#doughnut-chart">Doughnut chart</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
       <div class="min-h-0 min-w-0 max-w-prose grow">
         <p>Congo includes support for Chart.js using the <code>chart</code> shortcode. Simply wrap the chart markup within the shortcode. Congo automatically themes charts to match the configured <code>colorScheme</code> parameter, however the colours can be customised using normal Chart.js syntax.</p>
 <p>Refer to the <a href="https://kel1n1995.github.io/docs/shortcodes/#chart">chart shortcode</a> docs for more details.</p>
@@ -529,10 +531,10 @@
 <h2 id="bar-chart" class="relative group">Bar chart <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#bar-chart" aria-label="Anchor">#</a></span></h2><!-- prettier-ignore-start -->
 <div class="chart">
   
-  <canvas id="472359168"></canvas>
+  <canvas id="293674185"></canvas>
   <script type="text/javascript">
     window.addEventListener("DOMContentLoaded", (event) => {
-      const ctx = document.getElementById("472359168");
+      const ctx = document.getElementById("293674185");
       const chart = new Chart(ctx, {
         
 type: 'bar',
@@ -572,10 +574,10 @@ data: {
 <h2 id="line-chart" class="relative group">Line chart <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#line-chart" aria-label="Anchor">#</a></span></h2><!-- prettier-ignore-start -->
 <div class="chart">
   
-  <canvas id="569723841"></canvas>
+  <canvas id="439672158"></canvas>
   <script type="text/javascript">
     window.addEventListener("DOMContentLoaded", (event) => {
-      const ctx = document.getElementById("569723841");
+      const ctx = document.getElementById("439672158");
       const chart = new Chart(ctx, {
         
 type: 'line',
@@ -597,10 +599,10 @@ data: {
 <h2 id="doughnut-chart" class="relative group">Doughnut chart <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#doughnut-chart" aria-label="Anchor">#</a></span></h2><!-- prettier-ignore-start -->
 <div class="chart">
   
-  <canvas id="597128634"></canvas>
+  <canvas id="843769251"></canvas>
   <script type="text/javascript">
     window.addEventListener("DOMContentLoaded", (event) => {
-      const ctx = document.getElementById("597128634");
+      const ctx = document.getElementById("843769251");
       const chart = new Chart(ctx, {
         
 type: 'doughnut',
@@ -659,7 +661,7 @@ data: {
         width="1080"
         height="1080"
         class="!mb-0 !mt-0 me-4 w-24 h-auto rounded-full"
-        alt="Cheng KeLin"
+        alt="KeLin Cheng"
         loading="lazy" decoding="async"
         
           src="/img/author_hu6311480428133163022.jpg"
@@ -685,7 +687,7 @@ data: {
           Author
         </div>
         <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
-          Cheng KeLin
+          KeLin Cheng
         </div>
       
       
@@ -784,6 +786,10 @@ data: {
   
 
 
+      
+        
+          
+        
       
     </footer>
   </article>

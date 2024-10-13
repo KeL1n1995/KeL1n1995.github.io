@@ -151,6 +151,8 @@
     
   
     
+  
+    
       <url>
             <loc>https://kel1n1995.github.io/samples/</loc>
             <lastmod>2023-01-23T00:00:00+00:00</lastmod>
@@ -167,27 +169,6 @@
           </url>
     
   
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://kel1n1995.github.io/users/</loc>
-            <lastmod>2020-08-14T00:00:00+00:00</lastmod>
-            <xhtml:link
-              rel="alternate"
-              hreflang="zh-hans"
-              href="https://kel1n1995.github.io/zh-hans/users/"
-              />
-            <xhtml:link
-              rel="alternate"
-              hreflang="en"
-              href="https://kel1n1995.github.io/users/"
-              />
-          </url>
     
   
     
@@ -486,6 +467,54 @@
           </url>
     
   
+    
+      <url>
+            <loc>https://kel1n1995.github.io/article/</loc>
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://kel1n1995.github.io/zh-hans/article/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://kel1n1995.github.io/article/"
+              />
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>https://kel1n1995.github.io/learn/</loc>
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://kel1n1995.github.io/zh-hans/learn/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://kel1n1995.github.io/learn/"
+              />
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://kel1n1995.github.io/research/</loc>
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://kel1n1995.github.io/zh-hans/research/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://kel1n1995.github.io/research/"
+              />
+          </url>
     
   
     
