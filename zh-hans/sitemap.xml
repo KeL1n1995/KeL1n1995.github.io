@@ -119,23 +119,6 @@
     
   
     
-      <url>
-            <loc>https://kel1n1995.github.io/zh-hans/samples/</loc>
-            <lastmod>2023-01-23T00:00:00+00:00</lastmod>
-            <xhtml:link
-              rel="alternate"
-              hreflang="en"
-              href="https://kel1n1995.github.io/samples/"
-              />
-            <xhtml:link
-              rel="alternate"
-              hreflang="zh-hans"
-              href="https://kel1n1995.github.io/zh-hans/samples/"
-              />
-          </url>
-    
-  
-    
   
     
       <url>
@@ -150,6 +133,23 @@
               rel="alternate"
               hreflang="zh-hans"
               href="https://kel1n1995.github.io/zh-hans/docs/configuration/"
+              />
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://kel1n1995.github.io/zh-hans/samples/</loc>
+            <lastmod>2023-01-23T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://kel1n1995.github.io/samples/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://kel1n1995.github.io/zh-hans/samples/"
               />
           </url>
     
