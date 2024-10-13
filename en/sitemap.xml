@@ -3,6 +3,63 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     
+      <url>
+            <loc>https://kel1n1995.github.io/article/</loc>
+            <lastmod>2024-10-13T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://kel1n1995.github.io/zh-hans/article/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://kel1n1995.github.io/article/"
+              />
+          </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>https://kel1n1995.github.io/article/meeting/</loc>
+            <lastmod>2024-10-13T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://kel1n1995.github.io/zh-hans/article/meeting/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://kel1n1995.github.io/article/meeting/"
+              />
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>https://kel1n1995.github.io/</loc>
+            <lastmod>2024-10-13T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://kel1n1995.github.io/zh-hans/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://kel1n1995.github.io/"
+              />
+          </url>
+    
+  
+    
   
     
       <url>
@@ -24,8 +81,6 @@
     
   
     
-  
-    
       <url>
             <loc>https://kel1n1995.github.io/docs/version-2/upgrade/</loc>
             <lastmod>2022-01-20T00:00:00+00:00</lastmod>
@@ -38,23 +93,6 @@
               rel="alternate"
               hreflang="en"
               href="https://kel1n1995.github.io/docs/version-2/upgrade/"
-              />
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://kel1n1995.github.io/</loc>
-            <lastmod>2023-01-23T00:00:00+00:00</lastmod>
-            <xhtml:link
-              rel="alternate"
-              hreflang="zh-hans"
-              href="https://kel1n1995.github.io/zh-hans/"
-              />
-            <xhtml:link
-              rel="alternate"
-              hreflang="en"
-              href="https://kel1n1995.github.io/"
               />
           </url>
     
@@ -464,22 +502,6 @@
     
       <url>
             <loc>https://kel1n1995.github.io/tags/advanced/_index.zh-cn/</loc>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://kel1n1995.github.io/article/</loc>
-            <xhtml:link
-              rel="alternate"
-              hreflang="zh-hans"
-              href="https://kel1n1995.github.io/zh-hans/article/"
-              />
-            <xhtml:link
-              rel="alternate"
-              hreflang="en"
-              href="https://kel1n1995.github.io/article/"
-              />
           </url>
     
   

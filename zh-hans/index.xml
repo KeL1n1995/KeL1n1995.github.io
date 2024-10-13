@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>zh-Hans</language>
     <copyright>&amp;copy; 2024 Congo contributors</copyright>
-    <lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kel1n1995.github.io/zh-hans/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Conference Notes：Human Milk Oligosaccharides (HMOs) Cell Factory</title>
+      <link>https://kel1n1995.github.io/zh-hans/article/meeting/</link>
+      <pubDate>Sun, 13 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://kel1n1995.github.io/zh-hans/article/meeting/</guid>
+      <description>Tianjin Conference Notes</description>
+    </item>
     <item>
       <title>从Congo 1.x升级</title>
       <link>https://kel1n1995.github.io/zh-hans/docs/version-2/upgrade/</link>
