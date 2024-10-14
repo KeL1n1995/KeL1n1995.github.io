@@ -60,6 +60,46 @@
     
   
     
+      <url>
+            <loc>https://kel1n1995.github.io/zh-hans/literature/readnote/</loc>
+            <lastmod>2023-04-14T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://kel1n1995.github.io/literature/readnote/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://kel1n1995.github.io/zh-hans/literature/readnote/"
+              />
+          </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>https://kel1n1995.github.io/zh-hans/literature/</loc>
+            <lastmod>2023-04-14T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://kel1n1995.github.io/literature/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://kel1n1995.github.io/zh-hans/literature/"
+              />
+          </url>
+    
+  
+    
+  
+    
   
     
   
@@ -475,22 +515,6 @@
               rel="alternate"
               hreflang="zh-hans"
               href="https://kel1n1995.github.io/zh-hans/samples/emoji/"
-              />
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://kel1n1995.github.io/zh-hans/literature/</loc>
-            <xhtml:link
-              rel="alternate"
-              hreflang="en"
-              href="https://kel1n1995.github.io/literature/"
-              />
-            <xhtml:link
-              rel="alternate"
-              hreflang="zh-hans"
-              href="https://kel1n1995.github.io/zh-hans/literature/"
               />
           </url>
     
