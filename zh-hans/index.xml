@@ -1,27 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>欢迎来到我的主页 :tada: on 科林的个人主页</title>
+    <title>欢迎来到我的主页 on 科林的个人主页</title>
     <link>https://kel1n1995.github.io/zh-hans/</link>
-    <description>Recent content in 欢迎来到我的主页 :tada: on 科林的个人主页</description>
+    <description>Recent content in 欢迎来到我的主页 on 科林的个人主页</description>
     <generator>Hugo</generator>
     <language>zh-Hans</language>
     <copyright>&amp;copy; 2024 Congo contributors</copyright>
-    <lastBuildDate>Sun, 13 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kel1n1995.github.io/zh-hans/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>[Conference] Human Milk Oligosaccharides (HMOs) Cell Factory</title>
+      <title>Hugo&#43;Github Self-learning</title>
+      <link>https://kel1n1995.github.io/zh-hans/learn/hugonote/</link>
+      <pubDate>Mon, 14 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://kel1n1995.github.io/zh-hans/learn/hugonote/</guid>
+      <description>Self-learning Notes</description>
+    </item>
+    <item>
+      <title>🖋 Human Milk Oligosaccharides (HMOs) Cell Factory</title>
       <link>https://kel1n1995.github.io/zh-hans/article/meeting/</link>
       <pubDate>Sun, 13 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://kel1n1995.github.io/zh-hans/article/meeting/</guid>
       <description>Tianjin Conference Notes</description>
     </item>
     <item>
-      <title>[Literature]NBT:AGORA2-model</title>
-      <link>https://kel1n1995.github.io/zh-hans/literature/readnote/</link>
+      <title>📑NBT:AGORA2-Model</title>
+      <link>https://kel1n1995.github.io/zh-hans/literature/readnote01/</link>
       <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://kel1n1995.github.io/zh-hans/literature/readnote/</guid>
-      <description>model：AGORA2</description>
+      <guid>https://kel1n1995.github.io/zh-hans/literature/readnote01/</guid>
+      <description>In-depth Reading of Literature.</description>
     </item>
     <item>
       <title>从Congo 1.x升级</title>

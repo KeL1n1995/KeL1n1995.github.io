@@ -3,28 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     
+  
+    
       <url>
-            <loc>https://kel1n1995.github.io/article/</loc>
+            <loc>https://kel1n1995.github.io/learn/hugonote/</loc>
             <lastmod>2024-10-14T00:00:00+00:00</lastmod>
             <xhtml:link
               rel="alternate"
               hreflang="zh-hans"
-              href="https://kel1n1995.github.io/zh-hans/article/"
+              href="https://kel1n1995.github.io/zh-hans/learn/hugonote/"
               />
             <xhtml:link
               rel="alternate"
               hreflang="en"
-              href="https://kel1n1995.github.io/article/"
+              href="https://kel1n1995.github.io/learn/hugonote/"
               />
           </url>
     
   
     
-  
-    
       <url>
-            <loc>https://kel1n1995.github.io/article/hugonote/</loc>
+            <loc>https://kel1n1995.github.io/learn/</loc>
             <lastmod>2024-10-14T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://kel1n1995.github.io/zh-hans/learn/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://kel1n1995.github.io/learn/"
+              />
           </url>
     
   
@@ -51,6 +61,27 @@
   
     
       <url>
+            <loc>https://kel1n1995.github.io/article/</loc>
+            <lastmod>2024-10-13T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="zh-hans"
+              href="https://kel1n1995.github.io/zh-hans/article/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://kel1n1995.github.io/article/"
+              />
+          </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
             <loc>https://kel1n1995.github.io/article/meeting/</loc>
             <lastmod>2024-10-13T00:00:00+00:00</lastmod>
             <xhtml:link
@@ -67,22 +98,18 @@
     
   
     
-  
-    
-  
-    
       <url>
-            <loc>https://kel1n1995.github.io/literature/readnote/</loc>
+            <loc>https://kel1n1995.github.io/literature/readnote01/</loc>
             <lastmod>2023-04-14T00:00:00+00:00</lastmod>
             <xhtml:link
               rel="alternate"
               hreflang="zh-hans"
-              href="https://kel1n1995.github.io/zh-hans/literature/readnote/"
+              href="https://kel1n1995.github.io/zh-hans/literature/readnote01/"
               />
             <xhtml:link
               rel="alternate"
               hreflang="en"
-              href="https://kel1n1995.github.io/literature/readnote/"
+              href="https://kel1n1995.github.io/literature/readnote01/"
               />
           </url>
     
@@ -540,22 +567,6 @@
           </url>
     
   
-    
-  
-    
-      <url>
-            <loc>https://kel1n1995.github.io/learn/</loc>
-            <xhtml:link
-              rel="alternate"
-              hreflang="zh-hans"
-              href="https://kel1n1995.github.io/zh-hans/learn/"
-              />
-            <xhtml:link
-              rel="alternate"
-              hreflang="en"
-              href="https://kel1n1995.github.io/learn/"
-              />
-          </url>
     
   
     
