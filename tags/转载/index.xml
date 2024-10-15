@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Article on KeLin&#39;s Homepage</title>
-    <link>https://kel1n1995.github.io/article/</link>
-    <description>Recent content in Article on KeLin&#39;s Homepage</description>
+    <title>转载 on KeLin&#39;s Homepage</title>
+    <link>https://kel1n1995.github.io/tags/%E8%BD%AC%E8%BD%BD/</link>
+    <description>Recent content in 转载 on KeLin&#39;s Homepage</description>
     <generator>Hugo</generator>
     <language>en-AU</language>
     <copyright>&amp;copy; 2024 Kelin | Zhao-Lab</copyright>
     <lastBuildDate>Sun, 13 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://kel1n1995.github.io/article/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kel1n1995.github.io/tags/%E8%BD%AC%E8%BD%BD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【转载】康米主义者为什么要坚持写作</title>
       <link>https://kel1n1995.github.io/article/reprinting01/</link>
       <pubDate>Sun, 13 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://kel1n1995.github.io/article/reprinting01/</guid>
       <description>康米主义者为什么要坚持写作</description>
-    </item>
-    <item>
-      <title>🖋 Human Milk Oligosaccharides (HMOs) Cell Factory</title>
-      <link>https://kel1n1995.github.io/article/meeting/</link>
-      <pubDate>Sun, 13 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://kel1n1995.github.io/article/meeting/</guid>
-      <description>Tianjin Conference Notes</description>
     </item>
   </channel>
 </rss>
