@@ -40,8 +40,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.7256b758438d1234664a1ded9025b90c1a4b5d2358746cccac49ea3bfd740c8e.css"
-    integrity="sha256-cla3WEONEjRmSh3tkCW5DBpLXSNYdGzMrEnqO/10DI4="
+    href="/css/main.bundle.min.d26335eac94bf8897867f5ce06bd3550abda61f623a2e601be6516ff239ab8c4.css"
+    integrity="sha256-0mM16slL&#43;Il4Z/XOBr01UKvaYfYjouYBvmUW/yOauMQ="
   />
   
     
@@ -54,6 +54,9 @@
     
   
   
+    
+    
+  
   
   
     
@@ -61,8 +64,8 @@
       defer
       type="text/javascript"
       id="script-bundle"
-      src="/js/main.bundle.min.af5d9722112bedac95702865c340bcd6286c4e9b2c15ce26b531ea1fba974cb8.js"
-      integrity="sha256-r12XIhEr7ayVcChlw0C81ihsTpssFc4mtTHqH7qXTLg="
+      src="/js/main.bundle.min.bb487ad6073790cb02c354ee8c5f8822c42c5513e10bf7a86bbe8f82118cd1fc.js"
+      integrity="sha256-u0h61gc3kMsCw1TujF&#43;IIsQsVRPhC/eoa76PghGM0fw="
       data-copy="Copy"
       data-copied="Copied"
     ></script>
@@ -208,7 +211,7 @@
       <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
   <nav class="flex items-start justify-between sm:items-center">
     
-    <div class="flex flex-row items-center">
+    <div class="z-40 flex flex-row items-center">
       
     <a href="/" class="mr-2">
       
@@ -237,12 +240,227 @@
 
     </div>
     
+      
+      <label id="menu-button" for="menu-controller" class="block sm:hidden">
+        <input type="checkbox" id="menu-controller" class="hidden" />
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="invisible fixed inset-0 z-30 m-auto h-full w-full cursor-default overflow-auto bg-neutral-100/50 opacity-0 backdrop-blur-sm transition-opacity dark:bg-neutral-900/50"
+        >
+          <ul
+            class="mx-auto flex w-full max-w-7xl list-none flex-col overflow-visible px-6 py-6 text-end sm:px-14 sm:py-10 sm:pt-10 md:px-24 lg:px-32"
+          >
+            <li class="mb-1">
+              <span class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400"
+                ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span></span
+              >
+            </li>
+            
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/article/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Article</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/research/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Research</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/learn/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Learn</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/literature/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Literature</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="https://github.com/KeL1n1995"
+                      title=""
+                      onclick="close_menu()"
+                      target="_blank"
+                      >
+                        <span
+                          class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                        ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></span></a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    
+                    
+                      <button
+                        id="search-button-1"
+                        title="Search (/)"
+                      >
+                        
+                          <span
+                            class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                          ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                            class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                            ></span
+                          >
+                        
+                      </button>
+                    
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    
+                    
+  
     
-      <ul class="flex list-none flex-col text-end sm:flex-row">
+    
+      <div class="group relative">
+        <button
+          class="group-dark:hover:text-primary-400 flex w-full items-center justify-end transition-colors group-hover:text-primary-600"
+        >
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <path fill="currentColor" d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+  <path fill="currentColor" d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+</svg>
+</span><span class="text-sm">EN</span
+          ><span class="text-[0.6rem]"
+            ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+</span></span
+          >
+        </button>
+        
+          <div class="invisible w-full bg-transparent group-hover:visible"></div>
+        
+        <div
+          class=" invisible absolute z-50 flex flex-col whitespace-nowrap rounded border border-neutral-300 bg-neutral text-start text-base shadow group-hover:visible ltr:right-0 rtl:left-0 dark:border-neutral-600 dark:bg-neutral-800"
+        >
+          
+          
+          
+            
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="/docs/getting-started/"
+                      class="flex w-full items-center justify-between bg-primary-100 px-2 py-1 dark:bg-primary-900"
+                      >English<span
+                        class="ms-2 w-6 text-primary-600 dark:text-primary-400"
+                        ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg>
+</span></span
+                      ></a
+                    >
+                  
+                </div>
+              
+            
+              
+            
+          
+            
+            
+              
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="/zh-hans/docs/getting-started/"
+                      class="w-full py-1 pe-10 ps-2 decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+                      >简体中文</a
+                    >
+                  
+                </div>
+              
+            
+          
+        </div>
+      </div>
+    
+  
+
+
+                  
+                </li>
+              
+              
+            
+          </ul>
+        </div>
+      </label>
+      
+      <ul class="hidden list-none flex-row text-end sm:flex">
         
           
             
-            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
               
                 <a
                   href="/article/"
@@ -258,7 +476,7 @@
             </li>
           
             
-            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
               
                 <a
                   href="/research/"
@@ -274,7 +492,7 @@
             </li>
           
             
-            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
               
                 <a
                   href="/learn/"
@@ -290,7 +508,7 @@
             </li>
           
             
-            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
               
                 <a
                   href="/literature/"
@@ -306,7 +524,7 @@
             </li>
           
             
-            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
               
                 <a
                   href="https://github.com/KeL1n1995"
@@ -322,12 +540,12 @@
             </li>
           
             
-            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
               
                 
                 
                   <button
-                    id="search-button-1"
+                    id="search-button-2"
                     title="Search (/)"
                   >
                     
@@ -345,7 +563,7 @@
             </li>
           
             
-            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
               
                 
                 
@@ -425,6 +643,7 @@
             </li>
           
           
+
         
       </ul>
     
@@ -550,10 +769,10 @@
 
 <p>The config files that ship with Congo contain all of the possible settings that the theme recognises. By default, many of these are commented out but you can simply uncomment them to activate or change a specific feature.</p>
 <h2 id="basic-configuration" class="relative group">Basic configuration <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#basic-configuration" aria-label="Anchor">#</a></span></h2><p>Before creating any content, there are a few things you should set for a new installation. Starting in the <code>config.toml</code> file, set the <code>baseURL</code> and <code>languageCode</code> parameters. The <code>languageCode</code> should be set to the main language that you will be using to author your content.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config/_default/config.toml</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;https://your_domain.com/&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;en&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config/_default/config.toml</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;https://your_domain.com/&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en&#34;</span>
 </span></span></code></pre></div><p>The next step is to configure the language settings. Although Congo supports multilingual setups, for now, just configure the main language.</p>
 <p>Locate the <code>languages.en.toml</code> file in the config folder. If your main language is English you can use this file as is. Otherwise, rename it so that it includes the correct language code in the filename. For example, for French, rename the file to <code>languages.fr.toml</code>.</p>
 <div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
@@ -564,18 +783,18 @@
   <span class="dark:text-neutral-300">The language code in the language config filename should match the <code>languageCode</code> setting in <code>config.toml</code>.</span>
 </div>
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config/_default/languages.en.toml</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;My awesome website&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">author</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;My name&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nx">image</span> <span class="p">=</span> <span class="s2">&#34;img/author.jpg&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nx">headline</span> <span class="p">=</span> <span class="s2">&#34;A generally awesome human&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nx">bio</span> <span class="p">=</span> <span class="s2">&#34;A little bit about me&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nx">links</span> <span class="p">=</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">  <span class="p">{</span> <span class="nx">twitter</span> <span class="p">=</span> <span class="s2">&#34;https://twitter.com/username&#34;</span> <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config/_default/languages.en.toml</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;My awesome website&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">author</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;My name&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">image</span> = <span style="color:#e6db74">&#34;img/author.jpg&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">headline</span> = <span style="color:#e6db74">&#34;A generally awesome human&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">bio</span> = <span style="color:#e6db74">&#34;A little bit about me&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">links</span> = [
+</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">twitter</span> = <span style="color:#e6db74">&#34;https://twitter.com/username&#34;</span> }
+</span></span><span style="display:flex;"><span>]
 </span></span></code></pre></div><p>The <code>[params.author]</code> configuration determines how the author information is displayed on the website. The image should be placed in the site&rsquo;s <code>assets/</code> folder. Links will be displayed in the order they are listed.</p>
 <p>If you need extra detail, further information about each of these configuration options, is covered in the <a href="https://kel1n1995.github.io/docs/configuration/">Configuration</a> section.</p>
 <h2 id="colour-schemes" class="relative group">Colour schemes <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#colour-schemes" aria-label="Anchor">#</a></span></h2><p>Congo ships with a number of colour schemes out of the box. To change the scheme, simply set the <code>colorScheme</code> theme parameter. Valid options are <code>congo</code> (default), <code>avocado</code>, <code>cherry</code>, <code>fire</code>, <code>ocean</code>, <code>sapphire</code> and <code>slate</code>.</p>
@@ -587,9 +806,9 @@
   <span class="dark:text-neutral-300">The <code>colourScheme</code> value should be provided in lowercase.</span>
 </div>
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config/_default/params.toml</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">colorScheme</span> <span class="p">=</span> <span class="s2">&#34;congo&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config/_default/params.toml</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">colorScheme</span> = <span style="color:#e6db74">&#34;congo&#34;</span>
 </span></span></code></pre></div><p>Congo defines a three-colour palette that is used throughout the theme. Each main colour contains ten shades which are based upon the colours that are included in <a href="https://tailwindcss.com/docs/customizing-colors#color-palette-reference" target="_blank" rel="noreferrer">Tailwind</a>.</p>
 <h4 id="congo-default" class="relative group">Congo (default) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#congo-default" aria-label="Anchor">#</a></span></h4><div class="flex justify-between">
   <span
@@ -699,23 +918,23 @@
 <p>Although these are the default schemes, you can also create your own. Refer to the <a href="https://kel1n1995.github.io/docs/advanced-customisation/#colour-schemes">Advanced Customisation</a> section for details.</p>
 <h2 id="organising-content" class="relative group">Organising content <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#organising-content" aria-label="Anchor">#</a></span></h2><p>By default, Congo doesn&rsquo;t force you to use a particular content type. In doing so you are free to define your content as you wish. You might prefer <em>pages</em> for a static site, <em>posts</em> for a blog, or <em>projects</em> for a portfolio.</p>
 <h3 id="directory-structure" class="relative group">Directory structure <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#directory-structure" aria-label="Anchor">#</a></span></h3><p>Here&rsquo;s a quick overview of a basic Congo project. All content is placed within the <code>content</code> folder:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">.
-</span></span><span class="line"><span class="cl">├── assets
-</span></span><span class="line"><span class="cl">│   └── img
-</span></span><span class="line"><span class="cl">│       └── author.jpg
-</span></span><span class="line"><span class="cl">├── config
-</span></span><span class="line"><span class="cl">│   └── _default
-</span></span><span class="line"><span class="cl">├── content
-</span></span><span class="line"><span class="cl">│   ├── _index.md
-</span></span><span class="line"><span class="cl">│   ├── about.md
-</span></span><span class="line"><span class="cl">│   └── posts
-</span></span><span class="line"><span class="cl">│       ├── _index.md
-</span></span><span class="line"><span class="cl">│       ├── first-post.md
-</span></span><span class="line"><span class="cl">│       └── another-post
-</span></span><span class="line"><span class="cl">│           ├── aardvark.jpg
-</span></span><span class="line"><span class="cl">│           └── index.md
-</span></span><span class="line"><span class="cl">└── themes
-</span></span><span class="line"><span class="cl">    └── congo
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>├── assets
+</span></span><span style="display:flex;"><span>│   └── img
+</span></span><span style="display:flex;"><span>│       └── author.jpg
+</span></span><span style="display:flex;"><span>├── config
+</span></span><span style="display:flex;"><span>│   └── _default
+</span></span><span style="display:flex;"><span>├── content
+</span></span><span style="display:flex;"><span>│   ├── _index.md
+</span></span><span style="display:flex;"><span>│   ├── about.md
+</span></span><span style="display:flex;"><span>│   └── posts
+</span></span><span style="display:flex;"><span>│       ├── _index.md
+</span></span><span style="display:flex;"><span>│       ├── first-post.md
+</span></span><span style="display:flex;"><span>│       └── another-post
+</span></span><span style="display:flex;"><span>│           ├── aardvark.jpg
+</span></span><span style="display:flex;"><span>│           └── index.md
+</span></span><span style="display:flex;"><span>└── themes
+</span></span><span style="display:flex;"><span>    └── congo
 </span></span></code></pre></div><div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
   <span class="pe-3 text-primary-400">
     <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
@@ -727,14 +946,14 @@
 <p>It&rsquo;s important to have a firm grasp of how Hugo expects content to be organised as the theme is designed to take full advantage of Hugo page bundles. Be sure to read the <a href="https://gohugo.io/content-management/organization/" target="_blank" rel="noreferrer">official Hugo docs</a> for more information.</p>
 <h3 id="feature-cover-and-thumbnail-images" class="relative group">Feature, cover and thumbnail images <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#feature-cover-and-thumbnail-images" aria-label="Anchor">#</a></span></h3><p>The Congo theme supports displaying images on article listings and at the top of individual article pages. There are three types of images supported, each with their own use case: <code>feature</code>, <code>cover</code> and <code>thumb</code>.</p>
 <p>In the example below, a cover and thumb image have been provided for the <code>first-post</code> article:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">.
-</span></span><span class="line"><span class="cl">└── content
-</span></span><span class="line"><span class="cl">    └── posts
-</span></span><span class="line"><span class="cl">        ├── _index.md
-</span></span><span class="line"><span class="cl">        └── first-post
-</span></span><span class="line"><span class="cl">            ├── cover.jpg
-</span></span><span class="line"><span class="cl">            ├── index.md
-</span></span><span class="line"><span class="cl">            └── thumb.jpg
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>└── content
+</span></span><span style="display:flex;"><span>    └── posts
+</span></span><span style="display:flex;"><span>        ├── _index.md
+</span></span><span style="display:flex;"><span>        └── first-post
+</span></span><span style="display:flex;"><span>            ├── cover.jpg
+</span></span><span style="display:flex;"><span>            ├── index.md
+</span></span><span style="display:flex;"><span>            └── thumb.jpg
 </span></span></code></pre></div><p>The <code>thumb</code> image is used as the article thumbnail and will be displayed in article lists, and the <code>cover</code> image will be displayed at the top of the article content on individual article pages.</p>
 <p>
 
@@ -815,44 +1034,44 @@
 <p>The <a href="https://kel1n1995.github.io/samples/">Samples section</a> provides a number of examples of these images (and you can view the <a href="https://github.com/jpanther/congo/tree/dev/exampleSite/content/samples" target="_blank" rel="noreferrer">source code</a> to see the file structure).</p>
 <h3 id="taxonomies" class="relative group">Taxonomies <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#taxonomies" aria-label="Anchor">#</a></span></h3><p>Congo is also flexible when it comes to taxonomies. Some people prefer to use <em>tags</em> and <em>categories</em> to group their content, others prefer to use <em>topics</em>.</p>
 <p>Hugo defaults to using posts, tags and categories out of the box and this will work fine if that&rsquo;s what you want. If you wish to customise this, however, you can do so by creating a <code>taxonomies.toml</code> configuration file:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config/_default/taxonomies.toml</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">topic</span> <span class="p">=</span> <span class="s2">&#34;topics&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config/_default/taxonomies.toml</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">topic</span> = <span style="color:#e6db74">&#34;topics&#34;</span>
 </span></span></code></pre></div><p>This will replace the default <em>tags</em> and <em>categories</em> with <em>topics</em>. Refer to the <a href="https://gohugo.io/content-management/taxonomies/" target="_blank" rel="noreferrer">Hugo Taxonomy docs</a> for more information on naming taxonomies.</p>
 <p>When you create a new taxonomy, you will need to adjust the navigation links on the website to point to the correct sections, which is covered below.</p>
 <h2 id="menus" class="relative group">Menus <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#menus" aria-label="Anchor">#</a></span></h2><p>Congo has two menus that can be customised to suit the content and layout of your site. The <code>main</code> menu appears in the site header and the <code>footer</code> menu appears at the bottom of the page just above the copyright notice.</p>
 <p>Both menus are configured in the <code>menus.en.toml</code> file. Similarly to the languages config file, if you wish to use another language, rename this file and replace <code>en</code> with the language code you wish to use. Menu links will be sorted from lowest to highest <code>weight</code>, and then alphabetically by <code>name</code>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config/_default/menus.en.toml</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">main</span><span class="p">]]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Blog&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">pageRef</span> <span class="p">=</span> <span class="s2">&#34;posts&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">10</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">main</span><span class="p">]]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Topics&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">pageRef</span> <span class="p">=</span> <span class="s2">&#34;topics&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">20</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">main</span><span class="p">]]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;GitHub&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;https://github.com/jpanther/congo&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">30</span>
-</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">main</span><span class="p">.</span><span class="nx">params</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">icon</span> <span class="p">=</span> <span class="s2">&#34;github&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">showName</span> <span class="p">=</span> <span class="kc">false</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">target</span> <span class="p">=</span> <span class="s2">&#34;_blank&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">main</span><span class="p">]]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;search&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">99</span>
-</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">main</span><span class="p">.</span><span class="nx">params</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">action</span> <span class="p">=</span> <span class="s2">&#34;search&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">icon</span> <span class="p">=</span> <span class="s2">&#34;search&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">footer</span><span class="p">]]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Privacy&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">pageRef</span> <span class="p">=</span> <span class="s2">&#34;privacy&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config/_default/menus.en.toml</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Blog&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pageRef</span> = <span style="color:#e6db74">&#34;posts&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Topics&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pageRef</span> = <span style="color:#e6db74">&#34;topics&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;GitHub&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;https://github.com/jpanther/congo&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">30</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">main</span>.<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">icon</span> = <span style="color:#e6db74">&#34;github&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">showName</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">target</span> = <span style="color:#e6db74">&#34;_blank&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;search&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">99</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">main</span>.<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">action</span> = <span style="color:#e6db74">&#34;search&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">icon</span> = <span style="color:#e6db74">&#34;search&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">footer</span>]]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Privacy&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pageRef</span> = <span style="color:#e6db74">&#34;privacy&#34;</span>
 </span></span></code></pre></div><h3 id="basic-links" class="relative group">Basic links <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#basic-links" aria-label="Anchor">#</a></span></h3><p>The <code>name</code> parameter specifies the text that is used in the menu link. You can also optionally provide a <code>title</code> which fills the HTML title attribute for the link.</p>
 <p>The <code>pageRef</code> parameter allows you to easily reference Hugo content pages and taxonomies. It is the quickest way to configure the menu as you can simply refer to any Hugo content item and it will automatically build the correct link. To link to external URLs, the <code>url</code> parameter can be used.</p>
 <p>Further customisation can be achieved through the use of special theme parameters. Providing <code>params</code> within a link allows the addition of an <code>icon</code>, the ability to toggle the link text with <code>showName</code> and to optionally set a <code>target</code> for the URL. In the example above, the GitHub link will only display as an icon and will open the link in a new window.</p>

@@ -40,8 +40,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.7256b758438d1234664a1ded9025b90c1a4b5d2358746cccac49ea3bfd740c8e.css"
-    integrity="sha256-cla3WEONEjRmSh3tkCW5DBpLXSNYdGzMrEnqO/10DI4="
+    href="/css/main.bundle.min.d26335eac94bf8897867f5ce06bd3550abda61f623a2e601be6516ff239ab8c4.css"
+    integrity="sha256-0mM16slL&#43;Il4Z/XOBr01UKvaYfYjouYBvmUW/yOauMQ="
   />
   
     
@@ -54,6 +54,9 @@
     
   
   
+    
+    
+  
   
   
     
@@ -61,8 +64,8 @@
       defer
       type="text/javascript"
       id="script-bundle"
-      src="/js/main.bundle.min.af5d9722112bedac95702865c340bcd6286c4e9b2c15ce26b531ea1fba974cb8.js"
-      integrity="sha256-r12XIhEr7ayVcChlw0C81ihsTpssFc4mtTHqH7qXTLg="
+      src="/js/main.bundle.min.bb487ad6073790cb02c354ee8c5f8822c42c5513e10bf7a86bbe8f82118cd1fc.js"
+      integrity="sha256-u0h61gc3kMsCw1TujF&#43;IIsQsVRPhC/eoa76PghGM0fw="
       data-copy="Copy"
       data-copied="Copied"
     ></script>
@@ -208,7 +211,7 @@
       <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
   <nav class="flex items-start justify-between sm:items-center">
     
-    <div class="flex flex-row items-center">
+    <div class="z-40 flex flex-row items-center">
       
     <a href="/" class="mr-2">
       
@@ -237,12 +240,227 @@
 
     </div>
     
+      
+      <label id="menu-button" for="menu-controller" class="block sm:hidden">
+        <input type="checkbox" id="menu-controller" class="hidden" />
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="invisible fixed inset-0 z-30 m-auto h-full w-full cursor-default overflow-auto bg-neutral-100/50 opacity-0 backdrop-blur-sm transition-opacity dark:bg-neutral-900/50"
+        >
+          <ul
+            class="mx-auto flex w-full max-w-7xl list-none flex-col overflow-visible px-6 py-6 text-end sm:px-14 sm:py-10 sm:pt-10 md:px-24 lg:px-32"
+          >
+            <li class="mb-1">
+              <span class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400"
+                ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span></span
+              >
+            </li>
+            
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/article/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Article</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/research/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Research</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/learn/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Learn</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/literature/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Literature</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="https://github.com/KeL1n1995"
+                      title=""
+                      onclick="close_menu()"
+                      target="_blank"
+                      >
+                        <span
+                          class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                        ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></span></a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    
+                    
+                      <button
+                        id="search-button-1"
+                        title="Search (/)"
+                      >
+                        
+                          <span
+                            class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                          ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                            class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                            ></span
+                          >
+                        
+                      </button>
+                    
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    
+                    
+  
     
-      <ul class="flex list-none flex-col text-end sm:flex-row">
+    
+      <div class="group relative">
+        <button
+          class="group-dark:hover:text-primary-400 flex w-full items-center justify-end transition-colors group-hover:text-primary-600"
+        >
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <path fill="currentColor" d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+  <path fill="currentColor" d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+</svg>
+</span><span class="text-sm">EN</span
+          ><span class="text-[0.6rem]"
+            ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+</span></span
+          >
+        </button>
+        
+          <div class="invisible w-full bg-transparent group-hover:visible"></div>
+        
+        <div
+          class=" invisible absolute z-50 flex flex-col whitespace-nowrap rounded border border-neutral-300 bg-neutral text-start text-base shadow group-hover:visible ltr:right-0 rtl:left-0 dark:border-neutral-600 dark:bg-neutral-800"
+        >
+          
+          
+          
+            
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="/docs/content-examples/"
+                      class="flex w-full items-center justify-between bg-primary-100 px-2 py-1 dark:bg-primary-900"
+                      >English<span
+                        class="ms-2 w-6 text-primary-600 dark:text-primary-400"
+                        ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg>
+</span></span
+                      ></a
+                    >
+                  
+                </div>
+              
+            
+              
+            
+          
+            
+            
+              
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="/zh-hans/docs/content-examples/"
+                      class="w-full py-1 pe-10 ps-2 decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+                      >简体中文</a
+                    >
+                  
+                </div>
+              
+            
+          
+        </div>
+      </div>
+    
+  
+
+
+                  
+                </li>
+              
+              
+            
+          </ul>
+        </div>
+      </label>
+      
+      <ul class="hidden list-none flex-row text-end sm:flex">
         
           
             
-            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
               
                 <a
                   href="/article/"
@@ -258,7 +476,7 @@
             </li>
           
             
-            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
               
                 <a
                   href="/research/"
@@ -274,7 +492,7 @@
             </li>
           
             
-            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
               
                 <a
                   href="/learn/"
@@ -290,7 +508,7 @@
             </li>
           
             
-            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
               
                 <a
                   href="/literature/"
@@ -306,7 +524,7 @@
             </li>
           
             
-            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
               
                 <a
                   href="https://github.com/KeL1n1995"
@@ -322,12 +540,12 @@
             </li>
           
             
-            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
               
                 
                 
                   <button
-                    id="search-button-1"
+                    id="search-button-2"
                     title="Search (/)"
                   >
                     
@@ -345,7 +563,7 @@
             </li>
           
             
-            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
               
                 
                 
@@ -425,6 +643,7 @@
             </li>
           
           
+
         
       </ul>
     
@@ -562,12 +781,12 @@
 <p>The homepage in Congo is special in that it&rsquo;s overarching design is controlled by the homepage layout config parameter. You can learn more about this in the <a href="https://kel1n1995.github.io/docs/homepage-layout/">Homepage Layout</a> section.</p>
 <p>If you want to add custom content to this page, you simply need to create a <code>content/_index.md</code> file. Anything in this file will then be included in your homepage.</p>
 <p><strong>Example:</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Welcome to Congo!&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;This is a demo of adding content to the homepage.&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">Welcome to my website! I&#39;m really happy you stopped by.</span><span class="w">
-</span></span></span></code></pre></div><p><em>This example sets a custom title and adds some additional text to the body of the page. Any Markdown formatted text is acceptable, including shortcodes, images and links.</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Welcome to Congo!&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;This is a demo of adding content to the homepage.&#34;</span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">Welcome to my website! I&#39;m really happy you stopped by.</span>
+</span></span></code></pre></div><p><em>This example sets a custom title and adds some additional text to the body of the page. Any Markdown formatted text is acceptable, including shortcodes, images and links.</em></p>
 <h3 id="list-pages" class="relative group">List pages <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#list-pages" aria-label="Anchor">#</a></span></h3><table>
   <thead>
       <tr>
@@ -589,25 +808,25 @@
 <p>List pages group all the pages within into a section and provide a way for visitors to reach each page. A blog or portfolio are examples of a list page as they group together posts or projects.</p>
 <p>Creating a list page is as simple as making a sub-directory in the content folder. For example, to create a &ldquo;Projects&rdquo; section, you would create <code>content/projects/</code>. Then create a Markdown file for each of your projects.</p>
 <p>A list page will be generated by default, however to customise the content, you should also create an <code>_index.md</code> page in this new directory.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">.
-</span></span><span class="line"><span class="cl">└── content
-</span></span><span class="line"><span class="cl">    └── projects
-</span></span><span class="line"><span class="cl">        ├── _index.md          <span class="c1"># /projects</span>
-</span></span><span class="line"><span class="cl">        ├── first-project.md   <span class="c1"># /projects/first-project</span>
-</span></span><span class="line"><span class="cl">        └── another-project
-</span></span><span class="line"><span class="cl">            ├── index.md       <span class="c1"># /projects/another-project</span>
-</span></span><span class="line"><span class="cl">            └── project.jpg
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>└── content
+</span></span><span style="display:flex;"><span>    └── projects
+</span></span><span style="display:flex;"><span>        ├── _index.md          <span style="color:#75715e"># /projects</span>
+</span></span><span style="display:flex;"><span>        ├── first-project.md   <span style="color:#75715e"># /projects/first-project</span>
+</span></span><span style="display:flex;"><span>        └── another-project
+</span></span><span style="display:flex;"><span>            ├── index.md       <span style="color:#75715e"># /projects/another-project</span>
+</span></span><span style="display:flex;"><span>            └── project.jpg
 </span></span></code></pre></div><p>Hugo will generate URLs for the pages in your projects folder accordingly.</p>
 <p>Just like the homepage, content in the <code>_index.md</code> file will be output into the generated list index. Congo will then list any pages in this section below the content.</p>
 <p><strong>Example:</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Projects&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Learn about some of my projects.&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">cascade</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">showReadingTime</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">This section contains all my current projects.</span><span class="w">
-</span></span></span></code></pre></div><p><em>In this example, the special <code>cascade</code> parameter is being used to hide the reading time on any sub-pages within this section. By doing this, any project pages will not have their reading time showing. This is a great way to override default theme parameters for an entire section without having to include them in every individual page.</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Projects&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;Learn about some of my projects.&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">cascade</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">showReadingTime</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">This section contains all my current projects.</span>
+</span></span></code></pre></div><p><em>In this example, the special <code>cascade</code> parameter is being used to hide the reading time on any sub-pages within this section. By doing this, any project pages will not have their reading time showing. This is a great way to override default theme parameters for an entire section without having to include them in every individual page.</em></p>
 <p>The <a href="https://kel1n1995.github.io/samples/">samples section</a> of this site is an example of a list page.</p>
 <h3 id="taxonomy-pages" class="relative group">Taxonomy pages <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#taxonomy-pages" aria-label="Anchor">#</a></span></h3><table>
   <thead>
@@ -634,27 +853,27 @@
 <p>Taxonomy pages come in two forms - taxonomy lists and taxonomy terms. Lists display a listing of each of the terms within a given taxonomy, while terms display a list of pages that are related to a given term.</p>
 <p>The terminology can get a little confusing so let&rsquo;s explore an example using a taxonomy named <code>animals</code>.</p>
 <p>Firstly, to use taxonomies in Hugo, they have to be configured. This is done by creating a config file at <code>config/_default/taxonomies.toml</code> and defining the taxonomy name.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config/_default/taxonomies.toml</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">animal</span> <span class="p">=</span> <span class="s2">&#34;animals&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config/_default/taxonomies.toml</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">animal</span> = <span style="color:#e6db74">&#34;animals&#34;</span>
 </span></span></code></pre></div><p>Hugo expects taxonomies to be listed using their singular and plural forms, so we add the singular <code>animal</code> equals the plural <code>animals</code> to create our example taxonomy.</p>
 <p>Now that our <code>animals</code> taxonomy exists, it needs to be added to individual content items. It&rsquo;s as simple as inserting it into the front matter:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Into the Lion&#39;s Den&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;This week we&#39;re learning about lions.&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">animals</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;lion&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;cat&#34;</span><span class="p">]</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
-</span></span></span></code></pre></div><p>This has now created two <em>terms</em> within our <code>animals</code> taxonomy - <code>lion</code> and <code>cat</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Into the Lion&#39;s Den&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;This week we&#39;re learning about lions.&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">animals</span>: [<span style="color:#e6db74">&#34;lion&#34;</span>, <span style="color:#e6db74">&#34;cat&#34;</span>]
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><p>This has now created two <em>terms</em> within our <code>animals</code> taxonomy - <code>lion</code> and <code>cat</code>.</p>
 <p>Although it&rsquo;s not obvious at this point, Hugo will now be generating list and term pages for this new taxonomy. By default the listing can be accessed at <code>/animals/</code> and the term pages can be found at <code>/animals/lion/</code> and <code>/animals/cat/</code>.</p>
 <p>The list page will list all the terms contained within the taxonomy. In this example, navigating to <code>/animals/</code> will show a page that has links for &ldquo;lion&rdquo; and &ldquo;cat&rdquo; which take visitors to the individual term pages.</p>
 <p>The term pages will list all the pages contained within that term. These term lists are essentially the same as normal <a href="#list-pages">list pages</a> and behave in much the same way.</p>
 <p>In order to add custom content to taxonomy pages, simply create <code>_index.md</code> files in the content folder using the taxonomy name as the sub-directory name.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">.
-</span></span><span class="line"><span class="cl">└── content
-</span></span><span class="line"><span class="cl">    └── animals
-</span></span><span class="line"><span class="cl">        ├── _index.md       <span class="c1"># /animals</span>
-</span></span><span class="line"><span class="cl">        └── lion
-</span></span><span class="line"><span class="cl">            └── _index.md   <span class="c1"># /animals/lion</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>└── content
+</span></span><span style="display:flex;"><span>    └── animals
+</span></span><span style="display:flex;"><span>        ├── _index.md       <span style="color:#75715e"># /animals</span>
+</span></span><span style="display:flex;"><span>        └── lion
+</span></span><span style="display:flex;"><span>            └── _index.md   <span style="color:#75715e"># /animals/lion</span>
 </span></span></code></pre></div><p>Anything in these content files will now be placed onto the generated taxonomy pages. As with other content, the front matter variables can be used to override defaults. In this way you could have a tag named <code>lion</code> but override the <code>title</code> to be &ldquo;Lion&rdquo;.</p>
 <p>To see how this looks in reality, check out the <a href="https://kel1n1995.github.io/tags/">tags taxonomy listing</a> on this site.</p>
 <h2 id="leaf-pages" class="relative group">Leaf pages <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#leaf-pages" aria-label="Anchor">#</a></span></h2><table>
@@ -681,41 +900,41 @@
 </table>
 <p>Leaf pages in Hugo are basically standard content pages. They are defined as pages that don&rsquo;t contain any sub-pages. These could be things like an about page, or an individual blog post that lives in the blog section of the website.</p>
 <p>The most important thing to remember about leaf pages is that unlike branch pages, leaf pages should be named <code>index.md</code> <em>without</em> an underscore. Leaf pages are also special in that they can be grouped together at the top level of the section and named with a unique name.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">.
-</span></span><span class="line"><span class="cl">└── content
-</span></span><span class="line"><span class="cl">    └── blog
-</span></span><span class="line"><span class="cl">        ├── first-post.md     <span class="c1"># /blog/first-post</span>
-</span></span><span class="line"><span class="cl">        ├── second-post.md    <span class="c1"># /blog/second-post</span>
-</span></span><span class="line"><span class="cl">        └── third-post
-</span></span><span class="line"><span class="cl">            ├── index.md      <span class="c1"># /blog/third-post</span>
-</span></span><span class="line"><span class="cl">            └── image.jpg
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>└── content
+</span></span><span style="display:flex;"><span>    └── blog
+</span></span><span style="display:flex;"><span>        ├── first-post.md     <span style="color:#75715e"># /blog/first-post</span>
+</span></span><span style="display:flex;"><span>        ├── second-post.md    <span style="color:#75715e"># /blog/second-post</span>
+</span></span><span style="display:flex;"><span>        └── third-post
+</span></span><span style="display:flex;"><span>            ├── index.md      <span style="color:#75715e"># /blog/third-post</span>
+</span></span><span style="display:flex;"><span>            └── image.jpg
 </span></span></code></pre></div><p>When including assets in a page, like an image, a page bundle should be used. Page bundles are created using a sub-directory with an <code>index.md</code> file. Grouping the assets with the content in its own directory is important as many of the shortcodes and other theme logic assumes that resources are bundled alongside pages.</p>
 <p><strong>Example:</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;My First Blog Post&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="ld">2022-01-25</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Welcome to my blog!&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">summary</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Learn more about me and why I am starting this blog.&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;welcome&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;new&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;about&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;first&#34;</span><span class="p">]</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">_This_ is the content of my blog post.</span><span class="w">
-</span></span></span></code></pre></div><p>Leaf pages have a wide variety of <a href="https://kel1n1995.github.io/docs/front-matter/">front matter</a> parameters that can be used to customise how they are displayed.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;My First Blog Post&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">date</span>: <span style="color:#e6db74">2022-01-25</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;Welcome to my blog!&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">summary</span>: <span style="color:#e6db74">&#34;Learn more about me and why I am starting this blog.&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">tags</span>: [<span style="color:#e6db74">&#34;welcome&#34;</span>, <span style="color:#e6db74">&#34;new&#34;</span>, <span style="color:#e6db74">&#34;about&#34;</span>, <span style="color:#e6db74">&#34;first&#34;</span>]
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">_This_ is the content of my blog post.</span>
+</span></span></code></pre></div><p>Leaf pages have a wide variety of <a href="https://kel1n1995.github.io/docs/front-matter/">front matter</a> parameters that can be used to customise how they are displayed.</p>
 <h3 id="external-links" class="relative group">External links <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#external-links" aria-label="Anchor">#</a></span></h3><p>Congo has a special feature that allows links to external pages to appear alongside articles in the article listings. This is useful if you have content on third party websites like Medium, or research papers that you&rsquo;d like to link to, without replicating the content in your Hugo site.</p>
 <p>In order to create an external link article, some special front matter needs to be set:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;My Medium post&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="ld">2022-01-25</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">externalUrl</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://medium.com/&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">summary</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;I wrote a post on Medium.&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">showReadingTime</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">_build</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">render</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;false&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">list</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;local&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
-</span></span></span></code></pre></div><p>Along with the normal front matter parameters like <code>title</code> and <code>summary</code>, the <code>externalUrl</code> parameter is used to tell Congo that this is not an ordinary article. The URL provided here will be where visitors are directed when they select this article.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;My Medium post&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">date</span>: <span style="color:#e6db74">2022-01-25</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">externalUrl</span>: <span style="color:#e6db74">&#34;https://medium.com/&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">summary</span>: <span style="color:#e6db74">&#34;I wrote a post on Medium.&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">showReadingTime</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">_build</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">render</span>: <span style="color:#e6db74">&#34;false&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">list</span>: <span style="color:#e6db74">&#34;local&#34;</span>
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><p>Along with the normal front matter parameters like <code>title</code> and <code>summary</code>, the <code>externalUrl</code> parameter is used to tell Congo that this is not an ordinary article. The URL provided here will be where visitors are directed when they select this article.</p>
 <p>Additionally, we use a special Hugo front matter parameter <code>_build</code> to prevent a normal page for this content being generated - there&rsquo;s no point generating a page since we&rsquo;re linking to an external URL!</p>
 <p>The theme includes an archetype to make generating these external link articles simple. Just specify <code>-k external</code> when making new content.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo new -k external posts/my-post.md
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new -k external posts/my-post.md
 </span></span></code></pre></div><h3 id="simple-pages" class="relative group">Simple pages <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#simple-pages" aria-label="Anchor">#</a></span></h3><table>
   <thead>
       <tr>
@@ -737,62 +956,62 @@
 <p>Congo also includes a special layout for simple pages. The simple layout is a full-width template that just places Markdown content into the page without any special theme features.</p>
 <p>The only features available in the simple layout are breadcrumbs and sharing links. However, the behaviour of these can still be controlled using the normal page <a href="https://kel1n1995.github.io/docs/front-matter/">front matter</a> variables.</p>
 <p>To enable the simple layout on a particular page, add the <code>layout</code> front matter variable with a value of <code>&quot;simple&quot;</code>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;My landing page&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="ld">2022-03-08</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">layout</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;simple&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">This page content is now full-width.</span><span class="w">
-</span></span></span></code></pre></div><h2 id="custom-layouts" class="relative group">Custom layouts <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#custom-layouts" aria-label="Anchor">#</a></span></h2><p>One of the benefits of Hugo is that it makes it easy to create custom layouts for the whole site, individual sections or pages.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;My landing page&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">date</span>: <span style="color:#e6db74">2022-03-08</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">layout</span>: <span style="color:#e6db74">&#34;simple&#34;</span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">This page content is now full-width.</span>
+</span></span></code></pre></div><h2 id="custom-layouts" class="relative group">Custom layouts <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#custom-layouts" aria-label="Anchor">#</a></span></h2><p>One of the benefits of Hugo is that it makes it easy to create custom layouts for the whole site, individual sections or pages.</p>
 <p>Layouts follow all the normal Hugo templating rules and more information is available in the <a href="https://gohugo.io/templates/introduction/" target="_blank" rel="noreferrer">official Hugo docs</a>.</p>
 <h3 id="overriding-default-layouts" class="relative group">Overriding default layouts <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#overriding-default-layouts" aria-label="Anchor">#</a></span></h3><p>Each of the content types discussed above lists the layout file that is used to generate each type of page. If this file is created in your local project it will override the theme template and thus can be used to customise the default style of the website.</p>
 <p>For example, creating a <code>layouts/_default/single.html</code> file will allow the layout of leaf pages to be completely customised.</p>
 <h3 id="custom-section-layouts" class="relative group">Custom section layouts <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#custom-section-layouts" aria-label="Anchor">#</a></span></h3><p>It is also simple to create custom layouts for individual content sections. This is useful when you want to make a section that lists a certain type of content using a particular style.</p>
 <p>Let&rsquo;s step through an example that creates a custom &ldquo;Projects&rdquo; page that lists projects using a special layout.</p>
 <p>In order to do this, structure your content using the normal Hugo content rules and create a section for your projects. Additionally, create a new layout for the projects section by using the same directory name as the content and adding a <code>list.html</code> file.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">.
-</span></span><span class="line"><span class="cl">└── content
-</span></span><span class="line"><span class="cl">│   └── projects
-</span></span><span class="line"><span class="cl">│       ├── _index.md
-</span></span><span class="line"><span class="cl">│       ├── first-project.md
-</span></span><span class="line"><span class="cl">│       └── second-project.md
-</span></span><span class="line"><span class="cl">└── layouts
-</span></span><span class="line"><span class="cl">    └── projects
-</span></span><span class="line"><span class="cl">        └── list.html
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>└── content
+</span></span><span style="display:flex;"><span>│   └── projects
+</span></span><span style="display:flex;"><span>│       ├── _index.md
+</span></span><span style="display:flex;"><span>│       ├── first-project.md
+</span></span><span style="display:flex;"><span>│       └── second-project.md
+</span></span><span style="display:flex;"><span>└── layouts
+</span></span><span style="display:flex;"><span>    └── projects
+</span></span><span style="display:flex;"><span>        └── list.html
 </span></span></code></pre></div><p>This <code>list.html</code> file will now override the default list template, but only for the <code>projects</code> section. Before we look at this file, lets first look at the individual project files.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Congo&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="ld">2021-08-11</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;github&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;A theme for Hugo built with Tailwind CSS.&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">topics</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;Hugo&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;Web&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;Tailwind&#34;</span><span class="p">]</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">externalUrl</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://github.com/jpanther/congo/&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
-</span></span></span></code></pre></div><p><em>In this example we are assigning some metadata for each project that we can then use in our list template. There&rsquo;s no page content, but there&rsquo;s nothing stopping you from including it. It&rsquo;s your own custom template after all!</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Congo&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">date</span>: <span style="color:#e6db74">2021-08-11</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">icon</span>: <span style="color:#e6db74">&#34;github&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;A theme for Hugo built with Tailwind CSS.&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">topics</span>: [<span style="color:#e6db74">&#34;Hugo&#34;</span>, <span style="color:#e6db74">&#34;Web&#34;</span>, <span style="color:#e6db74">&#34;Tailwind&#34;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">externalUrl</span>: <span style="color:#e6db74">&#34;https://github.com/jpanther/congo/&#34;</span>
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><p><em>In this example we are assigning some metadata for each project that we can then use in our list template. There&rsquo;s no page content, but there&rsquo;s nothing stopping you from including it. It&rsquo;s your own custom template after all!</em></p>
 <p>With the projects defined, now we can create a list template that outputs the details of each project.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span> <span class="nx">define</span> <span class="s">&#34;main&#34;</span> <span class="p">}}</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nx">section</span> <span class="nx">class</span><span class="p">=</span><span class="s">&#34;mt-8&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{{</span> <span class="k">range</span> <span class="p">.</span><span class="nx">Pages</span> <span class="p">}}</span>
-</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nx">article</span> <span class="nx">class</span><span class="p">=</span><span class="s">&#34;pb-6&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nx">a</span> <span class="nx">class</span><span class="p">=</span><span class="s">&#34;flex&#34;</span> <span class="nx">href</span><span class="p">=</span><span class="s">&#34;{{ .Params.externalUrl }}&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nx">div</span> <span class="nx">class</span><span class="p">=</span><span class="s">&#34;mr-3 text-3xl text-neutral-300&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nx">span</span> <span class="nx">class</span><span class="p">=</span><span class="s">&#34;relative inline-block align-text-bottom&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">              <span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;icon.html&#34;</span> <span class="p">.</span><span class="nx">Params</span><span class="p">.</span><span class="nx">icon</span> <span class="p">}}</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="o">/</span><span class="nx">span</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="o">/</span><span class="nx">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nx">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nx">h3</span> <span class="nx">class</span><span class="p">=</span><span class="s">&#34;flex text-xl font-semibold&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">              <span class="p">{{</span> <span class="p">.</span><span class="nx">Title</span> <span class="p">}}</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="o">/</span><span class="nx">h3</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nx">p</span> <span class="nx">class</span><span class="p">=</span><span class="s">&#34;text-sm text-neutral-400&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">              <span class="p">{{</span> <span class="p">.</span><span class="nx">Description</span> <span class="p">}}</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="o">/</span><span class="nx">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="o">/</span><span class="nx">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="o">/</span><span class="nx">a</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="o">/</span><span class="nx">article</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="o">/</span><span class="nx">section</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">define</span> <span style="color:#e6db74">&#34;main&#34;</span> }}
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#a6e22e">section</span> <span style="color:#a6e22e">class</span>=<span style="color:#e6db74">&#34;mt-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    {{ <span style="color:#66d9ef">range</span> .<span style="color:#a6e22e">Pages</span> }}
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#a6e22e">article</span> <span style="color:#a6e22e">class</span>=<span style="color:#e6db74">&#34;pb-6&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#a6e22e">a</span> <span style="color:#a6e22e">class</span>=<span style="color:#e6db74">&#34;flex&#34;</span> <span style="color:#a6e22e">href</span>=<span style="color:#e6db74">&#34;{{ .Params.externalUrl }}&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#a6e22e">div</span> <span style="color:#a6e22e">class</span>=<span style="color:#e6db74">&#34;mr-3 text-3xl text-neutral-300&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#a6e22e">span</span> <span style="color:#a6e22e">class</span>=<span style="color:#e6db74">&#34;relative inline-block align-text-bottom&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>              {{ <span style="color:#a6e22e">partial</span> <span style="color:#e6db74">&#34;icon.html&#34;</span> .<span style="color:#a6e22e">Params</span>.<span style="color:#a6e22e">icon</span> }}
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">/</span><span style="color:#a6e22e">span</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#f92672">/</span><span style="color:#a6e22e">div</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#a6e22e">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#a6e22e">h3</span> <span style="color:#a6e22e">class</span>=<span style="color:#e6db74">&#34;flex text-xl font-semibold&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>              {{ .<span style="color:#a6e22e">Title</span> }}
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">/</span><span style="color:#a6e22e">h3</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#a6e22e">p</span> <span style="color:#a6e22e">class</span>=<span style="color:#e6db74">&#34;text-sm text-neutral-400&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>              {{ .<span style="color:#a6e22e">Description</span> }}
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">/</span><span style="color:#a6e22e">p</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#f92672">/</span><span style="color:#a6e22e">div</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">/</span><span style="color:#a6e22e">a</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">/</span><span style="color:#a6e22e">article</span>&gt;
+</span></span><span style="display:flex;"><span>    {{ <span style="color:#a6e22e">end</span> }}
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">/</span><span style="color:#a6e22e">section</span>&gt;
+</span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">end</span> }}
 </span></span></code></pre></div><p>Although this is quite a straightforward example, you can see that it steps through each of the pages in this section (ie. each project), and then outputs HTML links to each project alongside an icon. The metadata in the front matter for each project is used to determine which information is displayed.</p>
 <p>Keep in mind that you&rsquo;ll need to ensure the relevant styles and classes are available, which may require the Tailwind CSS to be recompiled. This is discussed in more detail in the <a href="https://kel1n1995.github.io/docs/advanced-customisation/">Advanced Customisation</a> section.</p>
 <p>When making custom templates like this one, it&rsquo;s always easiest to take a look at how the default Congo template works and then use that as a guide. Remember, the <a href="https://gohugo.io/templates/introduction/" target="_blank" rel="noreferrer">Hugo docs</a> are a great resource to learn more about creating templates too.</p>
