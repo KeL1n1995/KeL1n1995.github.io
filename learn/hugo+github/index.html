@@ -655,15 +655,15 @@
     <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M421.7 220.3L188.5 453.4L154.6 419.5L158.1 416H112C103.2 416 96 408.8 96 400V353.9L92.51 357.4C87.78 362.2 84.31 368 82.42 374.4L59.44 452.6L137.6 429.6C143.1 427.7 149.8 424.2 154.6 419.5L188.5 453.4C178.1 463.8 165.2 471.5 151.1 475.6L30.77 511C22.35 513.5 13.24 511.2 7.03 504.1C.8198 498.8-1.502 489.7 .976 481.2L36.37 360.9C40.53 346.8 48.16 333.9 58.57 323.5L291.7 90.34L421.7 220.3zM492.7 58.75C517.7 83.74 517.7 124.3 492.7 149.3L444.3 197.7L314.3 67.72L362.7 19.32C387.7-5.678 428.3-5.678 453.3 19.32L492.7 58.75z"/></svg>
 </span>
   </span>
-  <span class="dark:text-neutral-300"><pre><code>	主要命令：
-		- git init：初始化新仓库
-		- git clone：克隆远程仓库
-		- git add：暂存更改
-		- git commit：提交更改
-		- git push：推送到远程仓库
-		- git pull：从远程仓库拉取更新
-		- git branch：管理分支
-		- git merge：合并分支
+  <span class="dark:text-neutral-300"><pre><code>主要命令：
+	- git init：初始化新仓库
+	- git clone：克隆远程仓库
+	- git add：暂存更改
+	- git commit：提交更改
+	- git push：推送到远程仓库
+	- git pull：从远程仓库拉取更新
+	- git branch：管理分支
+	- git merge：合并分支
 </code></pre>
 </span>
 </div>
@@ -1309,22 +1309,14 @@
 
 然后进入该路径
 <code>cd mysite</code>
-在该目录下你可以看到以下几个目录和 <code>config.toml</code> 文件</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">C:\Hugo\mysite\archetypes
-</span></span><span class="line"><span class="cl">C:\Hugo\mysite\assets
-</span></span><span class="line"><span class="cl">C:\Hugo\mysite\content
-</span></span><span class="line"><span class="cl">C:\Hugo\mysite\data
-</span></span><span class="line"><span class="cl">C:\Hugo\mysite\hugo.toml
-</span></span><span class="line"><span class="cl">C:\Hugo\mysite\i18n
-</span></span><span class="line"><span class="cl">C:\Hugo\mysite\layouts
-</span></span><span class="line"><span class="cl">C:\Hugo\mysite\static
-</span></span><span class="line"><span class="cl">C:\Hugo\mysite\themes
-</span></span><span class="line"><span class="cl">C:\Hugo\mysite\archetypes\default.md
-</span></span></code></pre></div><blockquote>
+在该目录下你可以看到以下几个目录和 <code>config.toml</code> 文件
+<code>html C:\Hugo\mysite\archetypes C:\Hugo\mysite\assets C:\Hugo\mysite\content C:\Hugo\mysite\data C:\Hugo\mysite\hugo.toml C:\Hugo\mysite\i18n C:\Hugo\mysite\layouts C:\Hugo\mysite\static C:\Hugo\mysite\themes C:\Hugo\mysite\archetypes\default.md </code></p>
+<blockquote>
 <p><strong>Nice! 此时你已经完成了hugo的基本构架。</strong></p>
 </blockquote>
 <h4 id="23-设置hugo网页的主题" class="relative group">2.3 设置hugo网页的主题 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#23-%e8%ae%be%e7%bd%aehugo%e7%bd%91%e9%a1%b5%e7%9a%84%e4%b8%bb%e9%a2%98" aria-label="Anchor">#</a></span></h4><ul>
-<li>主题的下载和安装
+<li>
+<p>主题的下载和安装
 你可以在  <a href="https://themes.gohugo.io/" target="_blank" rel="noreferrer">Hugo 官方社区</a>上选择你喜爱的主题。
 这里以[Blowfish] (<a href="https://themes.gohugo.io/themes/blowfish/" target="_blank" rel="noreferrer">https://themes.gohugo.io/themes/blowfish/</a>) 为例进行后续的演示操作：
 
@@ -1391,18 +1383,16 @@
 
 </figure>
 
-进入该主题的GitHub仓库： <a href="https://github.com/nunocoracao/blowfish" target="_blank" rel="noreferrer">https://github.com/nunocoracao/blowfish</a> 进行下载：
+进入该主题的GitHub仓库： <a href="https://github.com/nunocoracao/blowfish" target="_blank" rel="noreferrer">https://github.com/nunocoracao/blowfish</a> 进行下载：</p>
 <ol>
 <li>你可以通过手动下载的方式，然后将该主题文件解压到你的<code>C:\Hugo\mysite\themes</code>目录中去。
 Note：要将文件名改为<code>blowfish</code></li>
 <li>也可以使用以下命令行在终端安装（需要开启全局代理）：</li>
 </ol>
-</li>
-</ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">cd mysite
 </span></span><span class="line"><span class="cl">git init
 </span></span><span class="line"><span class="cl">git submodule add -b main https://github.com/nunocoracao/blowfish.git themes/blowfish
-</span></span></code></pre></div><ul>
+</span></span></code></pre></div></li>
 <li>
 <p>主题的本地化配置-文件配置</p>
 <ul>
@@ -1637,15 +1627,15 @@ Note：要将文件名改为<code>blowfish</code></li>
 </li>
 <li>
 <p>初次推送到仓库的代码</p>
-</li>
-</ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">git init
 </span></span><span class="line"><span class="cl">git add .
 </span></span><span class="line"><span class="cl">git commit -m &#34;first commit&#34;
 </span></span><span class="line"><span class="cl">git branch -M main
 </span></span><span class="line"><span class="cl">git remote add origin {你的github仓库地址}
 </span></span><span class="line"><span class="cl">git push -u origin main
-</span></span></code></pre></div><p>-第一次上传需要输入账号密码，否则会出现以下报错：</p>
+</span></span></code></pre></div></li>
+</ul>
+<p>-第一次上传需要输入账号密码，否则会出现以下报错：</p>
 <p>
 
 
@@ -1715,11 +1705,11 @@ Note：要将文件名改为<code>blowfish</code></li>
 </figure>
 </p>
 <ul>
-<li>解决办法：</li>
-</ul>
+<li>
+<p>解决办法：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">git config --global user.email &#34;you@example.com&#34;# 你的GitHub注册邮箱
 </span></span><span class="line"><span class="cl">git config --global user.name &#34;Your Name&#34;#你的GitHub用户名
-</span></span></code></pre></div><ul>
+</span></span></code></pre></div></li>
 <li>
 <p>运行后，你将获得一个验证的 device code
 
@@ -1918,16 +1908,15 @@ Note：要将文件名改为<code>blowfish</code></li>
 </li>
 <li>
 <p>解决办法：</p>
-</li>
-</ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">git init
 </span></span><span class="line"><span class="cl">git add .
 </span></span><span class="line"><span class="cl">git commit -m &#34;update&#34;
 </span></span><span class="line"><span class="cl">git branch -M main
 </span></span><span class="line"><span class="cl">git remote set-url origin https://github.com/AniKeLin/AniKeLin.github.io
 </span></span><span class="line"><span class="cl">git push -u origin main --force # 加force 表示强制推送
-</span></span></code></pre></div><ul>
-<li>推送成功后将看到：
+</span></span></code></pre></div></li>
+<li>
+<p>推送成功后将看到：
 
 
 
@@ -1995,6 +1984,7 @@ Note：要将文件名改为<code>blowfish</code></li>
 
 
 </figure>
+</p>
 </li>
 </ul>
 <h4 id="33--github-action-自动部署" class="relative group">3.3  Github Action 自动部署 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#33--github-action-%e8%87%aa%e5%8a%a8%e9%83%a8%e7%bd%b2" aria-label="Anchor">#</a></span></h4><ul>
@@ -2524,10 +2514,8 @@ Note：要将文件名改为<code>blowfish</code></li>
 <li>
 <p>本地文件配置：</p>
 <ul>
-<li>在你的网站根目录<code>C:\Hugo\mysite</code>中创建一个<code>.github/workflows/deploy.yaml</code>文件，将以下内容复制进去:</li>
-</ul>
-</li>
-</ul>
+<li>
+<p>在你的网站根目录<code>C:\Hugo\mysite</code>中创建一个<code>.github/workflows/deploy.yaml</code>文件，将以下内容复制进去:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">name: deploy
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"># 代码提交到main分支时触发github action
@@ -2562,25 +2550,26 @@ Note：要将文件名改为<code>blowfish</code></li>
 </span></span><span class="line"><span class="cl">			PUBLISH_BRANCH: main
 </span></span><span class="line"><span class="cl">			PUBLISH_DIR: ./public
 </span></span><span class="line"><span class="cl">			commit_message: auto deploy
-</span></span></code></pre></div><pre><code>- 在你的网站根目录`C:\Hugo\mysite`中创建`.gitignore`文件，来避免提交不必要的文件。
-</code></pre>
+</span></span></code></pre></div></li>
+<li>
+<p>在你的网站根目录<code>C:\Hugo\mysite</code>中创建<code>.gitignore</code>文件，来避免提交不必要的文件。</p>
+</li>
+</ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"># 自动生成的文件
 </span></span><span class="line"><span class="cl">public
 </span></span><span class="line"><span class="cl">resources
 </span></span><span class="line"><span class="cl">.hugo_build.lock
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"># hugo命令
 </span></span><span class="line"><span class="cl">hugo.exe
-</span></span></code></pre></div><pre><code>- 在你的网站根目录`C:\Hugo\mysite`中运行终端将所有文件在上传到仓库，上传成功后会触发Github Action，来自动部署你的静态页面。
-</code></pre>
+</span></span></code></pre></div><p>-在你的网站根目录<code>C:\Hugo\mysite</code>中运行终端将所有文件在上传到仓库，上传成功后会触发Github Action，来自动部署你的静态页面。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">git init
 </span></span><span class="line"><span class="cl">git add .
 </span></span><span class="line"><span class="cl">git commit -m &#34;first commit&#34;
 </span></span><span class="line"><span class="cl">git branch -M main
 </span></span><span class="line"><span class="cl">git remote add origin https://github.com/AniKeLin/Hugo.git # 替换成{你的github仓库地址}
 </span></span><span class="line"><span class="cl">git push -u origin main
-</span></span></code></pre></div><pre><code>- 之后的每一次更新只需要在`C:\Hugo\mysite`目录下使用git推送到`AniKeLin/Hugo.git`仓库即可
-
+</span></span></code></pre></div><ul>
+<li>之后的每一次更新只需要在<code>C:\Hugo\mysite</code>目录下使用git推送到<code>AniKeLin/Hugo.git</code>仓库即可
 <div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
   <span class="pe-3 text-primary-400">
     <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
@@ -2590,14 +2579,16 @@ Note：要将文件名改为<code>blowfish</code></li>
 </code></pre>
 </span>
 </div>
-
-</code></pre>
+</li>
+</ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">git init
 </span></span><span class="line"><span class="cl">git remote set-url origin https://github.com/AniKeLin/Hugo.git
 </span></span><span class="line"><span class="cl">git add .
 </span></span><span class="line"><span class="cl">git commit -m &#34;update&#34;
 </span></span><span class="line"><span class="cl">git push 
-</span></span></code></pre></div><p>点击
+</span></span></code></pre></div></li>
+</ul>
+<p>点击
 <a
   class="inline-block !rounded-md bg-primary-600 px-4 py-1 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
   href="https://anikelin.github.io/guides/hugo&#43;github"
@@ -2614,9 +2605,12 @@ Link
 1.在GitHub中一共建立了两个仓库，分别为静态网页文件的发布的仓库<code>AniKeLin.github.io</code>（<strong>命名要用 {github用户名}.github.io</strong>）,简称<strong>网页仓库</strong>。以及Github Action自动部署的仓库<code>Hugo.git</code>,简称<strong>部署仓库</strong>。
 2.二者区别：将<code>C:\Hugo\mysite\public</code>的所有文件传送到<strong>网页仓库</strong><code>AniKeLin.github.io</code>。将<code>C:\Hugo\mysite</code>的所有文件传送到<strong>部署仓库</strong><code>Hugo.git</code>。</p>
 <h4 id="42-报错情况" class="relative group">4.2 报错情况 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#42-%e6%8a%a5%e9%94%99%e6%83%85%e5%86%b5" aria-label="Anchor">#</a></span></h4><p><strong>自动部署时出现：</strong></p>
-<pre tabindex="0"><code>Run peaceiris/actions-gh-pages@v4 [INFO] Usage https://github.com/peaceiris/actions-gh-pages#readme Dump inputs Setup auth token Prepare publishing assets Setup Git config Create a commit Push the commit or tag /usr/bin/git push origin main remote: Permission to KeL1n1995/KeL1n1995.github.io.git denied to github-actions[bot].  
-fatal: unable to access &#39;https://github.com/KeL1n1995/KeL1n1995.github.io.git/&#39;: The requested URL returned error: 403 Error: Action failed with &#34;The process &#39;/usr/bin/git&#39; failed with exit code 128&#34;
-</code></pre><p><strong>解决方法：</strong></p>
+<pre><code>```
+Run peaceiris/actions-gh-pages@v4 [INFO] Usage https://github.com/peaceiris/actions-gh-pages#readme Dump inputs Setup auth token Prepare publishing assets Setup Git config Create a commit Push the commit or tag /usr/bin/git push origin main remote: Permission to KeL1n1995/KeL1n1995.github.io.git denied to github-actions[bot].  
+fatal: unable to access 'https://github.com/KeL1n1995/KeL1n1995.github.io.git/': The requested URL returned error: 403 Error: Action failed with &quot;The process '/usr/bin/git' failed with exit code 128&quot;
+```
+</code></pre>
+<p><strong>解决方法：</strong></p>
 <ol>
 <li><strong>提供正确的 Token 权限</strong></li>
 </ol>
