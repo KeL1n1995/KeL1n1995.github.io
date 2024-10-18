@@ -2514,25 +2514,26 @@ Note：要将文件名改为<code>blowfish</code></li>
 </span></span><span class="line"><span class="cl">			PUBLISH_DIR: ./public
 </span></span><span class="line"><span class="cl">			commit_message: auto deploy
 </span></span></code></pre></div><ul>
-<li>在目录<code>C:\Hugo\mysite</code>中创建<code>.gitignore</code>文件，来避免提交不必要的文件。</li>
-</ul>
+<li>
+<p>在目录<code>C:\Hugo\mysite</code>中创建<code>.gitignore</code>文件，来避免提交不必要的文件。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"># 自动生成的文件
 </span></span><span class="line"><span class="cl">public
 </span></span><span class="line"><span class="cl">resources
 </span></span><span class="line"><span class="cl">.hugo_build.lock
 </span></span><span class="line"><span class="cl"># hugo命令
 </span></span><span class="line"><span class="cl">hugo.exe
-</span></span></code></pre></div><ul>
-<li>在目录<code>C:\Hugo\mysite</code>中运行终端将所有文件在上传到仓库，上传成功后会触发Github Action，来自动部署你的静态页面。</li>
-</ul>
+</span></span></code></pre></div></li>
+<li>
+<p>在目录<code>C:\Hugo\mysite</code>中运行终端将所有文件在上传到仓库，上传成功后会触发Github Action，来自动部署你的静态页面。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">git init
 </span></span><span class="line"><span class="cl">git add .
 </span></span><span class="line"><span class="cl">git commit -m &#34;first commit&#34;
 </span></span><span class="line"><span class="cl">git branch -M main
 </span></span><span class="line"><span class="cl">git remote add origin https://github.com/AniKeLin/Hugo.git # 替换成{你的github仓库地址}
 </span></span><span class="line"><span class="cl">git push -u origin main
-</span></span></code></pre></div><ul>
-<li>之后的每一次更新只需要在<code>C:\Hugo\mysite</code>目录下使用git推送到<code>AniKeLin/Hugo.git</code>仓库即可
+</span></span></code></pre></div></li>
+<li>
+<p>之后的每一次更新只需要在<code>C:\Hugo\mysite</code>目录下使用git推送到<code>AniKeLin/Hugo.git</code>仓库即可
 <div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
   <span class="pe-3 text-primary-400">
     <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
@@ -2542,14 +2543,15 @@ Note：要将文件名改为<code>blowfish</code></li>
 </code></pre>
 </span>
 </div>
-</li>
-</ul>
+</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">git init
 </span></span><span class="line"><span class="cl">git remote set-url origin https://github.com/AniKeLin/Hugo.git
 </span></span><span class="line"><span class="cl">git add .
 </span></span><span class="line"><span class="cl">git commit -m &#34;update&#34;
 </span></span><span class="line"><span class="cl">git push 
 </span></span></code></pre></div></li>
+</ul>
+</li>
 </ul>
 <p>点击
 <a
