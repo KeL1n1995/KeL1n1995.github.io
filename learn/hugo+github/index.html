@@ -137,7 +137,7 @@
     "keywords": ["杂谈","转载"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "603"
+    "wordCount": "591"
   }
   </script>
     
@@ -668,11 +668,11 @@
 </span>
 </div>
 </p>
-<h4 id="12-github网站创建" class="relative group">1.2 GitHub网站创建 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#12-github%e7%bd%91%e7%ab%99%e5%88%9b%e5%bb%ba" aria-label="Anchor">#</a></span></h4><p>访问 <a href="https://www.github.com/" title="GitHub" target="_blank" rel="noreferrer">GitHub</a> 创建账号。使用GitHub Pages 将托管你的网站。</p>
+<h4 id="12-github网站创建" class="relative group">1.2 GitHub网站创建 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#12-github%e7%bd%91%e7%ab%99%e5%88%9b%e5%bb%ba" aria-label="Anchor">#</a></span></h4><p>访问<a href="https://www.github.com/" title="GitHub" target="_blank" rel="noreferrer">GitHub</a>创建账号。使用GitHub Pages 将托管你的网站。</p>
 <ul>
 <li>
 <ol>
-<li>首先在 GitHub 上创建一个以 <code>username.github.io</code> 命名的项目。</li>
+<li>首先在 GitHub 上创建一个以<code>username.github.io</code>命名的项目。</li>
 </ol>
 </li>
 </ul>
@@ -1788,74 +1788,12 @@ Note：要将文件名改为<code>blowfish</code></li>
 </figure>
 </p>
 <ul>
-<li>转到：(<a href="https://github.com/login/device" target="_blank" rel="noreferrer">https://github.com/login/device</a>)  登录你的账号 并输入该device code</li>
-</ul>
-<p>
-
-
-
-
-
-<figure>
-    
-    
-
-
-
-
-
-
-
-
-  
-    <picture
-      class="mx-auto my-0 rounded-md"
-      
-    >
-      
-      
-      
-      
-        <source
-          
-            srcset="/learn/hugo&#43;github/Pasted%20image%2020241017195611_hu361307987708593277.webp 330w,/learn/hugo&#43;github/Pasted%20image%2020241017195611_hu10349074997344723009.webp 660w
-            
-              ,/learn/hugo&#43;github/Pasted%20image%2020241017195611_hu11887933531097910578.webp 1024w
-            
-            
-              ,/learn/hugo&#43;github/Pasted%20image%2020241017195611_hu16117083401408217359.webp 1320w
-            "
-          
-          sizes="100vw"
-          type="image/webp"
-        />
-      
-      <img
-        width="1652"
-        height="930"
-        class="mx-auto my-0 rounded-md"
-        alt="Alt text"
-        loading="lazy" decoding="async"
-        
-          src="/learn/hugo&#43;github/Pasted%20image%2020241017195611_hu16623403832854161930.png"
-          srcset="/learn/hugo&#43;github/Pasted%20image%2020241017195611_hu16838566030718126789.png 330w,/learn/hugo&#43;github/Pasted%20image%2020241017195611_hu16623403832854161930.png 660w
-          
-            ,/learn/hugo&#43;github/Pasted%20image%2020241017195611_hu7109686649580494439.png 1024w
-          
-          
-            ,/learn/hugo&#43;github/Pasted%20image%2020241017195611_hu16337232711332806551.png 1320w
-          "
-          sizes="100vw"
-        
-      />
-    </picture>
-  
-
-
-</figure>
-</p>
-<ul>
-<li>使用<code>git push -u origin main</code> 可能会出现以下报错：</li>
+<li>
+<p>转到：(<a href="https://github.com/login/device" target="_blank" rel="noreferrer">https://github.com/login/device</a>)  登录你的账号 并输入该device code</p>
+</li>
+<li>
+<p>使用<code>git push -u origin main</code> 可能会出现以下报错：</p>
+</li>
 </ul>
 <p>
 
@@ -2541,8 +2479,6 @@ Note：要将文件名改为<code>blowfish</code></li>
 <ul>
 <li>在你的网站根目录<code>C:\Hugo\mysite</code>中创建一个<code>.github/workflows/deploy.yaml</code>文件，将以下内容复制进去:</li>
 </ul>
-</li>
-</ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">name: deploy
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"># 代码提交到main分支时触发github action
@@ -2577,31 +2513,26 @@ Note：要将文件名改为<code>blowfish</code></li>
 </span></span><span class="line"><span class="cl">			PUBLISH_BRANCH: main
 </span></span><span class="line"><span class="cl">			PUBLISH_DIR: ./public
 </span></span><span class="line"><span class="cl">			commit_message: auto deploy
-</span></span></code></pre></div><pre><code>- 在你的网站根目录`C:\Hugo\mysite`中创建`.gitignore`文件，来避免提交不必要的文件。
-
-
-```html
-# 自动生成的文件
-public
-resources
-.hugo_build.lock
-# hugo命令
-hugo.exe
-```
-
--在你的网站根目录`C:\Hugo\mysite`中运行终端将所有文件在上传到仓库，上传成功后会触发Github Action，来自动部署你的静态页面。
-
-
-```html
-git init
-git add .
-git commit -m &quot;first commit&quot;
-git branch -M main
-git remote add origin https://github.com/AniKeLin/Hugo.git # 替换成{你的github仓库地址}
-git push -u origin main
-```
-
-- 之后的每一次更新只需要在`C:\Hugo\mysite`目录下使用git推送到`AniKeLin/Hugo.git`仓库即可
+</span></span></code></pre></div><ul>
+<li>在目录<code>C:\Hugo\mysite</code>中创建<code>.gitignore</code>文件，来避免提交不必要的文件。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"># 自动生成的文件
+</span></span><span class="line"><span class="cl">public
+</span></span><span class="line"><span class="cl">resources
+</span></span><span class="line"><span class="cl">.hugo_build.lock
+</span></span><span class="line"><span class="cl"># hugo命令
+</span></span><span class="line"><span class="cl">hugo.exe
+</span></span></code></pre></div><ul>
+<li>在目录<code>C:\Hugo\mysite</code>中运行终端将所有文件在上传到仓库，上传成功后会触发Github Action，来自动部署你的静态页面。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">git init
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m &#34;first commit&#34;
+</span></span><span class="line"><span class="cl">git branch -M main
+</span></span><span class="line"><span class="cl">git remote add origin https://github.com/AniKeLin/Hugo.git # 替换成{你的github仓库地址}
+</span></span><span class="line"><span class="cl">git push -u origin main
+</span></span></code></pre></div><ul>
+<li>之后的每一次更新只需要在<code>C:\Hugo\mysite</code>目录下使用git推送到<code>AniKeLin/Hugo.git</code>仓库即可
 <div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
   <span class="pe-3 text-primary-400">
     <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
@@ -2611,16 +2542,15 @@ git push -u origin main
 </code></pre>
 </span>
 </div>
-
-
-```html
-git init
-git remote set-url origin https://github.com/AniKeLin/Hugo.git
-git add .
-git commit -m &quot;update&quot;
-git push 
-```
-</code></pre>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">git init
+</span></span><span class="line"><span class="cl">git remote set-url origin https://github.com/AniKeLin/Hugo.git
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m &#34;update&#34;
+</span></span><span class="line"><span class="cl">git push 
+</span></span></code></pre></div></li>
+</ul>
 <p>点击
 <a
   class="inline-block !rounded-md bg-primary-600 px-4 py-1 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
