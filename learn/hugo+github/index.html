@@ -17,8 +17,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#FFFFFF" />
   
-  <title>【HugoLearn】使用hugo&#43;GitHub搭建自己的静态blog &middot; KeLin&#39;s Homepage</title>
-    <meta name="title" content="【HugoLearn】使用hugo&#43;GitHub搭建自己的静态blog &middot; KeLin&#39;s Homepage" />
+  <title>【Hugo Learn】使用hugo&#43;GitHub搭建自己的静态blog &middot; KeLin&#39;s Homepage</title>
+    <meta name="title" content="【Hugo Learn】使用hugo&#43;GitHub搭建自己的静态blog &middot; KeLin&#39;s Homepage" />
   
   
   
@@ -97,7 +97,7 @@
   
   <meta property="og:url" content="https://kel1n1995.github.io/learn/hugo&#43;github/">
   <meta property="og:site_name" content="KeLin&#39;s Homepage">
-  <meta property="og:title" content="【HugoLearn】使用hugo&#43;GitHub搭建自己的静态blog">
+  <meta property="og:title" content="【Hugo Learn】使用hugo&#43;GitHub搭建自己的静态blog">
   <meta property="og:description" content="Use Github and Hugo to build a personal blog">
   <meta property="og:locale" content="en_AU">
   <meta property="og:type" content="article">
@@ -109,7 +109,7 @@
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="【HugoLearn】使用hugo&#43;GitHub搭建自己的静态blog">
+  <meta name="twitter:title" content="【Hugo Learn】使用hugo&#43;GitHub搭建自己的静态blog">
   <meta name="twitter:description" content="Use Github and Hugo to build a personal blog">
 
   
@@ -118,8 +118,8 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Learn",
-    "name": "【HugoLearn】使用hugo\u002bGitHub搭建自己的静态blog",
-    "headline": "【HugoLearn】使用hugo\u002bGitHub搭建自己的静态blog",
+    "name": "【Hugo Learn】使用hugo\u002bGitHub搭建自己的静态blog",
+    "headline": "【Hugo Learn】使用hugo\u002bGitHub搭建自己的静态blog",
     "description": "Use Github and Hugo to build a personal blog",
     "abstract": "Use Github and Hugo to build a personal blog",
     "inLanguage": "en-AU",
@@ -137,7 +137,7 @@
     "keywords": ["杂谈","转载"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "551"
+    "wordCount": "557"
   }
   </script>
     
@@ -502,7 +502,7 @@
     <header class="max-w-prose">
       
       <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        【HugoLearn】使用hugo+GitHub搭建自己的静态blog
+        【Hugo Learn】使用hugo+GitHub搭建自己的静态blog
       </h1>
       
         <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
@@ -612,6 +612,7 @@
         </li>
         <li><a href="#补充">补充</a>
           <ul>
+            <li><a href="#注意事项">注意事项</a></li>
             <li><a href="#报错情况">报错情况</a></li>
           </ul>
         </li>
@@ -2576,7 +2577,10 @@ git commit -m &#34;update&#34;
 git push 
 </code></pre></li>
 </ul>
-<h3 id="补充" class="relative group">补充 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%a1%a5%e5%85%85" aria-label="Anchor">#</a></span></h3><h4 id="报错情况" class="relative group">报错情况 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%8a%a5%e9%94%99%e6%83%85%e5%86%b5" aria-label="Anchor">#</a></span></h4><p><strong>自动部署时出现：</strong></p>
+<h3 id="补充" class="relative group">补充 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%a1%a5%e5%85%85" aria-label="Anchor">#</a></span></h3><h4 id="注意事项" class="relative group">注意事项 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a1%b9" aria-label="Anchor">#</a></span></h4><p>本教程中容易混淆的地方：
+1.在GitHub中一共建立了两个仓库，分别为静态网页文件的发布的仓库<code>AniKeLin.github.io</code>（<strong>命名要用 {github用户名}.github.io</strong>）,简称<strong>网页仓库</strong>。以及Github Action自动部署的仓库<code>Hugo.git</code>,简称<strong>部署仓库</strong>。
+2.二者区别：将<code>C:\Hugo\mysite\public</code>的所有文件传送到<strong>网页仓库</strong><code>AniKeLin.github.io</code>。将<code>C:\Hugo\mysite</code>的所有文件传送到<strong>部署仓库</strong><code>Hugo.git</code>。</p>
+<h4 id="报错情况" class="relative group">报错情况 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%8a%a5%e9%94%99%e6%83%85%e5%86%b5" aria-label="Anchor">#</a></span></h4><p><strong>自动部署时出现：</strong></p>
 <pre tabindex="0"><code>Run peaceiris/actions-gh-pages@v4 [INFO] Usage https://github.com/peaceiris/actions-gh-pages#readme Dump inputs Setup auth token Prepare publishing assets Setup Git config Create a commit Push the commit or tag /usr/bin/git push origin main remote: Permission to KeL1n1995/KeL1n1995.github.io.git denied to github-actions[bot].  
 fatal: unable to access &#39;https://github.com/KeL1n1995/KeL1n1995.github.io.git/&#39;: The requested URL returned error: 403 Error: Action failed with &#34;The process &#39;/usr/bin/git&#39; failed with exit code 128&#34;
 </code></pre><p><strong>解决方法：</strong></p>
