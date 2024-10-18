@@ -787,16 +787,16 @@
 </li>
 <li>
 <p>从Hugo项目目录（您上面创建的目录）中，为您的网站初始化模块：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 如果您在GitHub上管理项目</span>
-</span></span><span style="display:flex;"><span>hugo mod init github.com/&lt;username&gt;/&lt;repo-name&gt;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 如果您在本地管理项目</span>
-</span></span><span style="display:flex;"><span>hugo mod init my-project
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 如果您在GitHub上管理项目</span>
+</span></span><span class="line"><span class="cl">hugo mod init github.com/&lt;username&gt;/&lt;repo-name&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 如果您在本地管理项目</span>
+</span></span><span class="line"><span class="cl">hugo mod init my-project
 </span></span></code></pre></div></li>
 <li>
 <p>通过创建一个新文件 <code>config/_default/module.toml</code> 并添加以下内容，将主题添加到配置中：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[[<span style="color:#a6e22e">imports</span>]]
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">path</span> = <span style="color:#e6db74">&#34;github.com/jpanther/congo/v2&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">imports</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">path</span> <span class="p">=</span> <span class="s2">&#34;github.com/jpanther/congo/v2&#34;</span>
 </span></span></code></pre></div></li>
 <li>
 <p>使用 <code>hugo server</code> 启动您的服务器，主题将自动下载。</p>
@@ -807,9 +807,9 @@
 </ol>
 <h4 id="使用git安装" class="relative group">使用Git安装 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%bd%bf%e7%94%a8git%e5%ae%89%e8%a3%85" aria-label="锚点">#</a></span></h4><p>对于这种方法，您需要确保在本地计算机上安装了 <strong>Git</strong>。</p>
 <p>切换到您的Hugo网站目录（上面创建的目录），初始化一个新的 <code>git</code> 存储库并将刚果添加为子模块。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd mywebsite
-</span></span><span style="display:flex;"><span>git init
-</span></span><span style="display:flex;"><span>git submodule add -b stable https://github.com/jpanther/congo.git themes/congo
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> mywebsite
+</span></span><span class="line"><span class="cl">git init
+</span></span><span class="line"><span class="cl">git submodule add -b stable https://github.com/jpanther/congo.git themes/congo
 </span></span></code></pre></div><p>然后继续 <a href="#%e8%ae%be%e7%bd%ae%e4%b8%bb%e9%a2%98%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6">设置主题配置文件</a>。</p>
 <h3 id="设置主题配置文件" class="relative group">设置主题配置文件 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%ae%be%e7%bd%ae%e4%b8%bb%e9%a2%98%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6" aria-label="锚点">#</a></span></h3><p>在您的网站根目录中，删除由Hugo生成的 <code>config.toml</code> 文件。将主题中的 <code>*.toml</code> 配置文件复制到您的 <code>config/_default/</code> 文件夹中。这将确保您具有所有正确的主题设置，并使您能够轻松地根据需要自定义主题。</p>
 <div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
@@ -826,12 +826,12 @@
 <li><strong>Git子模块或手动安装：</strong> <code>themes/congo/config/_default</code></li>
 </ul>
 <p>复制文件后，您的配置文件夹应如下所示：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>config/_default/
-</span></span><span style="display:flex;"><span>├─ config.toml
-</span></span><span style="display:flex;"><span>├─ markup.toml
-</span></span><span style="display:flex;"><span>├─ menus.toml
-</span></span><span style="display:flex;"><span>├─ module.toml  <span style="color:#75715e"># 如果使用Hugo模块安装</span>
-</span></span><span style="display:flex;"><span>└─ params.toml
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">config/_default/
+</span></span><span class="line"><span class="cl">├─ config.toml
+</span></span><span class="line"><span class="cl">├─ markup.toml
+</span></span><span class="line"><span class="cl">├─ menus.toml
+</span></span><span class="line"><span class="cl">├─ module.toml  <span class="c1"># 如果使用Hugo模块安装</span>
+</span></span><span class="line"><span class="cl">└─ params.toml
 </span></span></code></pre></div><div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
   <span class="pe-3 text-primary-400">
     <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
@@ -850,7 +850,7 @@
 <li><a href="#%e6%89%8b%e5%8a%a8%e6%9b%b4%e6%96%b0">手动文件复制</a></li>
 </ul>
 <h3 id="使用hugo更新" class="relative group">使用Hugo更新 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%bd%bf%e7%94%a8hugo%e6%9b%b4%e6%96%b0" aria-label="锚点">#</a></span></h3><p>Hugo使更新模块变得非常容易。只需切换到项目目录并执行以下命令：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo mod get -u
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo mod get -u
 </span></span></code></pre></div><p>Hugo将自动更新项目所需的任何模块。它通过检查您的 <code>module.toml</code> 和 <code>go.mod</code> 文件来完成。如果更新时出现任何问题，请检查这些文件是否仍然正确配置。</p>
 <p>然后只需重新构建您的站点，并检查一切是否按预期工作。</p>
 <div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
@@ -862,7 +862,7 @@
 </div>
 
 <h3 id="使用git更新" class="relative group">使用Git更新 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%bd%bf%e7%94%a8git%e6%9b%b4%e6%96%b0" aria-label="锚点">#</a></span></h3><p>可以使用 <code>git</code> 命令更新Git子模块。只需执行以下命令，最新版本的主题将被下载到本地存储库中：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git submodule update --remote --merge
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git submodule update --remote --merge
 </span></span></code></pre></div><p>一旦子模块已更新，重新构建您的站点并检查一切是否按预期工作。</p>
 <h3 id="手动更新" class="relative group">手动更新 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%89%8b%e5%8a%a8%e6%9b%b4%e6%96%b0" aria-label="锚点">#</a></span></h3><p>手动更新刚果需要您下载主题的最新副本，并替换项目中的旧版本。</p>
 <div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">

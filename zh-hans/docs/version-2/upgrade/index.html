@@ -777,11 +777,11 @@
 </ul>
 <h3 id="使用hugo升级" class="relative group">使用Hugo升级 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%bd%bf%e7%94%a8hugo%e5%8d%87%e7%ba%a7" aria-label="锚点">#</a></span></h3><p>要将go模块升级到新的主版本，需要更新 <code>modules.toml</code> 和 <code>go.mod</code> 文件。在每个文件中，将主题的路径从 <code>github.com/jpanther/congo</code> 更新为 <code>github.com/jpanther/congo/v2</code>。</p>
 <p>然后进入你的项目目录并执行以下命令：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo mod get -u
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo mod get -u
 </span></span></code></pre></div><p>请注意，在某些情况下，由于Hugo本地缓存模块的方式，此步骤可能会出现问题。如果上述命令不起作用，请尝试使用 <code>hugo mod clean</code> 来清除本地缓存并重新下载任何模块。</p>
 <p>一旦主题已经升级，继续到<a href="#%e6%ad%a5%e9%aa%a4-3-%e4%b8%bb%e9%a2%98%e9%85%8d%e7%bd%ae">下一节</a>。</p>
 <h3 id="使用git升级" class="relative group">使用git升级 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%bd%bf%e7%94%a8git%e5%8d%87%e7%ba%a7" aria-label="锚点">#</a></span></h3><p>可以使用<code>git</code>命令升级Git子模块。只需执行以下命令，最新版本的主题将被下载到你的本地存储库中：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git submodule update --remote --merge
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git submodule update --remote --merge
 </span></span></code></pre></div><p>一旦子模块升级完成，继续到<a href="#step-3-theme-configuration">下一节</a>。</p>
 <h3 id="手动升级" class="relative group">手动升级 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%89%8b%e5%8a%a8%e5%8d%87%e7%ba%a7" aria-label="锚点">#</a></span></h3><p>手动更新Congo需要下载主题的最新副本，并替换项目中的旧版本。</p>
 <div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
@@ -825,16 +825,16 @@
 </div>
 
 <p>语言配置文件遵循以下结构：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config/_default/languagues.en.toml</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageName</span> = <span style="color:#e6db74">&#34;English&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">displayName</span> = <span style="color:#e6db74">&#34;EN&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">htmlCode</span> = <span style="color:#e6db74">&#34;en&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">rtl</span> = <span style="color:#66d9ef">false</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Language-specific parameters go here</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config/_default/languagues.en.toml</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;en&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">languageName</span> <span class="p">=</span> <span class="s2">&#34;English&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">displayName</span> <span class="p">=</span> <span class="s2">&#34;EN&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">htmlCode</span> <span class="p">=</span> <span class="s2">&#34;en&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="nx">rtl</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Language-specific parameters go here</span>
 </span></span></code></pre></div><h3 id="languagestoml-1" class="relative group">Languages.toml <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#languagestoml-1" aria-label="锚点">#</a></span></h3><p>为了提供多语言支持，特定于语言的主题参数已移至新的配置文件 <code>languages.[lang-code].toml</code>。主题附带一个模板文件 <code>languages.en.toml</code>，可作为参考。</p>
 <div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
   <span class="pe-3 text-primary-400">
@@ -845,16 +845,16 @@
 </div>
 
 <p>语言配置文件遵循以下结构：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config/_default/languagues.en.toml</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageName</span> = <span style="color:#e6db74">&#34;English&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">displayName</span> = <span style="color:#e6db74">&#34;EN&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">htmlCode</span> = <span style="color:#e6db74">&#34;en&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">rtl</span> = <span style="color:#66d9ef">false</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 此处放置特定于语言的参数</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config/_default/languagues.en.toml</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;en&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">languageName</span> <span class="p">=</span> <span class="s2">&#34;English&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">displayName</span> <span class="p">=</span> <span class="s2">&#34;EN&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">htmlCode</span> <span class="p">=</span> <span class="s2">&#34;en&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="nx">rtl</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># 此处放置特定于语言的参数</span>
 </span></span></code></pre></div><p>使用你喜欢的语言，在 <code>config/_default/</code> 中创建这个新文件，然后将任何现有配置文件中的特定于语言的参数移到这个新文件中。下表概述了需要移动的参数。</p>
 <table>
   <thead>
@@ -890,23 +890,23 @@
 <h3 id="menustoml" class="relative group">Menus.toml <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#menustoml" aria-label="锚点">#</a></span></h3><p>由于主题现在支持多语言，<code>menus.toml</code> 文件也应该重命名，包含语言代码。将现有的 <code>menus.toml</code> 重命名为 <code>menus.[lang-code].toml</code>，其中语言代码与前一节中的 <code>languages.toml</code> 文件中使用的代码匹配。</p>
 <h3 id="configtoml" class="relative group">Config.toml <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#configtoml" aria-label="锚点">#</a></span></h3><p><code>config.toml</code> 文件现在只包含基本的Hugo配置值。除了删除上述特定于语言的字符串之外，只有两个更改需要考虑。</p>
 <p>如果你使用的是英语以外的语言，请提供一个与你为语言创建的配置文件中的语言代码匹配的 <code>defaultContentLanguage</code> 值。其次，为了利用Congo 2.0中的新站点搜索，需要提供一个 <code>[outputs]</code> 块。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config/_default/config.toml</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">defaultContentLanguage</span> = <span style="color:#e6db74">&#34;en&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">enableRobotsTXT</span> = <span style="color:#66d9ef">true</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">paginate</span> = <span style="color:#ae81ff">10</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">summaryLength</span> = <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">outputs</span>]
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">home</span> = [<span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#e6db74">&#34;RSS&#34;</span>, <span style="color:#e6db74">&#34;JSON&#34;</span>]
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config/_default/config.toml</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s2">&#34;en&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">enableRobotsTXT</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="nx">paginate</span> <span class="p">=</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl"><span class="nx">summaryLength</span> <span class="p">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">outputs</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">home</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;HTML&#34;</span><span class="p">,</span> <span class="s2">&#34;RSS&#34;</span><span class="p">,</span> <span class="s2">&#34;JSON&#34;</span><span class="p">]</span>
 </span></span></code></pre></div><h3 id="markuptoml" class="relative group">Markup.toml <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#markuptoml" aria-label="锚点">#</a></span></h3><p>Congo 2.0 添加了对文章页面上目录的支持。尽管Hugo默认提供了生成目录列表的默认设置，你可以通过在 <code>markup.toml</code> 文件中添加一个新的 <code>[tableOfContents]</code> 块来调整此行为。</p>
 <p>建议的设置如下，包括Markdown内容中的任何标题，级别为2、3和4：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config/_default/markup.toml</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">tableOfContents</span>]
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">startLevel</span> = <span style="color:#ae81ff">2</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">endLevel</span> = <span style="color:#ae81ff">4</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config/_default/markup.toml</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tableOfContents</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">startLevel</span> <span class="p">=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">endLevel</span> <span class="p">=</span> <span class="mi">4</span>
 </span></span></code></pre></div><h3 id="paramstoml" class="relative group">Params.toml <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#paramstoml" aria-label="锚点">#</a></span></h3><p>Congo 2.0 引入了许多新的主题参数。一些现有配置需要进行一些小的更改。请记住，如果未提供参数，主题将始终恢复为合理的默认值。</p>
 <p>Congo中深色模式的工作方式已更改，以提供更大的配置灵活性。旧的 <code>darkMode</code> 和 <code>darkToggle</code> 参数已被 <strong>删除并替换</strong> 为三个新参数。这些新选项彼此独立操作，使得可以强制外观同时仍然允许用户覆盖。</p>
 <!-- prettier-ignore-start -->

@@ -723,16 +723,16 @@
 
 </figure>
 </p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- Markdown: ![My image](image.jpg) --&gt;</span>
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">img</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">srcset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    /image_320x0_resize_q75_box.jpg 320w,
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    /image_635x0_resize_q75_box.jpg 635w,
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    /image_1024x0_resize_q75_box.jpg 1024w,
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    /image_1270x0_resize_q75_box.jpg 2x&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/image_635x0_resize_q75_box.jpg&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;My image&#34;</span>
-</span></span><span style="display:flex;"><span>/&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- Markdown: ![My image](image.jpg) --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span>
+</span></span><span class="line"><span class="cl">  <span class="na">srcset</span><span class="o">=</span><span class="s">&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">    /image_320x0_resize_q75_box.jpg 320w,
+</span></span></span><span class="line"><span class="cl"><span class="s">    /image_635x0_resize_q75_box.jpg 635w,
+</span></span></span><span class="line"><span class="cl"><span class="s">    /image_1024x0_resize_q75_box.jpg 1024w,
+</span></span></span><span class="line"><span class="cl"><span class="s">    /image_1270x0_resize_q75_box.jpg 2x&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">src</span><span class="o">=</span><span class="s">&#34;/image_635x0_resize_q75_box.jpg&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">alt</span><span class="o">=</span><span class="s">&#34;My image&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">/&gt;</span>
 </span></span></code></pre></div><p>最重要的是，您无需进行任何更改！只需插入标准的Markdown图像语法，让主题来处理其余的事情。如果您想要更多控制，<code>figure</code> shortcode已经完全重写，以提供相同的调整大小优势。</p>
 <h2 id="性能优化" class="relative group">性能优化 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%80%a7%e8%83%bd%e4%bc%98%e5%8c%96" aria-label="锚点">#</a></span></h2><p>此更新在整个主题中进行了性能优化。这个版本的一个关键目标是提高Lighthouse分数，而现在Congo在所有四个指标上都得分完美的100。</p>
 

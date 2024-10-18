@@ -788,16 +788,16 @@
 </li>
 <li>
 <p>From your Hugo project directory (that you created above), initialise modules for your website:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># If you&#39;re managing your project on GitHub</span>
-</span></span><span style="display:flex;"><span>hugo mod init github.com/&lt;username&gt;/&lt;repo-name&gt;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># If you&#39;re managing your project locally</span>
-</span></span><span style="display:flex;"><span>hugo mod init my-project
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># If you&#39;re managing your project on GitHub</span>
+</span></span><span class="line"><span class="cl">hugo mod init github.com/&lt;username&gt;/&lt;repo-name&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># If you&#39;re managing your project locally</span>
+</span></span><span class="line"><span class="cl">hugo mod init my-project
 </span></span></code></pre></div></li>
 <li>
 <p>Add the theme to your configuration by creating a new file <code>config/_default/module.toml</code> and adding the following:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[[<span style="color:#a6e22e">imports</span>]]
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">path</span> = <span style="color:#e6db74">&#34;github.com/jpanther/congo/v2&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">imports</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">path</span> <span class="p">=</span> <span class="s2">&#34;github.com/jpanther/congo/v2&#34;</span>
 </span></span></code></pre></div></li>
 <li>
 <p>Start your server using <code>hugo server</code> and the theme will be downloaded automatically.</p>
@@ -808,9 +808,9 @@
 </ol>
 <h4 id="install-using-git" class="relative group">Install using git <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#install-using-git" aria-label="Anchor">#</a></span></h4><p>For this method you&rsquo;ll need to ensure you have <strong>Git</strong> installed on your local machine.</p>
 <p>Change into the directory for your Hugo website (that you created above), initialise a new <code>git</code> repository and add Congo as a submodule.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd mywebsite
-</span></span><span style="display:flex;"><span>git init
-</span></span><span style="display:flex;"><span>git submodule add -b stable https://github.com/jpanther/congo.git themes/congo
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> mywebsite
+</span></span><span class="line"><span class="cl">git init
+</span></span><span class="line"><span class="cl">git submodule add -b stable https://github.com/jpanther/congo.git themes/congo
 </span></span></code></pre></div><p>Then continue to <a href="#set-up-theme-configuration-files">set up the theme configuration files</a>.</p>
 <h4 id="install-manually" class="relative group">Install manually <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#install-manually" aria-label="Anchor">#</a></span></h4><ol>
 <li>
@@ -848,12 +848,12 @@
 <li><strong>Git submodule or Manual install:</strong> <code>themes/congo/config/_default</code></li>
 </ul>
 <p>Once you&rsquo;ve copied the files, your config folder should look like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>config/_default/
-</span></span><span style="display:flex;"><span>├─ config.toml
-</span></span><span style="display:flex;"><span>├─ markup.toml
-</span></span><span style="display:flex;"><span>├─ menus.toml
-</span></span><span style="display:flex;"><span>├─ module.toml  <span style="color:#75715e"># if you installed using Hugo Modules</span>
-</span></span><span style="display:flex;"><span>└─ params.toml
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">config/_default/
+</span></span><span class="line"><span class="cl">├─ config.toml
+</span></span><span class="line"><span class="cl">├─ markup.toml
+</span></span><span class="line"><span class="cl">├─ menus.toml
+</span></span><span class="line"><span class="cl">├─ module.toml  <span class="c1"># if you installed using Hugo Modules</span>
+</span></span><span class="line"><span class="cl">└─ params.toml
 </span></span></code></pre></div><div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
   <span class="pe-3 text-primary-400">
     <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
@@ -872,7 +872,7 @@
 <li><a href="#update-manually">Manual file copy</a></li>
 </ul>
 <h3 id="update-using-hugo" class="relative group">Update using Hugo <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#update-using-hugo" aria-label="Anchor">#</a></span></h3><p>Hugo makes updating modules super easy. Simply change into your project directory and execute the following command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo mod get -u
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo mod get -u
 </span></span></code></pre></div><p>Hugo will automatically update any modules that are required for your project. It does this by inspecting your <code>module.toml</code> and <code>go.mod</code> files. If you have any issues with the update, check to ensure these files are still configured correctly.</p>
 <p>Then simply rebuild your site and check everything works as expected.</p>
 <div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
@@ -884,7 +884,7 @@
 </div>
 
 <h3 id="update-using-git" class="relative group">Update using git <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#update-using-git" aria-label="Anchor">#</a></span></h3><p>Git submodules can be updated using the <code>git</code> command. Simply execute the following command and the latest version of the theme will be downloaded into your local repository:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git submodule update --remote --merge
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git submodule update --remote --merge
 </span></span></code></pre></div><p>Once the submodule has been updated, rebuild your site and check everything works as expected.</p>
 <h3 id="update-manually" class="relative group">Update manually <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#update-manually" aria-label="Anchor">#</a></span></h3><p>Updating Congo manually requires you to download the latest copy of the theme and replace the old version in your project.</p>
 <div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">

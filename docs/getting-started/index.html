@@ -769,10 +769,10 @@
 
 <p>The config files that ship with Congo contain all of the possible settings that the theme recognises. By default, many of these are commented out but you can simply uncomment them to activate or change a specific feature.</p>
 <h2 id="basic-configuration" class="relative group">Basic configuration <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#basic-configuration" aria-label="Anchor">#</a></span></h2><p>Before creating any content, there are a few things you should set for a new installation. Starting in the <code>config.toml</code> file, set the <code>baseURL</code> and <code>languageCode</code> parameters. The <code>languageCode</code> should be set to the main language that you will be using to author your content.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config/_default/config.toml</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;https://your_domain.com/&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config/_default/config.toml</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;https://your_domain.com/&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;en&#34;</span>
 </span></span></code></pre></div><p>The next step is to configure the language settings. Although Congo supports multilingual setups, for now, just configure the main language.</p>
 <p>Locate the <code>languages.en.toml</code> file in the config folder. If your main language is English you can use this file as is. Otherwise, rename it so that it includes the correct language code in the filename. For example, for French, rename the file to <code>languages.fr.toml</code>.</p>
 <div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
@@ -783,18 +783,18 @@
   <span class="dark:text-neutral-300">The language code in the language config filename should match the <code>languageCode</code> setting in <code>config.toml</code>.</span>
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config/_default/languages.en.toml</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;My awesome website&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">author</span>]
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;My name&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">image</span> = <span style="color:#e6db74">&#34;img/author.jpg&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">headline</span> = <span style="color:#e6db74">&#34;A generally awesome human&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">bio</span> = <span style="color:#e6db74">&#34;A little bit about me&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">links</span> = [
-</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">twitter</span> = <span style="color:#e6db74">&#34;https://twitter.com/username&#34;</span> }
-</span></span><span style="display:flex;"><span>]
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config/_default/languages.en.toml</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;My awesome website&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">author</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;My name&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">image</span> <span class="p">=</span> <span class="s2">&#34;img/author.jpg&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">headline</span> <span class="p">=</span> <span class="s2">&#34;A generally awesome human&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">bio</span> <span class="p">=</span> <span class="s2">&#34;A little bit about me&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">links</span> <span class="p">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span> <span class="nx">twitter</span> <span class="p">=</span> <span class="s2">&#34;https://twitter.com/username&#34;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
 </span></span></code></pre></div><p>The <code>[params.author]</code> configuration determines how the author information is displayed on the website. The image should be placed in the site&rsquo;s <code>assets/</code> folder. Links will be displayed in the order they are listed.</p>
 <p>If you need extra detail, further information about each of these configuration options, is covered in the <a href="https://kel1n1995.github.io/docs/configuration/">Configuration</a> section.</p>
 <h2 id="colour-schemes" class="relative group">Colour schemes <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#colour-schemes" aria-label="Anchor">#</a></span></h2><p>Congo ships with a number of colour schemes out of the box. To change the scheme, simply set the <code>colorScheme</code> theme parameter. Valid options are <code>congo</code> (default), <code>avocado</code>, <code>cherry</code>, <code>fire</code>, <code>ocean</code>, <code>sapphire</code> and <code>slate</code>.</p>
@@ -806,9 +806,9 @@
   <span class="dark:text-neutral-300">The <code>colourScheme</code> value should be provided in lowercase.</span>
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config/_default/params.toml</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">colorScheme</span> = <span style="color:#e6db74">&#34;congo&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config/_default/params.toml</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">colorScheme</span> <span class="p">=</span> <span class="s2">&#34;congo&#34;</span>
 </span></span></code></pre></div><p>Congo defines a three-colour palette that is used throughout the theme. Each main colour contains ten shades which are based upon the colours that are included in <a href="https://tailwindcss.com/docs/customizing-colors#color-palette-reference" target="_blank" rel="noreferrer">Tailwind</a>.</p>
 <h4 id="congo-default" class="relative group">Congo (default) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#congo-default" aria-label="Anchor">#</a></span></h4><div class="flex justify-between">
   <span
@@ -918,23 +918,23 @@
 <p>Although these are the default schemes, you can also create your own. Refer to the <a href="https://kel1n1995.github.io/docs/advanced-customisation/#colour-schemes">Advanced Customisation</a> section for details.</p>
 <h2 id="organising-content" class="relative group">Organising content <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#organising-content" aria-label="Anchor">#</a></span></h2><p>By default, Congo doesn&rsquo;t force you to use a particular content type. In doing so you are free to define your content as you wish. You might prefer <em>pages</em> for a static site, <em>posts</em> for a blog, or <em>projects</em> for a portfolio.</p>
 <h3 id="directory-structure" class="relative group">Directory structure <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#directory-structure" aria-label="Anchor">#</a></span></h3><p>Here&rsquo;s a quick overview of a basic Congo project. All content is placed within the <code>content</code> folder:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>.
-</span></span><span style="display:flex;"><span>├── assets
-</span></span><span style="display:flex;"><span>│   └── img
-</span></span><span style="display:flex;"><span>│       └── author.jpg
-</span></span><span style="display:flex;"><span>├── config
-</span></span><span style="display:flex;"><span>│   └── _default
-</span></span><span style="display:flex;"><span>├── content
-</span></span><span style="display:flex;"><span>│   ├── _index.md
-</span></span><span style="display:flex;"><span>│   ├── about.md
-</span></span><span style="display:flex;"><span>│   └── posts
-</span></span><span style="display:flex;"><span>│       ├── _index.md
-</span></span><span style="display:flex;"><span>│       ├── first-post.md
-</span></span><span style="display:flex;"><span>│       └── another-post
-</span></span><span style="display:flex;"><span>│           ├── aardvark.jpg
-</span></span><span style="display:flex;"><span>│           └── index.md
-</span></span><span style="display:flex;"><span>└── themes
-</span></span><span style="display:flex;"><span>    └── congo
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">├── assets
+</span></span><span class="line"><span class="cl">│   └── img
+</span></span><span class="line"><span class="cl">│       └── author.jpg
+</span></span><span class="line"><span class="cl">├── config
+</span></span><span class="line"><span class="cl">│   └── _default
+</span></span><span class="line"><span class="cl">├── content
+</span></span><span class="line"><span class="cl">│   ├── _index.md
+</span></span><span class="line"><span class="cl">│   ├── about.md
+</span></span><span class="line"><span class="cl">│   └── posts
+</span></span><span class="line"><span class="cl">│       ├── _index.md
+</span></span><span class="line"><span class="cl">│       ├── first-post.md
+</span></span><span class="line"><span class="cl">│       └── another-post
+</span></span><span class="line"><span class="cl">│           ├── aardvark.jpg
+</span></span><span class="line"><span class="cl">│           └── index.md
+</span></span><span class="line"><span class="cl">└── themes
+</span></span><span class="line"><span class="cl">    └── congo
 </span></span></code></pre></div><div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
   <span class="pe-3 text-primary-400">
     <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
@@ -946,14 +946,14 @@
 <p>It&rsquo;s important to have a firm grasp of how Hugo expects content to be organised as the theme is designed to take full advantage of Hugo page bundles. Be sure to read the <a href="https://gohugo.io/content-management/organization/" target="_blank" rel="noreferrer">official Hugo docs</a> for more information.</p>
 <h3 id="feature-cover-and-thumbnail-images" class="relative group">Feature, cover and thumbnail images <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#feature-cover-and-thumbnail-images" aria-label="Anchor">#</a></span></h3><p>The Congo theme supports displaying images on article listings and at the top of individual article pages. There are three types of images supported, each with their own use case: <code>feature</code>, <code>cover</code> and <code>thumb</code>.</p>
 <p>In the example below, a cover and thumb image have been provided for the <code>first-post</code> article:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>.
-</span></span><span style="display:flex;"><span>└── content
-</span></span><span style="display:flex;"><span>    └── posts
-</span></span><span style="display:flex;"><span>        ├── _index.md
-</span></span><span style="display:flex;"><span>        └── first-post
-</span></span><span style="display:flex;"><span>            ├── cover.jpg
-</span></span><span style="display:flex;"><span>            ├── index.md
-</span></span><span style="display:flex;"><span>            └── thumb.jpg
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">└── content
+</span></span><span class="line"><span class="cl">    └── posts
+</span></span><span class="line"><span class="cl">        ├── _index.md
+</span></span><span class="line"><span class="cl">        └── first-post
+</span></span><span class="line"><span class="cl">            ├── cover.jpg
+</span></span><span class="line"><span class="cl">            ├── index.md
+</span></span><span class="line"><span class="cl">            └── thumb.jpg
 </span></span></code></pre></div><p>The <code>thumb</code> image is used as the article thumbnail and will be displayed in article lists, and the <code>cover</code> image will be displayed at the top of the article content on individual article pages.</p>
 <p>
 
@@ -1034,44 +1034,44 @@
 <p>The <a href="https://kel1n1995.github.io/samples/">Samples section</a> provides a number of examples of these images (and you can view the <a href="https://github.com/jpanther/congo/tree/dev/exampleSite/content/samples" target="_blank" rel="noreferrer">source code</a> to see the file structure).</p>
 <h3 id="taxonomies" class="relative group">Taxonomies <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#taxonomies" aria-label="Anchor">#</a></span></h3><p>Congo is also flexible when it comes to taxonomies. Some people prefer to use <em>tags</em> and <em>categories</em> to group their content, others prefer to use <em>topics</em>.</p>
 <p>Hugo defaults to using posts, tags and categories out of the box and this will work fine if that&rsquo;s what you want. If you wish to customise this, however, you can do so by creating a <code>taxonomies.toml</code> configuration file:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config/_default/taxonomies.toml</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">topic</span> = <span style="color:#e6db74">&#34;topics&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config/_default/taxonomies.toml</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">topic</span> <span class="p">=</span> <span class="s2">&#34;topics&#34;</span>
 </span></span></code></pre></div><p>This will replace the default <em>tags</em> and <em>categories</em> with <em>topics</em>. Refer to the <a href="https://gohugo.io/content-management/taxonomies/" target="_blank" rel="noreferrer">Hugo Taxonomy docs</a> for more information on naming taxonomies.</p>
 <p>When you create a new taxonomy, you will need to adjust the navigation links on the website to point to the correct sections, which is covered below.</p>
 <h2 id="menus" class="relative group">Menus <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#menus" aria-label="Anchor">#</a></span></h2><p>Congo has two menus that can be customised to suit the content and layout of your site. The <code>main</code> menu appears in the site header and the <code>footer</code> menu appears at the bottom of the page just above the copyright notice.</p>
 <p>Both menus are configured in the <code>menus.en.toml</code> file. Similarly to the languages config file, if you wish to use another language, rename this file and replace <code>en</code> with the language code you wish to use. Menu links will be sorted from lowest to highest <code>weight</code>, and then alphabetically by <code>name</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config/_default/menus.en.toml</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Blog&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pageRef</span> = <span style="color:#e6db74">&#34;posts&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">10</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Topics&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pageRef</span> = <span style="color:#e6db74">&#34;topics&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">20</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;GitHub&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;https://github.com/jpanther/congo&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">30</span>
-</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">main</span>.<span style="color:#a6e22e">params</span>]
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">icon</span> = <span style="color:#e6db74">&#34;github&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">showName</span> = <span style="color:#66d9ef">false</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">target</span> = <span style="color:#e6db74">&#34;_blank&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">main</span>]]
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;search&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">99</span>
-</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">main</span>.<span style="color:#a6e22e">params</span>]
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">action</span> = <span style="color:#e6db74">&#34;search&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">icon</span> = <span style="color:#e6db74">&#34;search&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">footer</span>]]
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Privacy&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pageRef</span> = <span style="color:#e6db74">&#34;privacy&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config/_default/menus.en.toml</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">main</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Blog&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">pageRef</span> <span class="p">=</span> <span class="s2">&#34;posts&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">main</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Topics&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">pageRef</span> <span class="p">=</span> <span class="s2">&#34;topics&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">20</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">main</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;GitHub&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;https://github.com/jpanther/congo&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">30</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">main</span><span class="p">.</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">icon</span> <span class="p">=</span> <span class="s2">&#34;github&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">showName</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">target</span> <span class="p">=</span> <span class="s2">&#34;_blank&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">main</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;search&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">99</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">main</span><span class="p">.</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">action</span> <span class="p">=</span> <span class="s2">&#34;search&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">icon</span> <span class="p">=</span> <span class="s2">&#34;search&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">footer</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Privacy&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">pageRef</span> <span class="p">=</span> <span class="s2">&#34;privacy&#34;</span>
 </span></span></code></pre></div><h3 id="basic-links" class="relative group">Basic links <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#basic-links" aria-label="Anchor">#</a></span></h3><p>The <code>name</code> parameter specifies the text that is used in the menu link. You can also optionally provide a <code>title</code> which fills the HTML title attribute for the link.</p>
 <p>The <code>pageRef</code> parameter allows you to easily reference Hugo content pages and taxonomies. It is the quickest way to configure the menu as you can simply refer to any Hugo content item and it will automatically build the correct link. To link to external URLs, the <code>url</code> parameter can be used.</p>
 <p>Further customisation can be achieved through the use of special theme parameters. Providing <code>params</code> within a link allows the addition of an <code>icon</code>, the ability to toggle the link text with <code>showName</code> and to optionally set a <code>target</code> for the URL. In the example above, the GitHub link will only display as an icon and will open the link in a new window.</p>

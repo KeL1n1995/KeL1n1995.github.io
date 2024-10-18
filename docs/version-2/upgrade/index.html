@@ -776,11 +776,11 @@
 </ul>
 <h3 id="upgrade-using-hugo" class="relative group">Upgrade using Hugo <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#upgrade-using-hugo" aria-label="Anchor">#</a></span></h3><p>To upgrade a go module to a new major release, the <code>modules.toml</code> and <code>go.mod</code> files need to be updated. In each file, update the path to the theme from <code>github.com/jpanther/congo</code> to <code>github.com/jpanther/congo/v2</code>.</p>
 <p>Then change into your project directory and execute the following command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo mod get -u
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo mod get -u
 </span></span></code></pre></div><p>Note that in some circumstances there may be issues with this step due to the way that Hugo locally caches modules. If the command above doesn&rsquo;t work, try using <code>hugo mod clean</code> to clear out the local cache and re-download any modules.</p>
 <p>Once the theme has been upgraded, continue to the <a href="#step-3-theme-configuration">next section</a>.</p>
 <h3 id="upgrade-using-git" class="relative group">Upgrade using git <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#upgrade-using-git" aria-label="Anchor">#</a></span></h3><p>Git submodules can be upgraded using the <code>git</code> command. Simply execute the following command and the latest version of the theme will be downloaded into your local repository:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git submodule update --remote --merge
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git submodule update --remote --merge
 </span></span></code></pre></div><p>Once the submodule has been upgraded, continue to the <a href="#step-3-theme-configuration">next section</a>.</p>
 <h3 id="upgrade-manually" class="relative group">Upgrade manually <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#upgrade-manually" aria-label="Anchor">#</a></span></h3><p>Updating Congo manually requires you to download the latest copy of the theme and replace the old version in your project.</p>
 <div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
@@ -824,16 +824,16 @@
 </div>
 
 <p>The languages config file follows this structure:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config/_default/languagues.en.toml</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageName</span> = <span style="color:#e6db74">&#34;English&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">displayName</span> = <span style="color:#e6db74">&#34;EN&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">htmlCode</span> = <span style="color:#e6db74">&#34;en&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">rtl</span> = <span style="color:#66d9ef">false</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Language-specific parameters go here</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config/_default/languagues.en.toml</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;en&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">languageName</span> <span class="p">=</span> <span class="s2">&#34;English&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">displayName</span> <span class="p">=</span> <span class="s2">&#34;EN&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">htmlCode</span> <span class="p">=</span> <span class="s2">&#34;en&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="nx">rtl</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Language-specific parameters go here</span>
 </span></span></code></pre></div><p>Using your preferred language, simply create this new file in <code>config/_default/</code> and then move the language-specific parameters from any existing config files over to this new file. The table below outlines the parameters that need to be moved.</p>
 <table>
   <thead>
@@ -869,23 +869,23 @@
 <h3 id="menustoml" class="relative group">Menus.toml <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#menustoml" aria-label="Anchor">#</a></span></h3><p>As the theme is now aware of languages, the <code>menus.toml</code> file should also be renamed to include a language code. Rename the existing <code>menus.toml</code> to <code>menus.[lang-code].toml</code>, where the language code matches the code used in the <code>languages.toml</code> file in the previous section.</p>
 <h3 id="configtoml" class="relative group">Config.toml <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#configtoml" aria-label="Anchor">#</a></span></h3><p>The <code>config.toml</code> file now only contains base Hugo configuration values. Other than removing the language-specific strings above, there are only two changes to consider.</p>
 <p>If you&rsquo;re using a language other than English, provide a <code>defaultContentLanguage</code> value that matches the language code in the config file you created for your language. Secondly, to take advange of the new site search in Congo 2.0, an <code>[outputs]</code> block needs to be provided.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config/_default/config.toml</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">defaultContentLanguage</span> = <span style="color:#e6db74">&#34;en&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">enableRobotsTXT</span> = <span style="color:#66d9ef">true</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">paginate</span> = <span style="color:#ae81ff">10</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">summaryLength</span> = <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">outputs</span>]
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">home</span> = [<span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#e6db74">&#34;RSS&#34;</span>, <span style="color:#e6db74">&#34;JSON&#34;</span>]
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config/_default/config.toml</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s2">&#34;en&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">enableRobotsTXT</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="nx">paginate</span> <span class="p">=</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl"><span class="nx">summaryLength</span> <span class="p">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">outputs</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">home</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;HTML&#34;</span><span class="p">,</span> <span class="s2">&#34;RSS&#34;</span><span class="p">,</span> <span class="s2">&#34;JSON&#34;</span><span class="p">]</span>
 </span></span></code></pre></div><h3 id="markuptoml" class="relative group">Markup.toml <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#markuptoml" aria-label="Anchor">#</a></span></h3><p>Congo 2.0 adds support for tables of contents on article pages. Although Hugo ships with default settings for generating contents listings, you can adjust this behaviour by adding a new <code>[tableOfContents]</code> block to your <code>markup.toml</code> file.</p>
 <p>The recommended settings are as follows, which includes any headings in the Markdown content at levels 2, 3 and 4:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config/_default/markup.toml</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">tableOfContents</span>]
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">startLevel</span> = <span style="color:#ae81ff">2</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">endLevel</span> = <span style="color:#ae81ff">4</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config/_default/markup.toml</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tableOfContents</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">startLevel</span> <span class="p">=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">endLevel</span> <span class="p">=</span> <span class="mi">4</span>
 </span></span></code></pre></div><h3 id="paramstoml" class="relative group">Params.toml <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#paramstoml" aria-label="Anchor">#</a></span></h3><p>A number of new theme parameters have been introduced in Congo 2.0. Some minor changes are requried to existing configurations. Remember, the theme will always revert to a sensible default if a parameter is not provided.</p>
 <p>The way that dark mode works in Congo has been changed to allow greater flexibility around configuration. The old <code>darkMode</code> and <code>darkToggle</code> parameters have been <strong>removed and replaced</strong> by three new parameters. These new options operate independently of each other, making it possible to force the appearance while still allowing the user to override.</p>
 <!-- prettier-ignore-start -->

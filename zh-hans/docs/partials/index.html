@@ -752,44 +752,44 @@
       <div class="min-h-0 min-w-0 max-w-prose grow">
         <h2 id="analytics" class="relative group">Analytics <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#analytics" aria-label="锚点">#</a></span></h2><p>Congo内置支持Fathom Analytics和Google Analytics。Fathom是Google Analytics的付费替代方案，尊重用户隐私。如果您感兴趣，可以使用此<a href="https://usefathom.com/ref/RLAJSV" target="_blank" rel="noreferrer">推广链接</a>获得$10的信用并尝试该服务。</p>
 <h3 id="fathom-analytics" class="relative group">Fathom Analytics <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#fathom-analytics" aria-label="锚点">#</a></span></h3><p>要启用Fathom Analytics支持，只需在 <code>config/_default/params.toml</code> 文件中提供您的Fathom站点代码。如果您还使用Fathom的自定义域功能，并希望从您的域提供其脚本，还可以提供<code>domain</code>配置值。如果不提供<code>domain</code>值，则脚本将直接从Fathom DNS加载。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config/_default/params.toml</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">fathomAnalytics</span>]
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">site</span> = <span style="color:#e6db74">&#34;ABC12345&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">domain</span> = <span style="color:#e6db74">&#34;llama.yoursite.com&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config/_default/params.toml</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">fathomAnalytics</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">site</span> <span class="p">=</span> <span class="s2">&#34;ABC12345&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">domain</span> <span class="p">=</span> <span class="s2">&#34;llama.yoursite.com&#34;</span>
 </span></span></code></pre></div><h3 id="plausible-analytics" class="relative group">Plausible Analytics <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#plausible-analytics" aria-label="锚点">#</a></span></h3><p>要启用 Plausible 分析支持，只需在 <code>config/_default/params.toml</code> 文件中提供您要跟踪的网站域。如果您使用的是自托管的 Plausible，或者希望使用 <a href="https://plausible.io/docs/proxy/introduction" target="_blank" rel="noreferrer">代理分析</a> 脚本和事件 API 路由，您还可以提供额外的 <code>event</code> 和 <code>script</code> 配置值。如果不提供这两个值，脚本将直接加载 Plausible 的默认托管服务。有关更多详细信息，请参阅 <a href="https://plausible.io/docs/proxy/introduction" target="_blank" rel="noreferrer">使用代理进行分析</a>。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config/_default/params.toml</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">plausibleAnalytics</span>]
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">domain</span> = <span style="color:#e6db74">&#34;blog.yoursite.com&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">event</span> = <span style="color:#e6db74">&#34;https://plausible.yoursite.com/api/event&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">script</span> = <span style="color:#e6db74">&#34;https://plausible.yoursite.com/js/script.js&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config/_default/params.toml</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">plausibleAnalytics</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">domain</span> <span class="p">=</span> <span class="s2">&#34;blog.yoursite.com&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">event</span> <span class="p">=</span> <span class="s2">&#34;https://plausible.yoursite.com/api/event&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">script</span> <span class="p">=</span> <span class="s2">&#34;https://plausible.yoursite.com/js/script.js&#34;</span>
 </span></span></code></pre></div><h3 id="google-analytics" class="relative group">Google Analytics <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#google-analytics" aria-label="锚点">#</a></span></h3><p>要启用 Google Analytics 支持，只需在 <code>config/_default/config.toml</code> 文件中提供 <code>googleAnalytics</code> 键，脚本将自动添加。</p>
 <p>根据提供的配置值，支持版本 3 (analytics.js) 和版本 4 (gtag.js)：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># config/_default/config.toml</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># version 3</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">googleAnalytics</span> = <span style="color:#e6db74">&#34;UA-PROPERTY_ID&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># version 4</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">googleAnalytics</span> = <span style="color:#e6db74">&#34;G-MEASUREMENT_ID&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config/_default/config.toml</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># version 3</span>
+</span></span><span class="line"><span class="cl"><span class="nx">googleAnalytics</span> <span class="p">=</span> <span class="s2">&#34;UA-PROPERTY_ID&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># version 4</span>
+</span></span><span class="line"><span class="cl"><span class="nx">googleAnalytics</span> <span class="p">=</span> <span class="s2">&#34;G-MEASUREMENT_ID&#34;</span>
 </span></span></code></pre></div><h3 id="自定义分析提供商" class="relative group">自定义分析提供商 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%87%aa%e5%ae%9a%e4%b9%89%e5%88%86%e6%9e%90%e6%8f%90%e4%be%9b%e5%95%86" aria-label="锚点">#</a></span></h3><p>如果您希望在您的网站上使用不同的分析提供商，您还可以覆盖分析 partial 并提供自己的脚本。只需在项目中创建文件 <code>layouts/partials/analytics.html</code>，它将自动包含在网站的 <code>&lt;head&gt;</code> 中。</p>
 <h2 id="评论" class="relative group">评论 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%af%84%e8%ae%ba" aria-label="锚点">#</a></span></h2><p>要在文章中添加评论，Congo 包括对评论 partial 的支持，该 partial 包含在每篇文章页面的底部。只需提供一个包含显示您选择的评论所需代码的 <code>layouts/partials/comments.html</code>。</p>
 <p>您可以使用内置的 Hugo Disqus 模板，也可以提供自己的自定义代码。有关详细信息，请参阅 <a href="https://gohugo.io/content-management/comments/" target="_blank" rel="noreferrer">Hugo 文档</a>。</p>
 <p>一旦提供了 partial，就可以使用 <code>showComments</code> 参数来更精细地控制评论的显示位置。该值可以在 <code>params.toml</code> <a href="https://kel1n1995.github.io/zh-hans/docs/configuration/#theme-parameters">配置文件</a>中在主题级别设置，也可以通过在 <a href="https://kel1n1995.github.io/zh-hans/docs/front-matter/">front matter</a> 中将其包含在每篇文章中。该参数默认为 <code>false</code>，因此必须在这些位置之一将其设置为 <code>true</code>，以便显示评论。</p>
 <h2 id="网站图标" class="relative group">网站图标 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e7%bd%91%e7%ab%99%e5%9b%be%e6%a0%87" aria-label="锚点">#</a></span></h2><p>Congo 提供了一组默认的空白网站图标，以便开始使用，但您可以提供自己的资产来覆盖它们。获取新网站图标资产的最简单方法是使用第三方提供商（例如 <a href="https://favicon.io" target="_blank" rel="noreferrer">favicon.io</a>）生成它们。</p>
 <p>图标资产应直接放置在您网站的 <code>static/</code> 文件夹中，并按下面的清单命名。如果您使用 <a href="https://favicon.io" target="_blank" rel="noreferrer">favicon.io</a>，这些将是为您自动生成的文件名，但如果愿意，您也可以提供自己的资产。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>static/
-</span></span><span style="display:flex;"><span>├─ android-chrome-192x192.png
-</span></span><span style="display:flex;"><span>├─ android-chrome-512x512.png
-</span></span><span style="display:flex;"><span>├─ apple-touch-icon.png
-</span></span><span style="display:flex;"><span>├─ favicon-16x16.png
-</span></span><span style="display:flex;"><span>├─ favicon-32x32.png
-</span></span><span style="display:flex;"><span>├─ favicon.ico
-</span></span><span style="display:flex;"><span>└─ site.webmanifest
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">static/
+</span></span><span class="line"><span class="cl">├─ android-chrome-192x192.png
+</span></span><span class="line"><span class="cl">├─ android-chrome-512x512.png
+</span></span><span class="line"><span class="cl">├─ apple-touch-icon.png
+</span></span><span class="line"><span class="cl">├─ favicon-16x16.png
+</span></span><span class="line"><span class="cl">├─ favicon-32x32.png
+</span></span><span class="line"><span class="cl">├─ favicon.ico
+</span></span><span class="line"><span class="cl">└─ site.webmanifest
 </span></span></code></pre></div><p>或者，您还可以完全覆盖默认的网站图标行为，并提供自己的网站图标 HTML 标签和资产。只需在您的项目中提供一个 <code>layouts/partials/favicons.html</code> 文件，它将被注入到站点的 <code>&lt;head&gt;</code> 中，取代默认的资产。</p>
 <h2 id="图标" class="relative group">图标 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%9b%be%e6%a0%87" aria-label="锚点">#</a></span></h2><p>与 <a href="https://kel1n1995.github.io/zh-hans/docs/shortcodes/#icon">图标 shortcode</a> 类似，您可以通过使用 Congo 的 <code>icon.html</code> 部分在自己的模板和部分中包含图标。该部分接受一个参数，即要包含的图标的名称。</p>
 <p><strong>例:</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>  {{ <span style="color:#a6e22e">partial</span> <span style="color:#e6db74">&#34;icon.html&#34;</span> <span style="color:#e6db74">&#34;github&#34;</span> }}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl">  <span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;icon.html&#34;</span> <span class="s">&#34;github&#34;</span> <span class="p">}}</span>
 </span></span></code></pre></div><p>图标是使用 Hugo 管道生成的，这使它们非常灵活。Congo 包含了许多内置的图标，用于社交、链接和其他用途。查看 <a href="https://kel1n1995.github.io/zh-hans/samples/icons/">图标示例</a> 页面，以获取支持的所有图标的完整列表。</p>
 <p>您可以通过在项目的 <code>assets/icons/</code> 目录中提供自己的图标资产来添加自定义图标。然后，可以通过在没有 <code>.svg</code> 扩展名的情况下使用 SVG 文件名在部分中引用该图标。</p>
 <p>图标还可以通过调用 <a href="https://kel1n1995.github.io/zh-hans/docs/shortcodes/#icon">图标 shortcode</a> 在文章内容中使用。</p>

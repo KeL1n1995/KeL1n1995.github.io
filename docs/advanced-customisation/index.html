@@ -766,19 +766,19 @@
 <p>In addition to the default schemes, you can also create your own and re-style the entire website to your liking. Schemes are created by by placing a <code>&lt;scheme-name&gt;.css</code> file in the <code>assets/css/schemes/</code> folder. Once the file is created, simply refer to it by name in the theme configuration.</p>
 <p>Congo defines a three-colour palette that is used throughout the theme. The three colours are defined as <code>neutral</code>, <code>primary</code> and <code>secondary</code> variants, each containing ten shades of colour.</p>
 <p>Due to the way Tailwind CSS 3.0 calculates colour values with opacity, the colours specified in the scheme need to <a href="https://github.com/adamwathan/tailwind-css-variable-text-opacity-demo" target="_blank" rel="noreferrer">conform to a particular format</a> by providing the red, green and blue colour values.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>:<span style="color:#a6e22e">root</span> {
-</span></span><span style="display:flex;"><span>  --color-primary-500: <span style="color:#ae81ff">139</span>, <span style="color:#ae81ff">92</span>, <span style="color:#ae81ff">246</span>;
-</span></span><span style="display:flex;"><span>}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">:</span><span class="nd">root</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">--color-primary-500</span><span class="p">:</span> <span class="mi">139</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">246</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>This example defines a CSS variable for the <code>primary-500</code> colour with a red value of <code>139</code>, green value of <code>92</code> and blue value of <code>246</code>.</p>
 <p>Use one of the existing theme stylesheets as a template. You are free to define your own colours, but for some inspiration, check out the official <a href="https://tailwindcss.com/docs/customizing-colors#color-palette-reference" target="_blank" rel="noreferrer">Tailwind colour palette reference</a>.</p>
 <h2 id="overriding-the-stylesheet" class="relative group">Overriding the stylesheet <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#overriding-the-stylesheet" aria-label="Anchor">#</a></span></h2><p>Sometimes you need to add a custom style to style your own HTML elements. Congo provides for this scenario by allowing you to override the default styles in your own CSS stylesheet. Simply create a <code>custom.css</code> file in your project&rsquo;s <code>assets/css/</code> folder.</p>
 <p>The <code>custom.css</code> file will be minified by Hugo and loaded automatically after all the other theme styles which means anything in your custom file will take precedence over the defaults.</p>
 <h3 id="adjusting-the-font-size" class="relative group">Adjusting the font size <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#adjusting-the-font-size" aria-label="Anchor">#</a></span></h3><p>Changing the font size of your website is one example of overriding the default stylesheet. Congo makes this simple as it uses scaled font sizes throughout the theme which are derived from the base HTML font size. By default, Tailwind sets the default size to <code>12pt</code>, but it can be changed to whatever value you prefer.</p>
 <p>Create a <code>custom.css</code> file using the <a href="#overriding-the-stylesheet">instructions above</a> and add the following CSS declaration:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#75715e">/* Increase the default font size */</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">html</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">13</span><span style="color:#66d9ef">pt</span>;
-</span></span><span style="display:flex;"><span>}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/* Increase the default font size */</span>
+</span></span><span class="line"><span class="cl"><span class="nt">html</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">font-size</span><span class="p">:</span> <span class="mi">13</span><span class="kt">pt</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>Simply by changing this one value, all the font sizes on your website will be adjusted to match this new size. Therefore, to increase the overall font sizes used, make the value greater than <code>12pt</code>. Similarly, to decrease the font sizes, make the value less than <code>12pt</code>.</p>
 <h2 id="building-the-theme-css-from-source" class="relative group">Building the theme CSS from source <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#building-the-theme-css-from-source" aria-label="Anchor">#</a></span></h2><p>If you&rsquo;d like to make a major change, you can take advantage of Tailwind CSS&rsquo;s JIT compiler and rebuild the entire theme CSS from scratch. This is useful if you want to adjust the Tailwind configuration or add extra Tailwind classes to the main stylesheet.</p>
 <div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
@@ -791,66 +791,66 @@
 
 <p>Let&rsquo;s step through how building the Tailwind CSS works.</p>
 <h3 id="tailwind-configuration" class="relative group">Tailwind configuration <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#tailwind-configuration" aria-label="Anchor">#</a></span></h3><p>In order to generate a CSS file that only contains the Tailwind classes that are actually being used the JIT compiler needs to scan through all the HTML templates and Markdown content files to check which styles are present in the markup. The compiler does this by looking at the <code>tailwind.config.js</code> file which is included in the root of the theme directory:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// themes/congo/tailwind.config.js
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">content</span><span style="color:#f92672">:</span> [
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;./layouts/**/*.html&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;./content/**/*.{html,md}&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;./themes/congo/layouts/**/*.html&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;./themes/congo/content/**/*.{html,md}&#34;</span>,
-</span></span><span style="display:flex;"><span>  ],
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// and more...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>};
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// themes/congo/tailwind.config.js
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">content</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;./layouts/**/*.html&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;./content/**/*.{html,md}&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;./themes/congo/layouts/**/*.html&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;./themes/congo/content/**/*.{html,md}&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">],</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// and more...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">};</span>
 </span></span></code></pre></div><p>This default configuration has been included with these content paths so that you can easily generate your own CSS file without needing to modify it, provided you follow a particular project structure. Namely, <strong>you have to include Congo in your project as a subdirectory at <code>themes/congo/</code></strong>. This means you cannot easily use Hugo Modules to install the theme and you must go down either the git submodule (recommended) or manual install routes. The <a href="https://kel1n1995.github.io/docs/installation/">Installation docs</a> explain how to install the theme using either of these methods.</p>
 <h3 id="project-structure" class="relative group">Project structure <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#project-structure" aria-label="Anchor">#</a></span></h3><p>In order to take advantage of the default configuration, your project should look something like this&hellip;</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>.
-</span></span><span style="display:flex;"><span>├── assets
-</span></span><span style="display:flex;"><span>│   └── css
-</span></span><span style="display:flex;"><span>│       └── compiled
-</span></span><span style="display:flex;"><span>│           └── main.css  <span style="color:#75715e"># this is the file we will generate</span>
-</span></span><span style="display:flex;"><span>├── config  <span style="color:#75715e"># site config</span>
-</span></span><span style="display:flex;"><span>│   └── _default
-</span></span><span style="display:flex;"><span>├── content  <span style="color:#75715e"># site content</span>
-</span></span><span style="display:flex;"><span>│   ├── _index.md
-</span></span><span style="display:flex;"><span>│   ├── projects
-</span></span><span style="display:flex;"><span>│   │   └── _index.md
-</span></span><span style="display:flex;"><span>│   └── blog
-</span></span><span style="display:flex;"><span>│       └── _index.md
-</span></span><span style="display:flex;"><span>├── layouts  <span style="color:#75715e"># custom layouts for your site</span>
-</span></span><span style="display:flex;"><span>│   ├── partials
-</span></span><span style="display:flex;"><span>│   │   └── extend-article-link.html
-</span></span><span style="display:flex;"><span>│   ├── projects
-</span></span><span style="display:flex;"><span>│   │   └── list.html
-</span></span><span style="display:flex;"><span>│   └── shortcodes
-</span></span><span style="display:flex;"><span>│       └── disclaimer.html
-</span></span><span style="display:flex;"><span>└── themes
-</span></span><span style="display:flex;"><span>    └── congo  <span style="color:#75715e"># git submodule or manual theme install</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">├── assets
+</span></span><span class="line"><span class="cl">│   └── css
+</span></span><span class="line"><span class="cl">│       └── compiled
+</span></span><span class="line"><span class="cl">│           └── main.css  <span class="c1"># this is the file we will generate</span>
+</span></span><span class="line"><span class="cl">├── config  <span class="c1"># site config</span>
+</span></span><span class="line"><span class="cl">│   └── _default
+</span></span><span class="line"><span class="cl">├── content  <span class="c1"># site content</span>
+</span></span><span class="line"><span class="cl">│   ├── _index.md
+</span></span><span class="line"><span class="cl">│   ├── projects
+</span></span><span class="line"><span class="cl">│   │   └── _index.md
+</span></span><span class="line"><span class="cl">│   └── blog
+</span></span><span class="line"><span class="cl">│       └── _index.md
+</span></span><span class="line"><span class="cl">├── layouts  <span class="c1"># custom layouts for your site</span>
+</span></span><span class="line"><span class="cl">│   ├── partials
+</span></span><span class="line"><span class="cl">│   │   └── extend-article-link.html
+</span></span><span class="line"><span class="cl">│   ├── projects
+</span></span><span class="line"><span class="cl">│   │   └── list.html
+</span></span><span class="line"><span class="cl">│   └── shortcodes
+</span></span><span class="line"><span class="cl">│       └── disclaimer.html
+</span></span><span class="line"><span class="cl">└── themes
+</span></span><span class="line"><span class="cl">    └── congo  <span class="c1"># git submodule or manual theme install</span>
 </span></span></code></pre></div><p>This example structure adds a new <code>projects</code> content type with its own custom layout along with a custom shortcode and extended partial. Provided the project follows this structure, all that&rsquo;s required is to recompile the <code>main.css</code> file.</p>
 <h3 id="install-dependencies" class="relative group">Install dependencies <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#install-dependencies" aria-label="Anchor">#</a></span></h3><p>In order for this to work you&rsquo;ll need to change into the <code>themes/congo/</code> directory and install the project dependencies. You&rsquo;ll need <a href="https://docs.npmjs.com/cli/v7/configuring-npm/install" target="_blank" rel="noreferrer">npm</a> on your local machine for this step.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd themes/congo
-</span></span><span style="display:flex;"><span>npm install
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> themes/congo
+</span></span><span class="line"><span class="cl">npm install
 </span></span></code></pre></div><h3 id="run-the-tailwind-compiler" class="relative group">Run the Tailwind compiler <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#run-the-tailwind-compiler" aria-label="Anchor">#</a></span></h3><p>With the dependencies installed all that&rsquo;s left is to use <a href="https://v2.tailwindcss.com/docs/installation#using-tailwind-cli" target="_blank" rel="noreferrer">Tailwind CLI</a> to invoke the JIT compiler. Navigate back to the root of your Hugo project and issue the following command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd ../..
-</span></span><span style="display:flex;"><span>./themes/congo/node_modules/tailwindcss/lib/cli.js -c ./themes/congo/tailwind.config.js -i ./themes/congo/assets/css/main.css -o ./assets/css/compiled/main.css --jit
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> ../..
+</span></span><span class="line"><span class="cl">./themes/congo/node_modules/tailwindcss/lib/cli.js -c ./themes/congo/tailwind.config.js -i ./themes/congo/assets/css/main.css -o ./assets/css/compiled/main.css --jit
 </span></span></code></pre></div><p>It&rsquo;s a bit of an ugly command due to the paths involved but essentially you&rsquo;re calling Tailwind CLI and passing it the location of the Tailwind config file (the one we looked at above), where to find the theme&rsquo;s <code>main.css</code> file and then where you want the compiled CSS file to be placed (it&rsquo;s going into the <code>assets/css/compiled/</code> folder of your Hugo project).</p>
 <p>The config file will automatically inspect all the content and layouts in your project as well as all those in the theme and build a new CSS file that contains all the CSS required for your website. Due to the way Hugo handles file hierarchy, this file in your project will now automatically override the one that comes with the theme.</p>
 <p>Each time you make a change to your layouts and need new Tailwind CSS styles, you can simply re-run the command and generate the new CSS file. You can also add <code>-w</code> to the end of the command to run the JIT compiler in watch mode.</p>
 <h3 id="make-a-build-script" class="relative group">Make a build script <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#make-a-build-script" aria-label="Anchor">#</a></span></h3><p>To fully complete this solution, you can simplify this whole process by adding aliases for these commands, or do what I do and add a <code>package.json</code> to the root of your project which contains the necessary scripts&hellip;</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// package.json
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;my-website&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;version&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;1.0.0&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;description&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;scripts&#34;</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;server&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;hugo server -b http://localhost -p 8000&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;dev&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;NODE_ENV=development ./themes/congo/node_modules/tailwindcss/lib/cli.js -c ./themes/congo/tailwind.config.js -i ./themes/congo/assets/css/main.css -o ./assets/css/compiled/main.css --jit -w&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;build&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;NODE_ENV=production ./themes/congo/node_modules/tailwindcss/lib/cli.js -c ./themes/congo/tailwind.config.js -i ./themes/congo/assets/css/main.css -o ./assets/css/compiled/main.css --jit&#34;</span>
-</span></span><span style="display:flex;"><span>  },
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// and more...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// package.json
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;name&#34;</span><span class="o">:</span> <span class="s2">&#34;my-website&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;version&#34;</span><span class="o">:</span> <span class="s2">&#34;1.0.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;description&#34;</span><span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;scripts&#34;</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;server&#34;</span><span class="o">:</span> <span class="s2">&#34;hugo server -b http://localhost -p 8000&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;dev&#34;</span><span class="o">:</span> <span class="s2">&#34;NODE_ENV=development ./themes/congo/node_modules/tailwindcss/lib/cli.js -c ./themes/congo/tailwind.config.js -i ./themes/congo/assets/css/main.css -o ./assets/css/compiled/main.css --jit -w&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;build&#34;</span><span class="o">:</span> <span class="s2">&#34;NODE_ENV=production ./themes/congo/node_modules/tailwindcss/lib/cli.js -c ./themes/congo/tailwind.config.js -i ./themes/congo/assets/css/main.css -o ./assets/css/compiled/main.css --jit&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// and more...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
 </span></span></code></pre></div><p>Now when you want to work on designing your site, you can invoke <code>npm run dev</code> and the compiler will run in watch mode. When you&rsquo;re ready to deploy, run <code>npm run build</code> and you&rsquo;ll get a clean Tailwind CSS build.</p>
 <p>🙋‍♀️ If you need help, feel free to ask a question on <a href="https://github.com/jpanther/congo/discussions" target="_blank" rel="noreferrer">GitHub Discussions</a>.</p>
 
