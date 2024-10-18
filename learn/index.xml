@@ -7,17 +7,24 @@
     <generator>Hugo</generator>
     <language>en-AU</language>
     <copyright>&amp;copy; 2024 Kelin | Zhao-Lab</copyright>
-    <lastBuildDate>Mon, 14 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kel1n1995.github.io/learn/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo&#43;Github Self-learning</title>
+      <title>【HugoLearn】使用hugo&#43;GitHub搭建自己的静态blog</title>
+      <link>https://kel1n1995.github.io/learn/hugo&#43;github/</link>
+      <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://kel1n1995.github.io/learn/hugo&#43;github/</guid>
+      <description>Use Github and Hugo to build a personal blog</description>
+    </item>
+    <item>
+      <title>【Git Learn】Git常用语法笔记</title>
       <link>https://kel1n1995.github.io/learn/hugonote/</link>
       <pubDate>Mon, 14 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://kel1n1995.github.io/learn/hugonote/</guid>
-      <description>Self-learning Notes</description>
+      <description>使用Git的基本步骤，适合初学者入门</description>
     </item>
     <item>
-      <title>🖋 Human Milk Oligosaccharides (HMOs) Cell Factory</title>
+      <title>【Conference】Human Milk Oligosaccharides (HMOs) Cell Factory</title>
       <link>https://kel1n1995.github.io/learn/conference/</link>
       <pubDate>Sun, 13 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://kel1n1995.github.io/learn/conference/</guid>

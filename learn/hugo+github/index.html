@@ -1,0 +1,2894 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html
+  lang="en-AU"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title>【HugoLearn】使用hugo&#43;GitHub搭建自己的静态blog &middot; KeLin&#39;s Homepage</title>
+    <meta name="title" content="【HugoLearn】使用hugo&#43;GitHub搭建自己的静态blog &middot; KeLin&#39;s Homepage" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
+  ></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.c0372af4afaa8970c8b8fec6b8e681b4db96423cfeac2eced51fcd387c74e62a.css"
+    integrity="sha256-wDcq9K&#43;qiXDIuP7GuOaBtNuWQjz&#43;rC7O1R/NOHx05io="
+  />
+  
+    
+    
+    
+  
+  
+  
+    
+    
+  
+  
+    
+    
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.bb487ad6073790cb02c354ee8c5f8822c42c5513e10bf7a86bbe8f82118cd1fc.js"
+      integrity="sha256-u0h61gc3kMsCw1TujF&#43;IIsQsVRPhC/eoa76PghGM0fw="
+      data-copy="Copy"
+      data-copied="Copied"
+    ></script>
+  
+  
+  <meta
+    name="description"
+    content="
+      Use Github and Hugo to build a personal blog
+    "
+  />
+  
+  
+  
+  <link rel="canonical" href="https://kel1n1995.github.io/learn/hugo&#43;github/" />
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="https://kel1n1995.github.io/learn/hugo&#43;github/">
+  <meta property="og:site_name" content="KeLin&#39;s Homepage">
+  <meta property="og:title" content="【HugoLearn】使用hugo&#43;GitHub搭建自己的静态blog">
+  <meta property="og:description" content="Use Github and Hugo to build a personal blog">
+  <meta property="og:locale" content="en_AU">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="learn">
+    <meta property="article:published_time" content="2024-10-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-18T00:00:00+00:00">
+    <meta property="article:tag" content="杂谈">
+    <meta property="article:tag" content="转载">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="【HugoLearn】使用hugo&#43;GitHub搭建自己的静态blog">
+  <meta name="twitter:description" content="Use Github and Hugo to build a personal blog">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Learn",
+    "name": "【HugoLearn】使用hugo\u002bGitHub搭建自己的静态blog",
+    "headline": "【HugoLearn】使用hugo\u002bGitHub搭建自己的静态blog",
+    "description": "Use Github and Hugo to build a personal blog",
+    "abstract": "Use Github and Hugo to build a personal blog",
+    "inLanguage": "en-AU",
+    "url" : "https:\/\/kel1n1995.github.io\/learn\/hugo\u002bgithub\/",
+    "author" : {
+      "@type": "Person",
+      "name": "KeLin Cheng"
+    },
+    "copyrightYear": "2024",
+    "dateCreated": "2024-10-18T00:00:00\u002b00:00",
+    "datePublished": "2024-10-18T00:00:00\u002b00:00",
+    
+    "dateModified": "2024-10-18T00:00:00\u002b00:00",
+    
+    "keywords": ["杂谈","转载"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "551"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "https://kel1n1995.github.io/",
+       "name": "Welcome to My Website ! Tada",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "https://kel1n1995.github.io/learn/",
+       "name": "Learn",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "name": "【 Hugo Learn】使用hugo Git Hub搭建自己的静态blog",
+       "position": 3
+     }
+   ]
+ }
+  </script>
+
+  
+  <meta name="author" content="KeLin Cheng" />
+  
+    
+      <link href="https://github.com/KeL1n1995/" rel="me" />
+    
+      <link href="knightl1n1995@outlook.com" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >Skip to main content</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="z-40 flex flex-row items-center">
+      
+    <a href="/" class="mr-2">
+      
+      <img
+        src="/img/%E5%8D%B0%E7%AB%A0.png"
+        width="61"
+        height="75"
+        class="max-h-[10rem] max-w-[10rem] object-scale-down object-left
+        hidden dark:flex"
+        alt="KeLin&#39;s Homepage"
+      />
+        <img
+          src="/img/%E5%8D%B0%E7%AB%A0.png"
+          width="61"
+          height="75"
+          class="max-h-[10rem] max-w-[10rem] object-scale-down object-left dark:hidden"
+          alt="KeLin&#39;s Homepage"
+        />
+    </a>
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >KeLin&rsquo;s Homepage</a
+  >
+
+    </div>
+    
+      
+      <label id="menu-button" for="menu-controller" class="block sm:hidden">
+        <input type="checkbox" id="menu-controller" class="hidden" />
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="invisible fixed inset-0 z-30 m-auto h-full w-full cursor-default overflow-auto bg-neutral-100/50 opacity-0 backdrop-blur-sm transition-opacity dark:bg-neutral-900/50"
+        >
+          <ul
+            class="mx-auto flex w-full max-w-7xl list-none flex-col overflow-visible px-6 py-6 text-end sm:px-14 sm:py-10 sm:pt-10 md:px-24 lg:px-32"
+          >
+            <li class="mb-1">
+              <span class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400"
+                ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span></span
+              >
+            </li>
+            
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/article/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Article</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/research/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Research</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/learn/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Learn</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/literature/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Literature</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="https://github.com/KeL1n1995"
+                      title=""
+                      onclick="close_menu()"
+                      target="_blank"
+                      >
+                        <span
+                          class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                        ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></span></a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    
+                    
+                      <button
+                        id="search-button-1"
+                        title="Search (/)"
+                      >
+                        
+                          <span
+                            class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                          ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                            class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                            ></span
+                          >
+                        
+                      </button>
+                    
+                  
+                </li>
+              
+                
+                  
+              
+            
+          </ul>
+        </div>
+      </label>
+      
+      <ul class="hidden list-none flex-row text-end sm:flex">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/article/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Article</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/research/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Research</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/learn/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Learn</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/literature/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Literature</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="https://github.com/KeL1n1995"
+                  title=""
+                  target="_blank"
+                  >
+                    <span
+                      class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                    ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></span></a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                
+                
+                  <button
+                    id="search-button-2"
+                    title="Search (/)"
+                  >
+                    
+                      <span
+                        class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                      ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                        class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                        ></span
+                      >
+                    
+                  </button>
+                
+              
+            </li>
+          
+            
+              
+          
+
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        【HugoLearn】使用hugo+GitHub搭建自己的静态blog
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2024-10-18 00:00:00 &#43;0000 UTC">2024-10-18</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span><span class="px-2 text-primary-500">&middot;</span>
+
+
+  
+    
+  
+  
+
+<span class="mb-[2px]">
+  <a
+    href="#/learn/hugo&#43;github/index.md"
+    class="text-lg hover:text-primary-500"
+    rel="noopener noreferrer"
+    target="_blank"
+    title="Edit content"
+    ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M490.3 40.4C512.2 62.27 512.2 97.73 490.3 119.6L460.3 149.7L362.3 51.72L392.4 21.66C414.3-.2135 449.7-.2135 471.6 21.66L490.3 40.4zM172.4 241.7L339.7 74.34L437.7 172.3L270.3 339.6C264.2 345.8 256.7 350.4 248.4 353.2L159.6 382.8C150.1 385.6 141.5 383.4 135 376.1C128.6 370.5 126.4 361 129.2 352.4L158.8 263.6C161.6 255.3 166.2 247.8 172.4 241.7V241.7zM192 63.1C209.7 63.1 224 78.33 224 95.1C224 113.7 209.7 127.1 192 127.1H96C78.33 127.1 64 142.3 64 159.1V416C64 433.7 78.33 448 96 448H352C369.7 448 384 433.7 384 416V319.1C384 302.3 398.3 287.1 416 287.1C433.7 287.1 448 302.3 448 319.1V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V159.1C0 106.1 42.98 63.1 96 63.1H192z"/></svg>
+</span></a
+  >
+</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+
+
+        </div>
+      
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Table of Contents
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#本教程参考文章">本教程参考文章：</a></li>
+        <li><a href="#1-准备工作">1 准备工作：</a>
+          <ul>
+            <li><a href="#11-安装git">1.1 安装Git</a></li>
+            <li><a href="#12-github网站创建">1.2 GitHub网站创建</a></li>
+            <li><a href="#13-hugo的安装">1.3 Hugo的安装</a></li>
+          </ul>
+        </li>
+        <li><a href="#2-开始搭建">2 开始搭建</a>
+          <ul>
+            <li><a href="#21-配置环境变量">2.1 配置环境变量</a></li>
+            <li><a href="#22-开始搭建hugo站点">2.2 开始搭建hugo站点</a></li>
+            <li><a href="#23-设置hugo网页的主题">2.3 设置hugo网页的主题</a></li>
+          </ul>
+        </li>
+        <li><a href="#3-网页部署">3 网页部署</a>
+          <ul>
+            <li><a href="#31-生成静态资源文件夹">3.1 生成静态资源文件夹</a></li>
+            <li><a href="#32-上传到github远程仓库">3.2 上传到GitHub远程仓库</a></li>
+            <li><a href="#33--github-action-自动部署">3.3  Github Action 自动部署</a></li>
+          </ul>
+        </li>
+        <li><a href="#补充">补充</a>
+          <ul>
+            <li><a href="#报错情况">报错情况</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        <hr>
+<h3 id="本教程参考文章" class="relative group">本教程参考文章： <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%9c%ac%e6%95%99%e7%a8%8b%e5%8f%82%e8%80%83%e6%96%87%e7%ab%a0" aria-label="Anchor">#</a></span></h3><p><strong><a href="https://jimmysong.io/blog/building-github-pages-with-hugo/" target="_blank" rel="noreferrer">Reference 1</a></strong>
+<strong><a href="https://sazerac-kk.github.io/p/%E6%95%99%E7%A8%8Bhugo-github%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2/" target="_blank" rel="noreferrer">Reference 2</a></strong>
+<strong><a href="https://letere-gzj.github.io/hugo-stack/p/hugo/custom-blog/" target="_blank" rel="noreferrer">Reference 3</a></strong></p>
+<div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
+  <span class="pe-3 text-primary-400">
+    <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M421.7 220.3L188.5 453.4L154.6 419.5L158.1 416H112C103.2 416 96 408.8 96 400V353.9L92.51 357.4C87.78 362.2 84.31 368 82.42 374.4L59.44 452.6L137.6 429.6C143.1 427.7 149.8 424.2 154.6 419.5L188.5 453.4C178.1 463.8 165.2 471.5 151.1 475.6L30.77 511C22.35 513.5 13.24 511.2 7.03 504.1C.8198 498.8-1.502 489.7 .976 481.2L36.37 360.9C40.53 346.8 48.16 333.9 58.57 323.5L291.7 90.34L421.7 220.3zM492.7 58.75C517.7 83.74 517.7 124.3 492.7 149.3L444.3 197.7L314.3 67.72L362.7 19.32C387.7-5.678 428.3-5.678 453.3 19.32L492.7 58.75z"/></svg>
+</span>
+  </span>
+  <span class="dark:text-neutral-300"><strong>Note</strong> 本教程只是草稿，还存在一些潜在的问题，请及时与我联系，后续会不断更新和修改。</span>
+</div>
+
+<h3 id="1-准备工作" class="relative group">1 准备工作： <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1-%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c" aria-label="Anchor">#</a></span></h3><h4 id="11-安装git" class="relative group">1.1 安装Git <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#11-%e5%ae%89%e8%a3%85git" aria-label="Anchor">#</a></span></h4><p>Git是一个分布式版本控制系统，广泛用于软件开发和其他需要版本控制的项目中。
+安装步骤可参考: <a href="https://blog.csdn.net/mukes/article/details/115693833" target="_blank" rel="noreferrer">https://blog.csdn.net/mukes/article/details/115693833</a>
+<div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
+  <span class="pe-3 text-primary-400">
+    <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M421.7 220.3L188.5 453.4L154.6 419.5L158.1 416H112C103.2 416 96 408.8 96 400V353.9L92.51 357.4C87.78 362.2 84.31 368 82.42 374.4L59.44 452.6L137.6 429.6C143.1 427.7 149.8 424.2 154.6 419.5L188.5 453.4C178.1 463.8 165.2 471.5 151.1 475.6L30.77 511C22.35 513.5 13.24 511.2 7.03 504.1C.8198 498.8-1.502 489.7 .976 481.2L36.37 360.9C40.53 346.8 48.16 333.9 58.57 323.5L291.7 90.34L421.7 220.3zM492.7 58.75C517.7 83.74 517.7 124.3 492.7 149.3L444.3 197.7L314.3 67.72L362.7 19.32C387.7-5.678 428.3-5.678 453.3 19.32L492.7 58.75z"/></svg>
+</span>
+  </span>
+  <span class="dark:text-neutral-300"><pre><code>	主要命令：
+		- git init：初始化新仓库
+		- git clone：克隆远程仓库
+		- git add：暂存更改
+		- git commit：提交更改
+		- git push：推送到远程仓库
+		- git pull：从远程仓库拉取更新
+		- git branch：管理分支
+		- git merge：合并分支
+</code></pre>
+</span>
+</div>
+</p>
+<h4 id="12-github网站创建" class="relative group">1.2 GitHub网站创建 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#12-github%e7%bd%91%e7%ab%99%e5%88%9b%e5%bb%ba" aria-label="Anchor">#</a></span></h4><p>访问 <a href="https://www.github.com/" title="GitHub" target="_blank" rel="noreferrer">GitHub</a> 创建账号。使用GitHub Pages 将托管你的网站。</p>
+<ul>
+<li>
+<ol>
+<li>首先在 GitHub 上创建一个以 <code>username.github.io</code> 命名的项目。
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/Pasted%20image%2020241017133843_hu4273404318324793962.webp 330w,/learn/hugo&#43;github/Pasted%20image%2020241017133843_hu14920509528410789317.webp 660w
+            
+              
+                ,/learn/hugo&#43;github/Pasted%20image%2020241017133843_hu919251909690847021.webp 1009w
+              
+            
+            
+              
+                ,/learn/hugo&#43;github/Pasted%20image%2020241017133843_hu919251909690847021.webp 1009w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1009"
+        height="594"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/Pasted%20image%2020241017133843_hu15280789292303560563.png"
+          srcset="/learn/hugo&#43;github/Pasted%20image%2020241017133843_hu6904301163938764760.png 330w,/learn/hugo&#43;github/Pasted%20image%2020241017133843_hu15280789292303560563.png 660w
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017133843.png 1009w
+          
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017133843.png 1009w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>需要为你的仓库添加一个README文件，能够激活仓库中的<code>mian</code>分支
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/Pasted%20image%2020241017134858_hu12639104116629702939.webp 330w,/learn/hugo&#43;github/Pasted%20image%2020241017134858_hu7515755729278922992.webp 660w
+            
+              ,/learn/hugo&#43;github/Pasted%20image%2020241017134858_hu8776394659670172837.webp 1024w
+            
+            
+              ,/learn/hugo&#43;github/Pasted%20image%2020241017134858_hu8432777263764059707.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1920"
+        height="910"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/Pasted%20image%2020241017134858_hu6170806944133516028.png"
+          srcset="/learn/hugo&#43;github/Pasted%20image%2020241017134858_hu16940482004162512472.png 330w,/learn/hugo&#43;github/Pasted%20image%2020241017134858_hu6170806944133516028.png 660w
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017134858_hu10520600165225611460.png 1024w
+          
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017134858_hu83580077295587835.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>仓库构建完成后，点击进入仓库的<code>setting</code>选项：
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/Pasted%20image%2020241017134403_hu3740119845769165833.webp 330w,/learn/hugo&#43;github/Pasted%20image%2020241017134403_hu13571944546926911869.webp 660w
+            
+              ,/learn/hugo&#43;github/Pasted%20image%2020241017134403_hu11798047714245668629.webp 1024w
+            
+            
+              ,/learn/hugo&#43;github/Pasted%20image%2020241017134403_hu8061811289110576034.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1693"
+        height="615"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/Pasted%20image%2020241017134403_hu9629612223079556314.png"
+          srcset="/learn/hugo&#43;github/Pasted%20image%2020241017134403_hu17795402649955122029.png 330w,/learn/hugo&#43;github/Pasted%20image%2020241017134403_hu9629612223079556314.png 660w
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017134403_hu549086977725884887.png 1024w
+          
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017134403_hu6743740893853326977.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>进入后点击<code>Pages</code>选项：
+可以看到 此时 GitHub Pages已经为你生成了一个网页链接 <a href="https://anikelin.github.io/" target="_blank" rel="noreferrer">https://anikelin.github.io/</a> （红框）。这将是你之后blog的网站地址。
+如果没有出现网址，请将按照黄色框进行设置，<code>source</code>选择<code>Deploy from a banch</code> <code>Banch</code> 选择<code>/main/(toot)</code>,点击<code>Save</code>.等待一会儿后刷新界面就可以了。
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/Pasted%20image%2020241017135524_hu7148976737675893831.webp 330w,/learn/hugo&#43;github/Pasted%20image%2020241017135524_hu8721562014601561974.webp 660w
+            
+              ,/learn/hugo&#43;github/Pasted%20image%2020241017135524_hu1810285954650778804.webp 1024w
+            
+            
+              ,/learn/hugo&#43;github/Pasted%20image%2020241017135524_hu18111502736548762277.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1920"
+        height="910"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/Pasted%20image%2020241017135524_hu8861577232990400691.png"
+          srcset="/learn/hugo&#43;github/Pasted%20image%2020241017135524_hu8628780102990792559.png 330w,/learn/hugo&#43;github/Pasted%20image%2020241017135524_hu8861577232990400691.png 660w
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017135524_hu12862878111342869283.png 1024w
+          
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017135524_hu15679972899069689514.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</li>
+</ol>
+</li>
+</ul>
+<h4 id="13-hugo的安装" class="relative group">1.3 Hugo的安装 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#13-hugo%e7%9a%84%e5%ae%89%e8%a3%85" aria-label="Anchor">#</a></span></h4><p>Hugo是一个流行的静态网站生成器。
+优点：1.构建速度极快。2.不需要数据库。3.易于部署和维护。</p>
+<ul>
+<li>
+<ol>
+<li>下载最新版的hugo文件包  <a href="https://github.com/gohugoio/hugo/tags" target="_blank" rel="noreferrer">https://github.com/gohugoio/hugo/tags</a>
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/Pasted%20image%2020241017140736_hu13390346032632762838.webp 330w,/learn/hugo&#43;github/Pasted%20image%2020241017140736_hu7420545833725265426.webp 660w
+            
+              ,/learn/hugo&#43;github/Pasted%20image%2020241017140736_hu16339541919950283261.webp 1024w
+            
+            
+              ,/learn/hugo&#43;github/Pasted%20image%2020241017140736_hu6140664773823285892.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1920"
+        height="910"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/Pasted%20image%2020241017140736_hu9854201630689536959.png"
+          srcset="/learn/hugo&#43;github/Pasted%20image%2020241017140736_hu16260849834403643474.png 330w,/learn/hugo&#43;github/Pasted%20image%2020241017140736_hu9854201630689536959.png 660w
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017140736_hu8593524209526862284.png 1024w
+          
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017140736_hu18257814001624018683.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>选择windows系统下的拓展版本：
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/Pasted%20image%2020241017140811_hu6192737433935154967.webp 330w,/learn/hugo&#43;github/Pasted%20image%2020241017140811_hu12968549173949685247.webp 660w
+            
+              ,/learn/hugo&#43;github/Pasted%20image%2020241017140811_hu283770793505119906.webp 1024w
+            
+            
+              ,/learn/hugo&#43;github/Pasted%20image%2020241017140811_hu1053913488485811725.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1920"
+        height="910"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/Pasted%20image%2020241017140811_hu17153640448998278080.png"
+          srcset="/learn/hugo&#43;github/Pasted%20image%2020241017140811_hu5865786900084210697.png 330w,/learn/hugo&#43;github/Pasted%20image%2020241017140811_hu17153640448998278080.png 660w
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017140811_hu970317362977142234.png 1024w
+          
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017140811_hu4632158998372106981.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</li>
+</ol>
+</li>
+</ul>
+<h3 id="2-开始搭建" class="relative group">2 开始搭建 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#2-%e5%bc%80%e5%a7%8b%e6%90%ad%e5%bb%ba" aria-label="Anchor">#</a></span></h3><h4 id="21-配置环境变量" class="relative group">2.1 配置环境变量 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#21-%e9%85%8d%e7%bd%ae%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f" aria-label="Anchor">#</a></span></h4><ul>
+<li>将下载后的文件解压到你本地创建的文件夹比如<code>C:\Hugo</code>中，并建立一个<code>C:\Hugo\bin</code>的文件夹，将<code>hugo.exe</code>文件移动到该文件夹中。
+选择系统变量的中的变量Path，点击编辑，进入。
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/Pasted%20image%2020241017142010_hu4201479062845434531.webp 330w,/learn/hugo&#43;github/Pasted%20image%2020241017142010_hu697736857012461228.webp 660w
+            
+              
+                ,/learn/hugo&#43;github/Pasted%20image%2020241017142010_hu3000827984582490442.webp 760w
+              
+            
+            
+              
+                ,/learn/hugo&#43;github/Pasted%20image%2020241017142010_hu3000827984582490442.webp 760w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="760"
+        height="312"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/Pasted%20image%2020241017142010_hu6664454374767958205.png"
+          srcset="/learn/hugo&#43;github/Pasted%20image%2020241017142010_hu12038197801349732979.png 330w,/learn/hugo&#43;github/Pasted%20image%2020241017142010_hu6664454374767958205.png 660w
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017142010.png 760w
+          
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017142010.png 760w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</li>
+<li>将<code>C:\Hugo\bin</code>路径添加到Path,点击确定，完成设置。
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/Pasted%20image%2020241017141657_hu5018391756314758540.webp 330w,/learn/hugo&#43;github/Pasted%20image%2020241017141657_hu6715609137113495518.webp 660w
+            
+              
+                ,/learn/hugo&#43;github/Pasted%20image%2020241017141657_hu4907500881291805146.webp 810w
+              
+            
+            
+              
+                ,/learn/hugo&#43;github/Pasted%20image%2020241017141657_hu4907500881291805146.webp 810w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="810"
+        height="786"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/Pasted%20image%2020241017141657_hu16901531730257001027.png"
+          srcset="/learn/hugo&#43;github/Pasted%20image%2020241017141657_hu6347604125322256359.png 330w,/learn/hugo&#43;github/Pasted%20image%2020241017141657_hu16901531730257001027.png 660w
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017141657.png 810w
+          
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017141657.png 810w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</li>
+</ul>
+<h4 id="22-开始搭建hugo站点" class="relative group">2.2 开始搭建hugo站点 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#22-%e5%bc%80%e5%a7%8b%e6%90%ad%e5%bb%bahugo%e7%ab%99%e7%82%b9" aria-label="Anchor">#</a></span></h4><ul>
+<li>在<code>C:\Hugo</code>中进入终端，输入代码：
+<code>hugo new site mysite</code></li>
+</ul>
+<blockquote>
+<p><strong>Note</strong> ：mysite 是网站的路径，可以自定义命名。</p>
+</blockquote>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/Pasted%20image%2020241017142850_hu7895576712949177829.webp 330w,/learn/hugo&#43;github/Pasted%20image%2020241017142850_hu7426356568054204366.webp 660w
+            
+              ,/learn/hugo&#43;github/Pasted%20image%2020241017142850_hu6932018301673743507.webp 1024w
+            
+            
+              ,/learn/hugo&#43;github/Pasted%20image%2020241017142850_hu14580532296761719265.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1500"
+        height="771"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/Pasted%20image%2020241017142850_hu18416369482522736290.png"
+          srcset="/learn/hugo&#43;github/Pasted%20image%2020241017142850_hu195903652534342506.png 330w,/learn/hugo&#43;github/Pasted%20image%2020241017142850_hu18416369482522736290.png 660w
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017142850_hu8305875592307207904.png 1024w
+          
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017142850_hu13229715471939349272.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+
+然后进入该路径
+<code>cd mysite</code>
+在该目录下你可以看到以下几个目录和 <code>config.toml</code> 文件</p>
+<pre tabindex="0"><code>C:\Hugo\mysite\archetypes
+C:\Hugo\mysite\assets
+C:\Hugo\mysite\content
+C:\Hugo\mysite\data
+C:\Hugo\mysite\hugo.toml
+C:\Hugo\mysite\i18n
+C:\Hugo\mysite\layouts
+C:\Hugo\mysite\static
+C:\Hugo\mysite\themes
+C:\Hugo\mysite\archetypes\default.md
+</code></pre><blockquote>
+<p><strong>Nice! 此时你已经完成了hugo的基本构架。</strong></p>
+</blockquote>
+<h4 id="23-设置hugo网页的主题" class="relative group">2.3 设置hugo网页的主题 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#23-%e8%ae%be%e7%bd%aehugo%e7%bd%91%e9%a1%b5%e7%9a%84%e4%b8%bb%e9%a2%98" aria-label="Anchor">#</a></span></h4><ul>
+<li>主题的下载和安装
+你可以在  <a href="https://themes.gohugo.io/" target="_blank" rel="noreferrer">Hugo 官方社区</a>上选择你喜爱的主题。
+这里以[Blowfish] (<a href="https://themes.gohugo.io/themes/blowfish/" target="_blank" rel="noreferrer">https://themes.gohugo.io/themes/blowfish/</a>) 为例进行后续的演示操作：
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/Pasted%20image%2020241017145918_hu13018771640116908227.webp 330w,/learn/hugo&#43;github/Pasted%20image%2020241017145918_hu10059725063404332620.webp 660w
+            
+              ,/learn/hugo&#43;github/Pasted%20image%2020241017145918_hu9942220030935807703.webp 1024w
+            
+            
+              ,/learn/hugo&#43;github/Pasted%20image%2020241017145918_hu7259391769966672639.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1920"
+        height="910"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/Pasted%20image%2020241017145918_hu8723472066295764829.png"
+          srcset="/learn/hugo&#43;github/Pasted%20image%2020241017145918_hu13476403664047340773.png 330w,/learn/hugo&#43;github/Pasted%20image%2020241017145918_hu8723472066295764829.png 660w
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017145918_hu588872715063966109.png 1024w
+          
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017145918_hu5118880022668890893.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+
+进入该主题的GitHub仓库： <a href="https://github.com/nunocoracao/blowfish" target="_blank" rel="noreferrer">https://github.com/nunocoracao/blowfish</a> 进行下载：
+<ol>
+<li>你可以通过手动下载的方式，然后将该主题文件解压到你的<code>C:\Hugo\mysite\themes</code>目录中去。
+Note：要将文件名改为<code>blowfish</code></li>
+<li>也可以使用以下命令行在终端安装（需要开启全局代理）：</li>
+</ol>
+</li>
+</ul>
+<pre tabindex="0"><code>cd mysite
+git init
+git submodule add -b main https://github.com/nunocoracao/blowfish.git themes/blowfish
+</code></pre><ul>
+<li>主题的本地化配置-文件配置
+<ul>
+<li>在你的网站根目录<code>C:\Hugo\mysite</code>中，删除 Hugo 自动生成的 <code>hugo.toml</code> 文件。</li>
+<li>从文件夹<code>C:\Hugo\mysite\themes\blowfish</code>中复制<code>config</code> ,<code>layouts</code>,<code>assets</code>,<code>static</code> 文件，粘贴到 <code>C:\Hugo\mysite</code> 目录中。</li>
+<li>从文件夹：<code>C:\Hugo\mysite\themes\blowfish\exampleSite</code>中复制<code>content</code>，粘贴到 <code>C:\Hugo\mysite</code> 目录中。</li>
+<li>删除掉<code>C:\Hugo\mysite\content\samples</code>目录中<code>rich-content</code>文件夹</li>
+</ul>
+</li>
+<li>主题的本地化配置-参数配置
+打开<code>C:\Hugo\mysite\config\_default\hugo.toml</code>文件（推荐使用visual stutio code打开和编辑），进行基础参数的修改。
+<pre tabindex="0"><code>theme = &#34;blowfish&#34; # UNCOMMENT THIS LINE
+baseURL = &#34;https://anikelin.github.io/&#34;
+defaultContentLanguage = &#34;en&#34;
+</code></pre></li>
+<li>主题的本地化配置-进阶配置
+详细的教程可以参考该主题的官方教程文件 <a href="https://blowfish.page/zh-cn/" target="_blank" rel="noreferrer">https://blowfish.page/zh-cn/</a> 这一过程可能需要花费一些时间。</li>
+<li>主题的本地化配置-启动服务
+在<code>C:\Hugo\mysite</code>目录下进入终端运行：<code>hugo server -D</code>
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/Pasted%20image%2020241017192746_hu13904961314929861763.webp 330w,/learn/hugo&#43;github/Pasted%20image%2020241017192746_hu9879258585116601692.webp 660w
+            
+              ,/learn/hugo&#43;github/Pasted%20image%2020241017192746_hu17383825985555722543.webp 1024w
+            
+            
+              ,/learn/hugo&#43;github/Pasted%20image%2020241017192746_hu336194534490930218.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1426"
+        height="497"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/Pasted%20image%2020241017192746_hu7419017118131409756.png"
+          srcset="/learn/hugo&#43;github/Pasted%20image%2020241017192746_hu2480937874591759523.png 330w,/learn/hugo&#43;github/Pasted%20image%2020241017192746_hu7419017118131409756.png 660w
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017192746_hu13627249431851859305.png 1024w
+          
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017192746_hu9384187449818824300.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</li>
+<li>点击 http://localhost:1313/
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/Pasted%20image%2020241017192853_hu12960522684836913601.webp 330w,/learn/hugo&#43;github/Pasted%20image%2020241017192853_hu14024521360676834997.webp 660w
+            
+              ,/learn/hugo&#43;github/Pasted%20image%2020241017192853_hu10672505402839849520.webp 1024w
+            
+            
+              ,/learn/hugo&#43;github/Pasted%20image%2020241017192853_hu14131151160870777302.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1920"
+        height="1029"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/Pasted%20image%2020241017192853_hu14837093730215031667.png"
+          srcset="/learn/hugo&#43;github/Pasted%20image%2020241017192853_hu1141669328769007718.png 330w,/learn/hugo&#43;github/Pasted%20image%2020241017192853_hu14837093730215031667.png 660w
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017192853_hu12100195771557677113.png 1024w
+          
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017192853_hu9651069531867684213.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</li>
+<li>该界面就是hugo生成的本地网页文件</li>
+</ul>
+<h3 id="3-网页部署" class="relative group">3 网页部署 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#3-%e7%bd%91%e9%a1%b5%e9%83%a8%e7%bd%b2" aria-label="Anchor">#</a></span></h3><h4 id="31-生成静态资源文件夹" class="relative group">3.1 生成静态资源文件夹 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#31-%e7%94%9f%e6%88%90%e9%9d%99%e6%80%81%e8%b5%84%e6%ba%90%e6%96%87%e4%bb%b6%e5%a4%b9" aria-label="Anchor">#</a></span></h4><ul>
+<li>在<code>C:\Hugo\mysite</code>目录下进入终端运行：<code>hugo</code>，就会生成一个名为 <code>public</code> 的静态资源文件夹</li>
+</ul>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/Pasted%20image%2020241017193541_hu2515113387452470197.webp 330w,/learn/hugo&#43;github/Pasted%20image%2020241017193541_hu17745055168995553575.webp 660w
+            
+              ,/learn/hugo&#43;github/Pasted%20image%2020241017193541_hu3210301219230025006.webp 1024w
+            
+            
+              
+                ,/learn/hugo&#43;github/Pasted%20image%2020241017193541_hu822625360241642228.webp 1180w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1180"
+        height="350"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/Pasted%20image%2020241017193541_hu9774421046054730453.png"
+          srcset="/learn/hugo&#43;github/Pasted%20image%2020241017193541_hu16062570377661993079.png 330w,/learn/hugo&#43;github/Pasted%20image%2020241017193541_hu9774421046054730453.png 660w
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017193541_hu575517672831175414.png 1024w
+          
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017193541.png 1180w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<h4 id="32-上传到github远程仓库" class="relative group">3.2 上传到GitHub远程仓库 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#32-%e4%b8%8a%e4%bc%a0%e5%88%b0github%e8%bf%9c%e7%a8%8b%e4%bb%93%e5%ba%93" aria-label="Anchor">#</a></span></h4><ul>
+<li>
+<p>首先在<code>C:\Hugo\mysite\public</code>目录下进入终端运行</p>
+</li>
+<li>
+<p>初次推送到仓库的代码</p>
+</li>
+</ul>
+<pre tabindex="0"><code>git init
+git add .
+git commit -m &#34;first commit&#34;
+git branch -M main
+git remote add origin {你的github仓库地址}
+git push -u origin main
+</code></pre><p>-第一次上传需要输入账号密码，否则会出现以下报错：</p>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/Pasted%20image%2020241017195100_hu4366988962495392803.webp 330w,/learn/hugo&#43;github/Pasted%20image%2020241017195100_hu8786007234447437071.webp 660w
+            
+              
+                ,/learn/hugo&#43;github/Pasted%20image%2020241017195100_hu1111930335382369036.webp 795w
+              
+            
+            
+              
+                ,/learn/hugo&#43;github/Pasted%20image%2020241017195100_hu1111930335382369036.webp 795w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="795"
+        height="424"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/Pasted%20image%2020241017195100_hu10725299565592649244.png"
+          srcset="/learn/hugo&#43;github/Pasted%20image%2020241017195100_hu13417779364229756479.png 330w,/learn/hugo&#43;github/Pasted%20image%2020241017195100_hu10725299565592649244.png 660w
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017195100.png 795w
+          
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017195100.png 795w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<ul>
+<li>解决办法：</li>
+</ul>
+<pre tabindex="0"><code>git config --global user.email &#34;you@example.com&#34;# 你的GitHub注册邮箱
+git config --global user.name &#34;Your Name&#34;#你的GitHub用户名
+</code></pre><ul>
+<li>
+<p>运行后，你将获得一个验证的 device code
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="/learn/hugo&#43;github/Pasted%20image%2020241017195449_hu6125121932395764520.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="524"
+        height="396"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/Pasted%20image%2020241017195449.png"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+</li>
+<li>
+<p>转到：(<a href="https://github.com/login/device" target="_blank" rel="noreferrer">https://github.com/login/device</a>)  登录你的账号 并输入该device code
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/Pasted%20image%2020241017195611_hu361307987708593277.webp 330w,/learn/hugo&#43;github/Pasted%20image%2020241017195611_hu10349074997344723009.webp 660w
+            
+              ,/learn/hugo&#43;github/Pasted%20image%2020241017195611_hu11887933531097910578.webp 1024w
+            
+            
+              ,/learn/hugo&#43;github/Pasted%20image%2020241017195611_hu16117083401408217359.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1652"
+        height="930"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/Pasted%20image%2020241017195611_hu16623403832854161930.png"
+          srcset="/learn/hugo&#43;github/Pasted%20image%2020241017195611_hu16838566030718126789.png 330w,/learn/hugo&#43;github/Pasted%20image%2020241017195611_hu16623403832854161930.png 660w
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017195611_hu7109686649580494439.png 1024w
+          
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017195611_hu16337232711332806551.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+</li>
+<li>
+<p>使用<code>git push -u origin main</code> 可能会出现以下报错：
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/Pasted%20image%2020241017201012_hu8945879370424136374.webp 330w,/learn/hugo&#43;github/Pasted%20image%2020241017201012_hu9013527439216835965.webp 660w
+            
+              
+                ,/learn/hugo&#43;github/Pasted%20image%2020241017201012_hu8332300309332340362.webp 772w
+              
+            
+            
+              
+                ,/learn/hugo&#43;github/Pasted%20image%2020241017201012_hu8332300309332340362.webp 772w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="772"
+        height="191"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/Pasted%20image%2020241017201012_hu7956434821590379037.png"
+          srcset="/learn/hugo&#43;github/Pasted%20image%2020241017201012_hu7069901849079512906.png 330w,/learn/hugo&#43;github/Pasted%20image%2020241017201012_hu7956434821590379037.png 660w
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017201012.png 772w
+          
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017201012.png 772w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+</li>
+<li>
+<p>报错原因： 远程仓库的<code>main</code>  分支出现了本地没有的更新，本教程中是由于提前在仓库<code>AniKeLin.github.io</code>添加一个README文件导致的。</p>
+</li>
+<li>
+<p>解决办法：</p>
+</li>
+</ul>
+<pre tabindex="0"><code>git init
+git add .
+git commit -m &#34;update&#34;
+git branch -M main
+git remote set-url origin https://github.com/AniKeLin/AniKeLin.github.io
+git push -u origin main --force # 加force 表示强制推送
+</code></pre><ul>
+<li>推送成功后将看到：
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/Pasted%20image%2020241017202700_hu1293634247779671564.webp 330w,/learn/hugo&#43;github/Pasted%20image%2020241017202700_hu14772466294271607419.webp 660w
+            
+              
+                ,/learn/hugo&#43;github/Pasted%20image%2020241017202700_hu17148590339380698217.webp 715w
+              
+            
+            
+              
+                ,/learn/hugo&#43;github/Pasted%20image%2020241017202700_hu17148590339380698217.webp 715w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="715"
+        height="384"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/Pasted%20image%2020241017202700_hu12715303439090308706.png"
+          srcset="/learn/hugo&#43;github/Pasted%20image%2020241017202700_hu13501485315906979033.png 330w,/learn/hugo&#43;github/Pasted%20image%2020241017202700_hu12715303439090308706.png 660w
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017202700.png 715w
+          
+          
+            ,/learn/hugo&#43;github/Pasted%20image%2020241017202700.png 715w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</li>
+</ul>
+<h4 id="33--github-action-自动部署" class="relative group">3.3  Github Action 自动部署 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#33--github-action-%e8%87%aa%e5%8a%a8%e9%83%a8%e7%bd%b2" aria-label="Anchor">#</a></span></h4><ul>
+<li>
+<p>Github  Action 的token设置</p>
+<ul>
+<li>前往<code>profile</code>的<code>Settings -&gt; Developer Settings -&gt; Personal access tokens</code>，创建一个
+<code>token(classic)</code>。
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/image-5_hu10872540868993924097.webp 330w,/learn/hugo&#43;github/image-5_hu17964617616000652109.webp 660w
+            
+              ,/learn/hugo&#43;github/image-5_hu8055670624545068637.webp 1024w
+            
+            
+              ,/learn/hugo&#43;github/image-5_hu5325033117283573403.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1789"
+        height="700"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/image-5_hu16204359333555351977.png"
+          srcset="/learn/hugo&#43;github/image-5_hu5812936997694051832.png 330w,/learn/hugo&#43;github/image-5_hu16204359333555351977.png 660w
+          
+            ,/learn/hugo&#43;github/image-5_hu14490137668392831686.png 1024w
+          
+          
+            ,/learn/hugo&#43;github/image-5_hu8162250820714081811.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</li>
+<li>进入到<code>New personal access token (classic)</code>界面后，参照图片中红框的设置。
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/image-6_hu139561584384948998.webp 330w,/learn/hugo&#43;github/image-6_hu11039425420613567032.webp 660w
+            
+              ,/learn/hugo&#43;github/image-6_hu16587050288682828416.webp 1024w
+            
+            
+              ,/learn/hugo&#43;github/image-6_hu10011525460125423395.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1868"
+        height="906"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/image-6_hu2171311216176077480.png"
+          srcset="/learn/hugo&#43;github/image-6_hu9683574938751832153.png 330w,/learn/hugo&#43;github/image-6_hu2171311216176077480.png 660w
+          
+            ,/learn/hugo&#43;github/image-6_hu4428461333317573025.png 1024w
+          
+          
+            ,/learn/hugo&#43;github/image-6_hu9628815051883792177.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</li>
+<li>将生成的token 复制下来保存好。
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/image-7_hu11444535224107783749.webp 330w,/learn/hugo&#43;github/image-7_hu6679221833876603597.webp 660w
+            
+              ,/learn/hugo&#43;github/image-7_hu7290473994826428777.webp 1024w
+            
+            
+              
+                ,/learn/hugo&#43;github/image-7_hu2164913397935223650.webp 1268w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1268"
+        height="354"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/image-7_hu8404049387804789475.png"
+          srcset="/learn/hugo&#43;github/image-7_hu3654121475400712950.png 330w,/learn/hugo&#43;github/image-7_hu8404049387804789475.png 660w
+          
+            ,/learn/hugo&#43;github/image-7_hu13455001430568877437.png 1024w
+          
+          
+            ,/learn/hugo&#43;github/image-7.png 1268w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</li>
+</ul>
+</li>
+<li>
+<p>配置仓库的secret</p>
+<ul>
+<li>新建一个GitHub仓库，这里我将其命名为<code>Hugo</code>，这个仓库建议将其设置为<code>Private</code>。
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/image_hu16221254805697250478.webp 330w,/learn/hugo&#43;github/image_hu16082118647028104409.webp 660w
+            
+              ,/learn/hugo&#43;github/image_hu5451521975937890404.webp 1024w
+            
+            
+              
+                ,/learn/hugo&#43;github/image_hu4684767723178939906.webp 1208w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1208"
+        height="704"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/image_hu5406115705081128981.png"
+          srcset="/learn/hugo&#43;github/image_hu5210346690090894689.png 330w,/learn/hugo&#43;github/image_hu5406115705081128981.png 660w
+          
+            ,/learn/hugo&#43;github/image_hu16122611922265633562.png 1024w
+          
+          
+            ,/learn/hugo&#43;github/image.png 1208w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</li>
+<li>进入该仓库的<code>Settings</code>界面
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/image-1_hu10166498254021243561.webp 330w,/learn/hugo&#43;github/image-1_hu12424416733426447618.webp 660w
+            
+              ,/learn/hugo&#43;github/image-1_hu13095454800241692729.webp 1024w
+            
+            
+              ,/learn/hugo&#43;github/image-1_hu4054997324508784017.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1702"
+        height="387"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/image-1_hu6719976657422387452.png"
+          srcset="/learn/hugo&#43;github/image-1_hu6308669279292270799.png 330w,/learn/hugo&#43;github/image-1_hu6719976657422387452.png 660w
+          
+            ,/learn/hugo&#43;github/image-1_hu1410521545068603545.png 1024w
+          
+          
+            ,/learn/hugo&#43;github/image-1_hu10956850344741679013.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</li>
+<li>左边的菜单栏找到<code>Actions</code>界面
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="/learn/hugo&#43;github/image-2_hu9480836319071953806.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="543"
+        height="452"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/image-2.png"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</li>
+<li>为该仓库新建一个<code>Repository secrets</code>
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/image-8_hu12658731185275281907.webp 330w,/learn/hugo&#43;github/image-8_hu15298747807045972099.webp 660w
+            
+              ,/learn/hugo&#43;github/image-8_hu1587699813915073109.webp 1024w
+            
+            
+              ,/learn/hugo&#43;github/image-8_hu15338092943495507203.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1822"
+        height="862"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/image-8_hu345505917321929413.png"
+          srcset="/learn/hugo&#43;github/image-8_hu5878420937973412060.png 330w,/learn/hugo&#43;github/image-8_hu345505917321929413.png 660w
+          
+            ,/learn/hugo&#43;github/image-8_hu4009697704513689370.png 1024w
+          
+          
+            ,/learn/hugo&#43;github/image-8_hu2042241446660022938.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</li>
+<li>将<code>Name</code> 设置为：<code>GH_TOKEN</code> ， <code>Secret</code>为你刚刚保存的token代码。点击<code>add Secret</code>,进入下一步
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/learn/hugo&#43;github/image-9_hu15206477054563180084.webp 330w,/learn/hugo&#43;github/image-9_hu11582955613456667605.webp 660w
+            
+              ,/learn/hugo&#43;github/image-9_hu8343869123005331965.webp 1024w
+            
+            
+              ,/learn/hugo&#43;github/image-9_hu14802086198631641152.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1432"
+        height="693"
+        class="mx-auto my-0 rounded-md"
+        alt="Alt text"
+        loading="lazy" decoding="async"
+        
+          src="/learn/hugo&#43;github/image-9_hu12970622894916899508.png"
+          srcset="/learn/hugo&#43;github/image-9_hu9169127593065250700.png 330w,/learn/hugo&#43;github/image-9_hu12970622894916899508.png 660w
+          
+            ,/learn/hugo&#43;github/image-9_hu15446862162786986176.png 1024w
+          
+          
+            ,/learn/hugo&#43;github/image-9_hu3906563303249389068.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</li>
+</ul>
+</li>
+<li>
+<p>本地文件配置：</p>
+<ul>
+<li>在你的网站根目录<code>C:\Hugo\mysite</code>中创建一个<code>.github/workflows/deploy.yaml</code>文件，将以下内容复制进去:</li>
+</ul>
+<pre tabindex="0"><code class="language-name:" data-lang="name:">
+# 代码提交到main分支时触发github action
+on:
+push:
+	branches:
+	- main
+
+jobs:
+deploy:
+	runs-on: ubuntu-latest
+	steps:
+		- name: Checkout
+		uses: actions/checkout@v4
+		with:
+			fetch-depth: 0
+
+		- name: Setup Hugo
+		uses: peaceiris/actions-hugo@v3
+		with:
+			hugo-version: &#34;latest&#34;
+			extended: true
+
+		- name: Build Web
+		run: hugo -D
+
+		- name: Deploy Web
+		uses: peaceiris/actions-gh-pages@v4
+		with:
+			PERSONAL_TOKEN: ${{ secrets.GH_TOKEN }}
+			EXTERNAL_REPOSITORY: AniKeLin/AniKeLin.github.io #你的github名/你的仓库名
+			PUBLISH_BRANCH: main
+			PUBLISH_DIR: ./public
+			commit_message: auto deploy
+</code></pre><ul>
+<li>在你的网站根目录<code>C:\Hugo\mysite</code>中创建<code>.gitignore</code>文件，来避免提交不必要的文件。</li>
+</ul>
+<pre tabindex="0"><code># 自动生成的文件
+public
+resources
+.hugo_build.lock
+
+# hugo命令
+hugo.exe
+</code></pre><ul>
+<li>在你的网站根目录<code>C:\Hugo\mysite</code>中运行终端将所有文件在上传到仓库，上传成功后会触发Github Action，来自动部署你的静态页面。</li>
+</ul>
+<pre tabindex="0"><code>git init
+git add .
+git commit -m &#34;first commit&#34;
+git branch -M main
+git remote add origin https://github.com/AniKeLin/Hugo.git # 替换成{你的github仓库地址}
+git push -u origin main
+</code></pre><ul>
+<li>之后的每一次更新只需要在<code>C:\Hugo\mysite</code>目录下使用git推送到<code>AniKeLin/Hugo.git</code>仓库即可</li>
+</ul>
+<div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
+  <span class="pe-3 text-primary-400">
+    <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
+</span>
+  </span>
+  <span class="dark:text-neutral-300"><strong>Note</strong> 后续每次本地文件更新后可以使用以下代码更新远程仓库：</span>
+</div>
+
+<pre tabindex="0"><code>git init
+git remote set-url origin https://github.com/AniKeLin/Hugo.git
+git add .
+git commit -m &#34;update&#34;
+git push 
+</code></pre></li>
+</ul>
+<h3 id="补充" class="relative group">补充 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%a1%a5%e5%85%85" aria-label="Anchor">#</a></span></h3><h4 id="报错情况" class="relative group">报错情况 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%8a%a5%e9%94%99%e6%83%85%e5%86%b5" aria-label="Anchor">#</a></span></h4><p><strong>自动部署时出现：</strong></p>
+<pre tabindex="0"><code>Run peaceiris/actions-gh-pages@v4 [INFO] Usage https://github.com/peaceiris/actions-gh-pages#readme Dump inputs Setup auth token Prepare publishing assets Setup Git config Create a commit Push the commit or tag /usr/bin/git push origin main remote: Permission to KeL1n1995/KeL1n1995.github.io.git denied to github-actions[bot].  
+fatal: unable to access &#39;https://github.com/KeL1n1995/KeL1n1995.github.io.git/&#39;: The requested URL returned error: 403 Error: Action failed with &#34;The process &#39;/usr/bin/git&#39; failed with exit code 128&#34;
+</code></pre><p><strong>解决方法：</strong></p>
+<ol>
+<li><strong>提供正确的 Token 权限</strong></li>
+</ol>
+<p>确保 GitHub Actions 拥有访问仓库的权限。你可以使用 <code>secrets</code> 来安全地提供令牌。</p>
+<ol start="2">
+<li>
+<p><strong>生成 GitHub Personal Access Token (PAT)</strong>：</p>
+<ul>
+<li>访问 <a href="https://github.com/settings/tokens" target="_blank" rel="noreferrer">GitHub 的 Personal Access Token 页面</a>。</li>
+<li>创建一个新的 token，勾选 <code>repo</code> 权限（用于访问私有仓库）。</li>
+<li>复制生成的 token。</li>
+</ul>
+</li>
+<li>
+<p><strong>将 token 添加到 GitHub Actions secrets</strong>：</p>
+<ul>
+<li>在你的 GitHub 仓库中，进入 <strong>Settings</strong> -&gt; <strong>Secrets and variables</strong> -&gt; <strong>Actions</strong>。</li>
+<li>点击 <strong>New repository secret</strong>，命名为 <code>GH_TOKEN</code>（或者任何适当的名称），然后将你刚刚创建的 Personal Access Token 作为值。
+<div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
+  <span class="pe-3 text-primary-400">
+    <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
+</span>
+  </span>
+  <span class="dark:text-neutral-300"><strong>注意</strong> 这里设置的是<code>secret</code> 而不是 <code>environment variable</code>！</span>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+  <div class="flex">
+    
+    
+    
+      
+      
+        
+        
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="!mb-0 !mt-0 me-4 w-24 h-auto rounded-full"
+      
+    >
+      
+      
+      
+      
+      <img
+        width="1080"
+        height="1080"
+        class="!mb-0 !mt-0 me-4 w-24 h-auto rounded-full"
+        alt="KeLin Cheng"
+        loading="lazy" decoding="async"
+        
+          src="/img/author_hu6311480428133163022.jpg"
+          srcset="/img/author_hu7780559591887432719.jpg 330w,/img/author_hu6311480428133163022.jpg 660w
+          
+            ,/img/author_hu1049530886349027043.jpg 1024w
+          
+          
+            ,/img/author.jpg 1080w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+      
+    
+    <div class="place-self-center">
+      
+        <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+          Author
+        </div>
+        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+          KeLin Cheng
+        </div>
+      
+      
+        <div class="text-sm text-neutral-700 dark:text-neutral-400">A novice researcher focused on systems and synthetic biology.</div>
+      
+      <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="https://github.com/KeL1n1995/"
+          target="_blank"
+          aria-label="Github"
+          rel="me noopener noreferrer"
+          ></a
+        >
+      
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="knightl1n1995@outlook.com"
+          target="_blank"
+          aria-label="Email"
+          rel="me noopener noreferrer"
+          ></a
+        >
+      
+    
+  </div>
+
+</div>
+    </div>
+  </div>
+
+
+      
+
+      
+  
+    
+    
+    
+      
+      
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+        </span>
+        <span>
+          
+            <a class="group flex text-right" href="/learn/hugonote/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >【Git Learn】Git常用语法笔记</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-10-14 00:00:00 &#43;0000 UTC">2024-10-14</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[-2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&rarr;</span
+                ><span class="ltr:hidden rtl:inline">&larr;</span></span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+        
+          <div class="pt-3">
+            <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+            <div class="pt-3">
+              
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https:\/\/kel1n1995.github.io\/learn\/hugo\u002bgithub\/';  
+      this.page.identifier = 'https:\/\/kel1n1995.github.io\/learn\/hugo\u002bgithub\/'; 
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://kel1n1995.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+
+
+            </div>
+          </div>
+        
+      
+    </footer>
+  </article>
+
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="Scroll to top"
+            title="Scroll to top"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            © 2024 Kelin | Zhao-Lab
+        </p>
+      
+      
+      
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+          
+          
+          Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://github.com/jpanther/congo" target="_blank" rel="noopener noreferrer">Congo</a>
+        </p>
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+        <div
+          class="me-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        >
+          <button id="appearance-switcher-0" type="button" aria-label="appearance switcher">
+            <div
+              class="flex h-12 w-12 items-center justify-center dark:hidden"
+              title="Switch to dark appearance"
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+            </div>
+            <div
+              class="hidden h-12 w-12 items-center justify-center dark:flex"
+              title="Switch to light appearance"
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+            </div>
+          </button>
+        </div>
+      
+    </div>
+  </div>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://kel1n1995.github.io/"
+>
+  <div
+    id="search-modal"
+    class="top-20 mx-auto flex min-h-0 w-full max-w-3xl flex-col rounded-md border border-neutral-200 bg-neutral shadow-lg dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex flex-none items-center justify-between px-2">
+      <form class="flex min-w-0 flex-auto items-center">
+        <div class="flex h-8 w-8 items-center justify-center text-neutral-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="mx-1 flex h-12 flex-auto appearance-none bg-transparent focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex h-8 w-8 items-center justify-center text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)"
+      >
+        <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto overflow-auto px-2">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>
