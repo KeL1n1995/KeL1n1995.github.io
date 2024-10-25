@@ -4,8 +4,8 @@
   
     
       <url>
-            <loc>https://kel1n1995.github.io/learn/hugo&#43;github/</loc>
-            <lastmod>2024-10-18T00:00:00+00:00</lastmod>
+            <loc>https://kel1n1995.github.io/learn/hugonote-2/</loc>
+            <lastmod>2024-10-25T00:00:00+00:00</lastmod>
           </url>
     
   
@@ -16,7 +16,7 @@
     
       <url>
             <loc>https://kel1n1995.github.io/learn/</loc>
-            <lastmod>2024-10-18T00:00:00+00:00</lastmod>
+            <lastmod>2024-10-25T00:00:00+00:00</lastmod>
             <xhtml:link
               rel="alternate"
               hreflang="zh-hans"
@@ -35,7 +35,7 @@
     
       <url>
             <loc>https://kel1n1995.github.io/</loc>
-            <lastmod>2024-10-18T00:00:00+00:00</lastmod>
+            <lastmod>2024-10-25T00:00:00+00:00</lastmod>
             <xhtml:link
               rel="alternate"
               hreflang="zh-hans"
@@ -51,7 +51,14 @@
   
     
       <url>
-            <loc>https://kel1n1995.github.io/learn/hugonote_1/</loc>
+            <loc>https://kel1n1995.github.io/learn/hugonote-1/</loc>
+            <lastmod>2024-10-18T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://kel1n1995.github.io/learn/gitnote-1/</loc>
             <lastmod>2024-10-14T00:00:00+00:00</lastmod>
           </url>
     
@@ -109,17 +116,17 @@
   
     
       <url>
-            <loc>https://kel1n1995.github.io/literature/note1/</loc>
+            <loc>https://kel1n1995.github.io/literature/note-1/</loc>
             <lastmod>2023-04-14T00:00:00+00:00</lastmod>
             <xhtml:link
               rel="alternate"
               hreflang="zh-hans"
-              href="https://kel1n1995.github.io/zh-hans/literature/note1/"
+              href="https://kel1n1995.github.io/zh-hans/literature/note-1/"
               />
             <xhtml:link
               rel="alternate"
               hreflang="en"
-              href="https://kel1n1995.github.io/literature/note1/"
+              href="https://kel1n1995.github.io/literature/note-1/"
               />
           </url>
     
