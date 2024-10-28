@@ -15,7 +15,7 @@
 ><head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#FFFFFF" />
+  <meta name="theme-color" content="#42eff5" />
   
   <title>【Learn】为Hugo网站添加评论系统 &middot; KeLin&#39;s Homepage</title>
     <meta name="title" content="【Learn】为Hugo网站添加评论系统 &middot; KeLin&#39;s Homepage" />
@@ -134,7 +134,7 @@
     "keywords": ["Hugo","Github"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "95"
+    "wordCount": "93"
   }
   </script>
     
@@ -517,9 +517,8 @@
 
 <hr>
 <h3 id="step-1" class="relative group">Step 1 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#step-1" aria-label="Anchor">#</a></span></h3><ol>
-<li>输入网址：https://disqus.com/ 打开Disqus官网。注册一个账号,也可以使用微软或者谷歌账号登陆。</li>
-<li>登录后，点击<code>Get Started</code>。</li>
-<li>填写完基本配置后，保存你填写的<code>Shortname</code>。
+<li>打开<a href="https://disqus.com/" target="_blank" rel="noreferrer">Disqus官网</a>注册一个账号,也可以使用微软或者谷歌账号登陆。</li>
+<li>登录后，点击<code>Get Started</code>。按照步骤填写完基本配置后，保存你填写的<code>Shortname</code>。
 
 
 
@@ -586,7 +585,7 @@
 </li>
 </ol>
 <h3 id="step-2" class="relative group">Step 2 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#step-2" aria-label="Anchor">#</a></span></h3><ol>
-<li>生成一个<code>layouts/partials/comments.html</code> ，或者直接<a href="/downloads/comments.html">下载</a> (鼠标右击 -&gt; 链接另存为)</li>
+<li>生成一个<code>layouts/partials/comments.html</code> 文件，或者直接<a href="/downloads/comments.html">下载</a> (鼠标右击 -&gt; 链接另存为)</li>
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">{{ if .Site.Config.Services.Disqus.Shortname }}
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;disqus_thread&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
