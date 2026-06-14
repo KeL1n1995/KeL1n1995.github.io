@@ -1,9 +1,60 @@
 // Add your own custom styles here
 
+// social icons dark mode fix
 .dark .social-icons li a {
   color: #121212;
 }
 
+// Chinese text first-line indent
 .text-indent-2em {
   text-indent: 2em;
+}
+
+// callout boxes
+.callout {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid #717171;
+  border-radius: 0 8px 8px 0;
+  background: #f6f6f6;
+
+  p {
+    margin: 0.25rem 0;
+  }
+
+  ul, ol {
+    margin: 0.25rem 0;
+    padding-left: 1.5rem;
+  }
+}
+
+.dark .callout {
+  background: #222;
+}
+
+.callout-question {
+  border-left-color: #2563eb;
+  background: #eff6ff;
+}
+
+.dark .callout-question {
+  background: #1e293b;
+}
+
+.callout-ref {
+  border-left-color: #717171;
+  background: #f6f6f6;
+}
+
+.dark .callout-ref {
+  background: #222;
+}
+
+.callout-summary {
+  border-left-color: #059669;
+  background: #ecfdf5;
+}
+
+.dark .callout-summary {
+  background: #0f1f18;
 }

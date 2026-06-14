@@ -36,3 +36,22 @@ showComments = true
   [services.disqus]
     shortname = 'kel1n1995'
 ```
+
+<div class="callout callout-ref">
+
+**参考文献**
+
+- Disqus 官方文档. https://help.disqus.com/
+- Giscus 文档. https://giscus.app/zh-CN
+- Hugo Disqus 内部模板. https://gohugo.io/templates/internal/#disqus
+
+</div>
+
+<div class="callout callout-question">
+
+**思考题**
+
+1. Disqus 使用方便但存在隐私问题（第三方追踪、免费版有广告）。从数据所有权、用户隐私和维护成本三个维度对比 Disqus 和 Giscus，你会为学术博客推荐哪一个？为什么？
+2. 如果选择自托管评论系统（如 Isso、Remark42），需要哪些额外的基础设施和维护工作？在什么条件下自托管是值得的？
+
+</div>

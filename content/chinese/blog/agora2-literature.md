@@ -26,3 +26,21 @@ draft: false
 3. 在药物失活、活化、解毒或再毒性化中发挥作用。
 
 因此，肠道微生物的应用必须考虑饮食、遗传和基于个性化微生物组的医疗干预。为了预测这些干预措施，了解不同人类微生物群体中药物转化反应的分布和化学计量关系至关重要。
+
+<div class="callout callout-ref">
+
+**参考文献**
+
+- Heinken, A., Hertel, J., Acharya, G. et al. Genome-scale metabolic reconstruction of 7,302 human microorganisms for personalized medicine. *Nature Biotechnology* 41, 1320–1331 (2023). https://doi.org/10.1038/s41587-022-01628-0
+- Magnusdottir, I., et al. (2017). Generation of genome-scale metabolic reconstructions for 773 members of the human gut microbiota. *Nature Biotechnology*, 35(1), 81–89.（前身模型 AGORA1）
+
+</div>
+
+<div class="callout callout-question">
+
+**思考题**
+
+1. AGORA2 覆盖了 7,302 株菌株，但人类肠道中的微生物物种远多于此。模型覆盖度和模型准确度之间的主要权衡是什么？你会如何决定优先重建哪些菌株？
+2. 设计一个实验来验证模型对特定肠道微生物药物代谢能力的预测——你会采用什么 *in vitro* 或 *in vivo* 方法？各自的优缺点是什么？
+
+</div>

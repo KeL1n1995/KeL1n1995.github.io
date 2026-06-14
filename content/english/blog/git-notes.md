@@ -79,3 +79,21 @@ git pull origin main
 ```bash
 git clone <repository-url>
 ```
+
+<div class="callout callout-ref">
+
+**References**
+
+- Git Official Documentation. https://git-scm.com/doc
+- Chacon, S. & Straub, B. (2014). *Pro Git* (2nd ed.). Apress. https://git-scm.com/book/en/v2
+
+</div>
+
+<div class="callout callout-question">
+
+**Practice Exercises**
+
+1. Create a new branch, make three commits on different files, then use `git rebase -i` to squash them into a single commit. What happens to the commit history, and why might you want to use rebase vs. merge?
+2. Simulate a merge conflict: have two branches modify the same line of the same file, then practice resolving the conflict manually. What strategies does Git provide to help with conflict resolution?
+
+</div>

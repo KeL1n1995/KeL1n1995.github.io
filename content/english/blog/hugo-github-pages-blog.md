@@ -71,3 +71,22 @@ Configure GitHub Personal Access Token (PAT) in Settings → Developer Settings.
 ## 4. Notes
 
 Create two repositories: one for static pages (`username.github.io`) and one for source code (e.g., `Hugo.git`).
+
+<div class="callout callout-ref">
+
+**References**
+
+- Hugo Official Documentation. https://gohugo.io/documentation/
+- GitHub Pages Documentation. https://docs.github.com/en/pages
+- Jimmy Song. Building GitHub Pages with Hugo. https://jimmysong.io/blog/building-github-pages-with-hugo/
+
+</div>
+
+<div class="callout callout-question">
+
+**Discussion Questions**
+
+1. Now that GitHub Actions has simplified deployment to a single-repository workflow (source and output in the same repo), what are the remaining advantages and disadvantages of the two-repository approach described in this tutorial?
+2. Compared to other static site generators (Jekyll, Next.js, Astro), what specific design decisions make Hugo particularly well-suited for personal academic blogs? Under what circumstances would you choose a different tool?
+
+</div>

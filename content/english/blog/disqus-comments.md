@@ -34,3 +34,22 @@ In `hugo.toml`:
   [services.disqus]
     shortname = 'your-shortname'
 ```
+
+<div class="callout callout-ref">
+
+**References**
+
+- Disqus Official Documentation. https://help.disqus.com/
+- Giscus Documentation. https://giscus.app/
+- Hugo Disqus Template. https://gohugo.io/templates/internal/#disqus
+
+</div>
+
+<div class="callout callout-question">
+
+**Discussion Questions**
+
+1. Disqus is convenient but raises privacy concerns (third-party tracking, ads in free tier). Compare Disqus and Giscus in terms of data ownership, user privacy, and maintenance burden. Which would you recommend for an academic blog and why?
+2. If you were to self-host a comment system (e.g., Isso, Remark42), what additional infrastructure and maintenance would be required? Under what circumstances is self-hosting worth the effort?
+
+</div>

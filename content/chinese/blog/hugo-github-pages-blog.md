@@ -65,3 +65,23 @@ Hugo 是一个领先的静态网站生成器。优点：1. 构建速度极快。
 ### 4.2 错误情况
 
 **自动部署时出现：** 403 错误。解决方案：提供正确的 Token 权限。检查 GitHub Personal Access Token (PAT)，将 token 添加到 GitHub Actions secrets 中。
+
+<div class="callout callout-ref">
+
+**参考文献**
+
+- Hugo 官方文档. https://gohugo.io/documentation/
+- GitHub Pages 文档. https://docs.github.com/en/pages
+- Jimmy Song. 使用 Hugo 构建 GitHub Pages. https://jimmysong.io/blog/building-github-pages-with-hugo/
+- 知乎专栏. Hugo + GitHub Pages 博客部署教程. https://zhuanlan.zhihu.com/p/573386870
+
+</div>
+
+<div class="callout callout-question">
+
+**思考题**
+
+1. 如今 GitHub Actions 已经可以简化到单个仓库完成源码管理和自动部署（本文描述的双仓库方案的进阶版），你觉得单仓库相比双仓库方案有哪些新的优缺点？你会如何选？
+2. 与 Jekyll、Next.js、Astro 等其他静态网站生成器相比，Hugo 的哪些设计特点让它特别适合个人学术博客？在什么场景下你会选择其他工具？
+
+</div>

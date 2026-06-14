@@ -72,3 +72,21 @@ git rm -r *
 git commit -m "clear"
 git push
 ```
+
+<div class="callout callout-ref">
+
+**参考文献**
+
+- Git 官方文档. https://git-scm.com/doc
+- Chacon, S. & Straub, B. (2014). *Pro Git*（第 2 版）. Apress. https://git-scm.com/book/zh/v2
+
+</div>
+
+<div class="callout callout-question">
+
+**练习**
+
+1. 创建一个新分支，在三个不同文件上各做一次 commit，然后用 `git rebase -i` 将它们压缩为一个 commit。提交历史发生了什么变化？什么场景下应该用 rebase 而非 merge？
+2. 模拟一次合并冲突：让两个分支修改同一个文件的同一行，然后练习手动解决冲突。Git 提供了哪些工具和策略来辅助冲突解决？
+
+</div>
