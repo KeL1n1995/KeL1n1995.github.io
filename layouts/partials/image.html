@@ -1,0 +1,29 @@
+{{ $img := "" }}
+{{ $src := .Src }}
+{{ $size := .Size | default "200x200" }}
+{{ $class := .Class }}
+{{ $alt := .Alt }}
+
+{{ if .Context }}
+  {{ with .Context.Resources.Get $src }}
+    {{ $img = .Fill $size }}
+  {{ end }}
+{{ end }}
+
+{{ if not $img }}
+  {{ with resources.Get $src }}
+    {{ $img = .Fill $size }}
+  {{ end }}
+{{ end }}
+
+{{ if not $img }}
+  {{ with resources.Get (printf "images/%s" $src) }}
+    {{ $img = .Fill $size }}
+  {{ end }}
+{{ end }}
+
+{{ if $img }}
+  <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $alt }}" class="{{ $class }}" loading="{{ .Loading | default "lazy" }}">
+{{ else }}
+  <img src="{{ $src }}" alt="{{ $alt }}" class="{{ $class }}" loading="{{ .Loading | default "lazy" }}">
+{{ end }}

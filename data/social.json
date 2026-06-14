@@ -1,0 +1,14 @@
+{
+  "main": [
+    {
+      "name": "github",
+      "icon": "fab fa-github",
+      "link": "https://github.com/KeL1n1995/"
+    },
+    {
+      "name": "email",
+      "icon": "fas fa-envelope",
+      "link": "mailto:knightl1n1995@outlook.com"
+    }
+  ]
+}

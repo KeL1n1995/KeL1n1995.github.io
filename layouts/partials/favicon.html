@@ -1,0 +1,4 @@
+{{- with site.Params.favicon }}
+<link rel="icon" href="{{ . | absURL }}">
+<link rel="apple-touch-icon" href="{{ . | absURL }}">
+{{ end }}

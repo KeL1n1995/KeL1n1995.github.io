@@ -1,0 +1,8 @@
+{{ if site.Params.search.enable }}
+<script>
+  var searchData = {
+    indexURL: {{ "searchindex.json" | absURL }},
+    includeSections: {{ site.Params.search.include_sections }}
+  }
+</script>
+{{ end }}

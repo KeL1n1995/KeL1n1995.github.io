@@ -1,0 +1,61 @@
+{{ define "main" }}
+  {{ with .Params.banner }}
+    <section class="section pt-14">
+      <div class="container">
+        <div class="row justify-center">
+          <div class="lg:col-7 md:col-9 mb-8 text-center">
+            <h1 class="mb-4 text-h3 lg:text-h1">
+              {{ .title | markdownify }}
+            </h1>
+            <p class="mb-8">
+              {{ .content | markdownify }}
+            </p>
+            {{ with .button }}
+              {{ if .enable }}
+                <a
+                  class="btn btn-primary"
+                  href="{{ .link | absURL }}"
+                  {{ if strings.HasPrefix .link `http` }}
+                    target="_blank" rel="noopener"
+                  {{ end }}>
+                  {{ .label }}
+                  <i class="fa fa-arrow-right pl-2"></i>
+                </a>
+              {{ end }}
+            {{ end }}
+          </div>
+          {{ with .image }}
+            <div class="col-12">
+              {{ partial "image" (dict "Src" . "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{ $posts := where site.RegularPages "Section" "in" site.Params.mainSections | first 3 }}
+  {{ if $posts }}
+    <section class="section">
+      <div class="container">
+        <div class="text-center mb-12">
+          <h2 class="h3">
+            {{ if eq .Language.Lang `zh-hans` }}最新文章{{ else }}Recent Posts{{ end }}
+          </h2>
+        </div>
+        <div class="row">
+          {{ range $posts }}
+            <div class="md:col-6 lg:col-4 mb-14">
+              {{ partial "components/blog-card" . }}
+            </div>
+          {{ end }}
+        </div>
+        <div class="text-center mt-4">
+          <a class="btn btn-outline-primary" href="{{ `blog` | relLangURL }}">
+            {{ if eq .Language.Lang `zh-hans` }}查看全部{{ else }}View All Posts{{ end }}
+          </a>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}

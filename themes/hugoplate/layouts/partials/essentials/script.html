@@ -1,0 +1,36 @@
+{{ $scriptFiles := slice }}
+{{ range site.Params.plugins.js }}
+  {{ if findRE "^http" .link }}
+    <script src="{{ .link | relURL }}" type="application/javascript" {{ .attributes | safeHTMLAttr }}></script>
+  {{ else }}
+    {{ with resources.Get .link }}
+      {{ $scriptFiles = $scriptFiles | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ with resources.Get "js/main.js" }}
+  {{ $scriptFiles = $scriptFiles | append . }}
+{{ end }}
+
+{{ with $scriptFiles | resources.Concat "js/script.js" }}
+  {{ if hugo.IsProduction }}
+    {{ . | minify | fingerprint }}
+  {{ end }}
+  <script crossorigin="anonymous" integrity="{{ .Data.Integrity }}" src="{{ .RelPermalink }}"></script>
+{{ end }}
+
+<!-- progressive web app -->
+{{ partialCached "pwa.html" . }}
+
+
+<!-- cookie consent -->
+{{ partialCached "cookie-consent.html" . }}
+
+
+<!-- google adsense -->
+{{ partialCached "adsense-script.html" . }}
+
+
+<!-- cookie consent -->
+{{ partialCached "announcement-script.html" . }}

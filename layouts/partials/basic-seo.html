@@ -1,0 +1,14 @@
+<meta name="description" content="{{ site.Params.metadata.description }}">
+<meta name="keywords" content="{{ delimit site.Params.metadata.keywords `, ` }}">
+<meta name="author" content="{{ site.Params.metadata.author }}">
+
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ site.Params.metadata.description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ with site.Params.metadata.image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ site.Params.metadata.description }}">
+{{ with site.Params.metadata.twitter }}<meta name="twitter:site" content="@{{ . }}">{{ end }}
