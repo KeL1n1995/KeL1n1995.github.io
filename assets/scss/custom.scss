@@ -2,7 +2,7 @@
 // SYNTHETIC BIOLOGY — BIO-DIGITAL LABORATORY
 // =============================================
 
-// ----- CSS Variables (light mode base) -----
+// ----- CSS Variables (light mode base — muted tones) -----
 :root {
   --gfp: #16a34a;
   --gfp-glow: #16a34a30;
@@ -18,9 +18,17 @@
   --title-color: #1a2a1a;
   --badge-bg: rgba(255, 255, 255, 0.85);
   --card-hover-border: rgba(22, 163, 74, 0.35);
+
+  // SynBio hero SVG — light mode muted
+  --sb-left: #be185d;
+  --sb-left-alt: #db2777;
+  --sb-right: #b8860b;
+  --sb-right-fill: #966408;
+  --sb-center: #0369a1;
+  --sb-center-alt: #0284c7;
 }
 
-// ----- Dark mode overrides -----
+// ----- Dark mode overrides — vibrant fluorescent -----
 .dark {
   --gfp: #4ade80;
   --gfp-glow: #4ade8040;
@@ -36,6 +44,14 @@
   --title-color: #ffffff;
   --badge-bg: rgba(15, 21, 15, 0.85);
   --card-hover-border: rgba(74, 222, 128, 0.3);
+
+  // SynBio hero SVG — dark mode vibrant
+  --sb-left: #ec4899;
+  --sb-left-alt: #f472b6;
+  --sb-right: #facc15;
+  --sb-right-fill: #eab308;
+  --sb-center: #0376bc;
+  --sb-center-alt: #0891b2;
 }
 
 // ----- Keyframes -----
@@ -125,12 +141,6 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-// Rotate slowly
-@keyframes rotate-slow {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
 }
 
 // Pipette drop
@@ -224,24 +234,28 @@
   &:nth-child(15) { left: 88%; animation-delay: 2.5s; color: var(--gfp); }
 }
 
-// DNA helix SVG
-.dna-container {
-  position: absolute;
-  right: -40px;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 0.05;
-  pointer-events: none;
-  z-index: 0;
+// SynBio hero animation
+.synbio-hero {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  opacity: 0.85;
 
   svg {
-    width: 300px;
-    height: 600px;
+    width: 100%;
+    height: auto;
+    display: block;
   }
 }
 
-.dark .dna-container {
-  opacity: 0.08;
+.dark .synbio-hero {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .synbio-hero {
+    max-width: 100%;
+  }
 }
 
 // ----- Avatar -----
@@ -769,14 +783,6 @@ html {
     padding: 4rem 0;
   }
 
-  .dna-container {
-    right: -100px;
-    svg {
-      width: 200px;
-      height: 400px;
-    }
-  }
-
   .hero-title {
     font-size: clamp(1.8rem, 8vw, 2.5rem);
   }
@@ -786,67 +792,3 @@ html {
   }
 }
 
-// ----- 3D Rotating DNA double helix -----
-.dna-3d {
-  width: 60px;
-  height: 150px;
-  perspective: 300px;
-}
-
-.dna-cylinder {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  animation: dna-spin 6s linear infinite;
-}
-
-.dna-rung {
-  position: absolute;
-  left: 50%;
-  width: 40px;
-  margin-left: -20px;
-  height: 1px;
-  top: calc(var(--i) * 12px + 4px);
-  transform: rotateY(calc(var(--i) * 30deg));
-  transform-style: preserve-3d;
-
-  .bond {
-    position: absolute;
-    top: -1.5px;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--gfp), var(--dapi));
-    border-radius: 1.5px;
-    opacity: 0.6;
-  }
-
-  .dot-left,
-  .dot-right {
-    position: absolute;
-    top: -6px;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-  }
-
-  .dot-left {
-    left: -7px;
-    background: radial-gradient(circle at 35% 35%, #bbf7d0, var(--gfp) 50%, #15803d 100%);
-    transform: translateZ(18px);
-    box-shadow: 0 0 10px var(--gfp-glow), 0 2px 4px rgba(0,0,0,0.3);
-  }
-
-  .dot-right {
-    right: -7px;
-    background: radial-gradient(circle at 35% 35%, #c7d2fe, var(--dapi) 50%, #3730a3 100%);
-    transform: translateZ(-18px);
-    box-shadow: 0 0 10px var(--dapi-glow), 0 2px 4px rgba(0,0,0,0.3);
-  }
-}
-
-@keyframes dna-spin {
-  0%   { transform: rotateX(20deg) rotateY(0deg); }
-  100% { transform: rotateX(20deg) rotateY(360deg); }
-}
