@@ -1,7 +1,7 @@
 ---
 banner:
   title: "KeLin's Homepage"
-  content: "A platform for sharing my research progress and study notes."
+  content: "Exploring the programmable frontier where computation meets living systems — synthetic biology, systems modeling, and the engineering of biological complexity."
   image: "/images/banner.jpg"
   button:
     enable: false

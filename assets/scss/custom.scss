@@ -1,16 +1,714 @@
-// Add your own custom styles here
+// =============================================
+// SYNTHETIC BIOLOGY — BIO-DIGITAL LABORATORY
+// =============================================
 
-// social icons dark mode fix
-.dark .social-icons li a {
-  color: #121212;
+// ----- CSS Variables (light mode base) -----
+:root {
+  --gfp: #16a34a;
+  --gfp-glow: #16a34a30;
+  --dapi: #6366f1;
+  --dapi-glow: #6366f130;
+  --mcherry: #ef4444;
+  --mcherry-glow: #ef444430;
+  --yfp: #eab308;
+  --agar: #ffffff;
+  --medium: #fafcf9;
+  --border-subtle: #d4e0d0;
+  --text-muted: #6b7d6b;
+  --title-color: #1a2a1a;
+  --badge-bg: rgba(255, 255, 255, 0.85);
+  --card-hover-border: rgba(22, 163, 74, 0.35);
 }
 
-// Chinese text first-line indent
+// ----- Dark mode overrides -----
+.dark {
+  --gfp: #4ade80;
+  --gfp-glow: #4ade8040;
+  --dapi: #818cf8;
+  --dapi-glow: #818cf840;
+  --mcherry: #f87171;
+  --mcherry-glow: #f8717140;
+  --yfp: #facc15;
+  --agar: #0f150f;
+  --medium: #080c08;
+  --border-subtle: #1a2a1a;
+  --text-muted: #889888;
+  --title-color: #ffffff;
+  --badge-bg: rgba(15, 21, 15, 0.85);
+  --card-hover-border: rgba(74, 222, 128, 0.3);
+}
+
+// ----- Keyframes -----
+
+// Floating ATCG particles
+@keyframes float-up {
+  0% {
+    transform: translateY(100vh) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.7;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-10vh) translateX(40px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes float-up-slow {
+  0% {
+    transform: translateY(100vh) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.5;
+  }
+  85% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-10vh) translateX(-30px) rotate(-270deg);
+    opacity: 0;
+  }
+}
+
+// DNA strand pulse
+@keyframes strand-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+// Glow breathing
+@keyframes glow-breathe {
+  0%, 100% {
+    box-shadow: 0 0 20px var(--gfp-glow), 0 0 60px var(--gfp-glow);
+  }
+  50% {
+    box-shadow: 0 0 40px var(--gfp-glow), 0 0 100px var(--gfp-glow), 0 0 140px var(--gfp-glow);
+  }
+}
+
+// Gel band pulse
+@keyframes band-pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+// Cursor blink
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+// Scan line
+@keyframes scan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+// Sequence scroll
+@keyframes sequence-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+// Staggered fade-in
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Rotate slowly
+@keyframes rotate-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+// Pipette drop
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+// ----- Hero Section -----
+.home-hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(74, 222, 128, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(129, 140, 248, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 60% 80%, rgba(248, 113, 113, 0.03) 0%, transparent 50%),
+    var(--medium);
+
+  // Microscope reticle lines
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(90deg, var(--border-subtle) 1px, transparent 1px),
+      linear-gradient(0deg, var(--border-subtle) 1px, transparent 1px);
+    background-size: 80px 80px;
+    opacity: 0.12;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+    pointer-events: none;
+  }
+
+  // Scan line overlay
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gfp-glow), transparent);
+    animation: scan 8s linear infinite;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+// Floating ATCG particles
+.atcg-particles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.atcg-particle {
+  position: absolute;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.2rem;
+  font-weight: 700;
+  animation: float-up 12s linear infinite;
+  opacity: 0;
+
+  &:nth-child(1) { left: 5%; animation-delay: 0s; color: var(--gfp); }
+  &:nth-child(2) { left: 15%; animation-delay: 2s; animation-duration: 15s; color: var(--dapi); }
+  &:nth-child(3) { left: 25%; animation-delay: 4s; color: var(--mcherry); }
+  &:nth-child(4) { left: 35%; animation-delay: 1s; animation-duration: 18s; color: var(--yfp); }
+  &:nth-child(5) { left: 45%; animation-delay: 6s; color: var(--gfp); }
+  &:nth-child(6) { left: 55%; animation-delay: 3s; animation-duration: 14s; color: var(--dapi); }
+  &:nth-child(7) { left: 65%; animation-delay: 7s; color: var(--mcherry); }
+  &:nth-child(8) { left: 75%; animation-delay: 5s; animation-duration: 16s; color: var(--yfp); }
+  &:nth-child(9) { left: 85%; animation-delay: 1.5s; color: var(--gfp); }
+  &:nth-child(10) { left: 92%; animation-delay: 4.5s; animation-duration: 13s; color: var(--dapi); }
+  &:nth-child(11) { left: 10%; animation-delay: 8s; animation-duration: 20s; color: var(--mcherry); }
+  &:nth-child(12) { left: 50%; animation-delay: 3.5s; animation-duration: 17s; color: var(--gfp); }
+  &:nth-child(13) { left: 70%; animation-delay: 9s; color: var(--dapi); }
+  &:nth-child(14) { left: 30%; animation-delay: 5.5s; animation-duration: 19s; color: var(--yfp); }
+  &:nth-child(15) { left: 88%; animation-delay: 2.5s; color: var(--gfp); }
+}
+
+// DNA helix SVG
+.dna-container {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+
+  svg {
+    width: 300px;
+    height: 600px;
+  }
+}
+
+.dark .dna-container {
+  opacity: 0.08;
+}
+
+// ----- Avatar -----
+.bio-avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--border-subtle);
+  animation: drop 0.6s ease-out;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+// Sequence badge
+.sequence-badge {
+  display: inline-flex;
+  gap: 2px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  padding: 0.4em 0.8em;
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  background: var(--badge-bg);
+  backdrop-filter: blur(10px);
+
+  span {
+    &:nth-child(4n+1) { color: var(--gfp); }   // A = green
+    &:nth-child(4n+2) { color: var(--dapi); }  // T = blue
+    &:nth-child(4n+3) { color: var(--mcherry); } // C = red
+    &:nth-child(4n+4) { color: var(--yfp); }   // G = yellow
+  }
+}
+
+// Hero title
+.hero-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--title-color);
+  animation: fade-in-up 0.8s ease-out;
+
+  .cursor {
+    display: inline-block;
+    width: 3px;
+    height: 0.9em;
+    background: var(--gfp);
+    margin-left: 0.1em;
+    vertical-align: text-bottom;
+    animation: blink 1s step-end infinite;
+    box-shadow: 0 0 10px var(--gfp-glow);
+  }
+}
+
+// Hero subtitle
+.hero-subtitle {
+  font-family: 'Crimson Pro', serif;
+  font-weight: 400;
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 560px;
+  animation: fade-in-up 0.8s ease-out 0.2s both;
+}
+
+// ----- Gel Electrophoresis Divider -----
+.gel-divider {
+  position: relative;
+  height: 6px;
+  margin: 3rem 0;
+  display: flex;
+  gap: 3px;
+  border-radius: 3px;
+  overflow: hidden;
+
+  .gel-band {
+    height: 100%;
+    border-radius: 2px;
+    animation: band-pulse 2s ease-in-out infinite;
+
+    &:nth-child(1) { width: 8%; background: var(--gfp); animation-delay: 0s; }
+    &:nth-child(2) { width: 12%; background: var(--dapi); animation-delay: 0.3s; }
+    &:nth-child(3) { width: 6%; background: var(--mcherry); animation-delay: 0.6s; }
+    &:nth-child(4) { width: 15%; background: var(--yfp); animation-delay: 0.9s; }
+    &:nth-child(5) { width: 4%; background: var(--gfp); animation-delay: 1.2s; }
+    &:nth-child(6) { width: 10%; background: var(--dapi); animation-delay: 1.5s; }
+    &:nth-child(7) { width: 7%; background: var(--mcherry); animation-delay: 0.4s; }
+    &:nth-child(8) { width: 9%; background: var(--yfp); animation-delay: 0.7s; }
+    &:nth-child(9) { width: 5%; background: var(--gfp); animation-delay: 1.0s; }
+    &:nth-child(10) { width: 11%; background: var(--dapi); animation-delay: 1.3s; }
+  }
+}
+
+// ----- Plasmid Map Circle (decorative) -----
+.plasmid-ring {
+  position: absolute;
+  border: 1px solid rgba(74, 222, 128, 0.15);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    background: var(--gfp);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 8px var(--gfp-glow);
+  }
+}
+
+// ----- Blog Cards (Synthetic Biology Style) -----
+.bio-card-grid {
+  position: relative;
+  z-index: 1;
+}
+
+.bio-card {
+  position: relative;
+  background: var(--agar);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 2rem;
+  height: 100%;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  overflow: hidden;
+  animation: drop 0.6s ease-out both;
+
+  // Fluorescent band at top — each card gets a different color
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    border-radius: 3px 3px 0 0;
+    transition: height 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  // Agarose texture
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 30% 20%, rgba(74, 222, 128, 0.02) 0%, transparent 50%),
+      radial-gradient(circle at 70% 60%, rgba(129, 140, 248, 0.02) 0%, transparent 50%);
+    pointer-events: none;
+    border-radius: 12px;
+  }
+
+  // GFP variant
+  &.bio-card-gfp::before {
+    background: linear-gradient(90deg, var(--gfp), #22c55e);
+    box-shadow: 0 0 12px var(--gfp-glow);
+  }
+
+  // DAPI variant
+  &.bio-card-dapi::before {
+    background: linear-gradient(90deg, var(--dapi), #6366f1);
+    box-shadow: 0 0 12px var(--dapi-glow);
+  }
+
+  // mCherry variant
+  &.bio-card-mcherry::before {
+    background: linear-gradient(90deg, var(--mcherry), #ef4444);
+    box-shadow: 0 0 12px var(--mcherry-glow);
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+    border-color: rgba(74, 222, 128, 0.3);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(74, 222, 128, 0.05);
+
+    &::before {
+      height: 5px;
+    }
+
+    &.bio-card-gfp {
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4), 0 0 40px rgba(74, 222, 128, 0.1);
+    }
+    &.bio-card-dapi {
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4), 0 0 40px rgba(129, 140, 248, 0.1);
+    }
+    &.bio-card-mcherry {
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4), 0 0 40px rgba(248, 113, 113, 0.1);
+    }
+  }
+}
+
+.bio-card-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  font-size: 1.15rem;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+  position: relative;
+  z-index: 2;
+
+  a {
+    color: var(--title-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--gfp);
+    }
+  }
+}
+
+.bio-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  position: relative;
+  z-index: 2;
+
+  a {
+    color: var(--dapi);
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover { color: #a5b4fc; }
+  }
+
+  .meta-sep {
+    color: var(--border-subtle);
+  }
+}
+
+.bio-card-summary {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  position: relative;
+  z-index: 2;
+}
+
+.bio-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--gfp);
+  text-decoration: none;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 2;
+  transition: gap 0.3s ease;
+
+  .arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    gap: 0.75rem;
+    .arrow { transform: translateX(3px); }
+  }
+}
+
+// ----- Section Title with gel underline -----
+.bio-section-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--title-color);
+  text-align: center;
+  margin-bottom: 0.5rem;
+
+  .accent {
+    color: var(--gfp);
+  }
+}
+
+.bio-section-underline {
+  width: 120px;
+  height: 3px;
+  margin: 0.5rem auto 3rem;
+  background: linear-gradient(90deg, var(--gfp), var(--dapi), var(--mcherry));
+  border-radius: 2px;
+  animation: glow-breathe 3s ease-in-out infinite;
+}
+
+// ----- Bio Button -----
+.btn-bio {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.75rem 1.75rem;
+  border: 1px solid var(--gfp);
+  border-radius: 8px;
+  color: var(--gfp);
+  background: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(74, 222, 128, 0.08);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover {
+    box-shadow: 0 0 30px var(--gfp-glow), inset 0 0 30px rgba(74, 222, 128, 0.05);
+
+    &::before {
+      opacity: 1;
+    }
+
+    .btn-arrow {
+      transform: translateX(3px);
+    }
+  }
+
+  .btn-arrow {
+    transition: transform 0.3s ease;
+  }
+}
+
+// ----- Sequence Ticker -----
+.sequence-ticker {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 0.5rem 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  opacity: 0.3;
+
+  .sequence-track {
+    display: flex;
+    white-space: nowrap;
+    animation: sequence-scroll 30s linear infinite;
+    width: max-content;
+  }
+
+  span {
+    &:nth-child(4n+1) { color: var(--gfp); }
+    &:nth-child(4n+2) { color: var(--dapi); }
+    &:nth-child(4n+3) { color: var(--mcherry); }
+    &:nth-child(4n+4) { color: var(--yfp); }
+  }
+}
+
+// ----- Dark Mode Specific Overrides -----
+.dark {
+  .home-hero::before {
+    opacity: 0.3;
+  }
+
+  .bio-card {
+    background: var(--agar);
+    border-color: var(--border-subtle);
+  }
+}
+
+// ----- Scroll Indicator -----
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-indicator {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 0.45;
+  text-decoration: none;
+  cursor: pointer;
+  animation: fade-in-up 0.8s ease-out 1s both;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+
+  &:hover span {
+    color: var(--gfp);
+  }
+
+  .scroll-chevron {
+    width: 18px;
+    height: 18px;
+    border-right: 2px solid var(--gfp);
+    border-bottom: 2px solid var(--gfp);
+    transform: rotate(45deg);
+    animation: chevron-bounce 2s ease-in-out infinite;
+  }
+}
+
+@keyframes chevron-bounce {
+  0%, 100% { transform: rotate(45deg) translateY(0); }
+  50% { transform: rotate(45deg) translateY(6px); }
+}
+
+// ----- Message bubbles (chat-style) -----
+.msg-bubble {
+  display: block;
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  background: var(--agar);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  border-top-left-radius: 4px;
+  font-family: 'Crimson Pro', serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--title-color);
+  position: relative;
+  max-width: 90%;
+
+  p {
+    margin: 0.3rem 0;
+  }
+}
+
+.dark .msg-bubble {
+  background: #161f16;
+  border-color: #243024;
+}
+
+// ----- Keep existing callout styles -----
 .text-indent-2em {
   text-indent: 2em;
 }
 
-// callout boxes
 .callout {
   margin: 1.5rem 0;
   padding: 1rem 1.25rem;
@@ -57,4 +755,98 @@
 
 .dark .callout-summary {
   background: #0f1f18;
+}
+
+// ----- Social icons dark mode fix -----
+.dark .social-icons li a {
+  color: #121212;
+}
+
+// ----- Responsive -----
+@media (max-width: 768px) {
+  .home-hero {
+    min-height: 80vh;
+    padding: 4rem 0;
+  }
+
+  .dna-container {
+    right: -100px;
+    svg {
+      width: 200px;
+      height: 400px;
+    }
+  }
+
+  .hero-title {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+  }
+
+  .bio-card {
+    padding: 1.5rem;
+  }
+}
+
+// ----- 3D Rotating DNA double helix -----
+.dna-3d {
+  width: 60px;
+  height: 150px;
+  perspective: 300px;
+}
+
+.dna-cylinder {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: dna-spin 6s linear infinite;
+}
+
+.dna-rung {
+  position: absolute;
+  left: 50%;
+  width: 40px;
+  margin-left: -20px;
+  height: 1px;
+  top: calc(var(--i) * 12px + 4px);
+  transform: rotateY(calc(var(--i) * 30deg));
+  transform-style: preserve-3d;
+
+  .bond {
+    position: absolute;
+    top: -1.5px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gfp), var(--dapi));
+    border-radius: 1.5px;
+    opacity: 0.6;
+  }
+
+  .dot-left,
+  .dot-right {
+    position: absolute;
+    top: -6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+  }
+
+  .dot-left {
+    left: -7px;
+    background: radial-gradient(circle at 35% 35%, #bbf7d0, var(--gfp) 50%, #15803d 100%);
+    transform: translateZ(18px);
+    box-shadow: 0 0 10px var(--gfp-glow), 0 2px 4px rgba(0,0,0,0.3);
+  }
+
+  .dot-right {
+    right: -7px;
+    background: radial-gradient(circle at 35% 35%, #c7d2fe, var(--dapi) 50%, #3730a3 100%);
+    transform: translateZ(-18px);
+    box-shadow: 0 0 10px var(--dapi-glow), 0 2px 4px rgba(0,0,0,0.3);
+  }
+}
+
+@keyframes dna-spin {
+  0%   { transform: rotateX(20deg) rotateY(0deg); }
+  100% { transform: rotateX(20deg) rotateY(360deg); }
 }

@@ -1,60 +1,214 @@
 {{ define "main" }}
   {{ with .Params.banner }}
-    <section class="section pt-14">
-      <div class="container">
+    <!-- ===== HERO SECTION ===== -->
+    <section class="home-hero">
+      <!-- Floating ATCG particles -->
+      <div class="atcg-particles" aria-hidden="true">
+        <span class="atcg-particle">A</span><span class="atcg-particle">T</span><span class="atcg-particle">C</span><span class="atcg-particle">G</span><span class="atcg-particle">A</span><span class="atcg-particle">T</span><span class="atcg-particle">G</span><span class="atcg-particle">C</span><span class="atcg-particle">A</span><span class="atcg-particle">T</span><span class="atcg-particle">G</span><span class="atcg-particle">C</span><span class="atcg-particle">A</span><span class="atcg-particle">T</span><span class="atcg-particle">G</span>
+      </div>
+
+      <!-- DNA Double Helix SVG -->
+      <div class="dna-container" aria-hidden="true">
+        <svg viewBox="0 0 200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="dnaGrad1" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#4ade80" stop-opacity="0"/>
+              <stop offset="25%" stop-color="#4ade80" stop-opacity="0.6"/>
+              <stop offset="50%" stop-color="#4ade80" stop-opacity="0.9"/>
+              <stop offset="75%" stop-color="#4ade80" stop-opacity="0.6"/>
+              <stop offset="100%" stop-color="#4ade80" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="dnaGrad2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#818cf8" stop-opacity="0"/>
+              <stop offset="25%" stop-color="#818cf8" stop-opacity="0.5"/>
+              <stop offset="50%" stop-color="#818cf8" stop-opacity="0.8"/>
+              <stop offset="75%" stop-color="#818cf8" stop-opacity="0.5"/>
+              <stop offset="100%" stop-color="#818cf8" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <!-- Strand 1 -->
+          <path d="M60,10 Q120,60 60,110 T60,210 T60,310 T60,390"
+                stroke="url(#dnaGrad1)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <!-- Strand 2 -->
+          <path d="M140,10 Q80,60 140,110 T140,210 T140,310 T140,390"
+                stroke="url(#dnaGrad2)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <!-- Rungs (base pairs) -->
+          <line x1="72" y1="35" x2="128" y2="35" stroke="#4ade80" stroke-width="1" opacity="0.5"/>
+          <line x1="66" y1="75" x2="134" y2="75" stroke="#818cf8" stroke-width="1" opacity="0.4"/>
+          <line x1="70" y1="115" x2="130" y2="115" stroke="#f87171" stroke-width="1" opacity="0.45"/>
+          <line x1="67" y1="155" x2="133" y2="155" stroke="#facc15" stroke-width="1" opacity="0.4"/>
+          <line x1="72" y1="195" x2="128" y2="195" stroke="#4ade80" stroke-width="1" opacity="0.5"/>
+          <line x1="66" y1="235" x2="134" y2="235" stroke="#818cf8" stroke-width="1" opacity="0.4"/>
+          <line x1="70" y1="275" x2="130" y2="275" stroke="#f87171" stroke-width="1" opacity="0.45"/>
+          <line x1="68" y1="315" x2="132" y2="315" stroke="#facc15" stroke-width="1" opacity="0.4"/>
+          <line x1="72" y1="355" x2="128" y2="355" stroke="#4ade80" stroke-width="1" opacity="0.5"/>
+          <!-- Base nodes -->
+          <circle cx="60" cy="10" r="4" fill="#4ade80" opacity="0.6"/>
+          <circle cx="140" cy="10" r="4" fill="#818cf8" opacity="0.6"/>
+          <circle cx="60" cy="390" r="4" fill="#4ade80" opacity="0.6"/>
+          <circle cx="140" cy="390" r="4" fill="#818cf8" opacity="0.6"/>
+        </svg>
+      </div>
+
+      <!-- Plasmid ring decoration -->
+      <div class="plasmid-ring" style="width:200px;height:200px;top:15%;left:-80px;opacity:0.4" aria-hidden="true"></div>
+      <div class="plasmid-ring" style="width:100px;height:100px;bottom:20%;right:-30px;opacity:0.3" aria-hidden="true"></div>
+
+      <div class="container" style="position:relative;z-index:2">
         <div class="row justify-center">
-          <div class="lg:col-7 md:col-9 mb-8 text-center">
-            <h1 class="mb-4 text-h3 lg:text-h1">
-              {{ .title | markdownify }}
+          <div class="lg:col-8 md:col-10 text-center">
+            <!-- Avatar -->
+            <div class="bio-avatar mx-auto mb-6">
+              <img src="/images/fivoce.jpg" alt="KeLin" />
+            </div>
+
+            <!-- Sequence badge -->
+            <div class="sequence-badge mb-6" aria-hidden="true">
+              <span>A</span><span>T</span><span>G</span><span>C</span>
+              <span>T</span><span>A</span><span>G</span><span>C</span>
+              <span>A</span><span>T</span><span>C</span><span>G</span>
+              <span>G</span><span>A</span><span>T</span><span>C</span>
+            </div>
+
+            <!-- Title -->
+            <h1 class="hero-title mb-6">
+              {{ .title | markdownify }}<span class="cursor" aria-hidden="true"></span>
             </h1>
-            <p class="mb-8">
+
+            <!-- Subtitle -->
+            <p class="hero-subtitle mx-auto mb-8">
               {{ .content | markdownify }}
             </p>
+
+            <!-- CTA button -->
             {{ with .button }}
               {{ if .enable }}
-                <a
-                  class="btn btn-primary"
-                  href="{{ .link | absURL }}"
-                  {{ if strings.HasPrefix .link `http` }}
-                    target="_blank" rel="noopener"
-                  {{ end }}>
+                <a class="btn-bio" href="{{ .link | absURL }}"
+                  {{ if strings.HasPrefix .link `http` }}target="_blank" rel="noopener"{{ end }}>
                   {{ .label }}
-                  <i class="fa fa-arrow-right pl-2"></i>
+                  <span class="btn-arrow">&rarr;</span>
                 </a>
               {{ end }}
             {{ end }}
-          </div>
-          {{ with .image }}
-            <div class="col-12">
-              {{ partial "image" (dict "Src" . "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
+
+            <!-- 3D Rotating DNA double helix -->
+            <div class="dna-3d mt-8 mx-auto" aria-hidden="true">
+              <div class="dna-cylinder">
+                {{ range seq 0 11 }}
+                <div class="dna-rung" style="--i:{{ . }}">
+                  <span class="bond"></span>
+                  <span class="dot-left"></span>
+                  <span class="dot-right"></span>
+                </div>
+                {{ end }}
+              </div>
             </div>
-          {{ end }}
+
+            <!-- Scroll indicator -->
+            <a href="#recent-posts" class="scroll-indicator mt-10" aria-label="{{ if eq .Language.Lang `zh-hans` }}向下滚动{{ else }}Scroll down{{ end }}">
+              <span>{{ if eq .Language.Lang `zh-hans` }}向下滚动{{ else }}Scroll{{ end }}</span>
+              <div class="scroll-chevron"></div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
   {{ end }}
 
+  <!-- ===== RECENT POSTS ===== -->
   {{ $posts := where site.RegularPages "Section" "in" site.Params.mainSections | first 3 }}
   {{ if $posts }}
-    <section class="section">
-      <div class="container">
-        <div class="text-center mb-12">
-          <h2 class="h3">
-            {{ if eq .Language.Lang `zh-hans` }}最新文章{{ else }}Recent Posts{{ end }}
-          </h2>
+    <section id="recent-posts" class="section" style="background: var(--medium); position: relative; scroll-margin-top: 80px;">
+      <!-- Sequence ticker above posts -->
+      <div class="sequence-ticker container mb-4" aria-hidden="true">
+        <div class="sequence-track">
+          <span>A</span><span>T</span><span>G</span><span>C</span><span>A</span><span>T</span><span>G</span><span>C</span><span>A</span><span>T</span><span>G</span><span>C</span><span>A</span><span>T</span><span>G</span><span>C</span><span>A</span><span>T</span><span>G</span><span>C</span><span>A</span><span>T</span><span>G</span><span>C</span><span>A</span><span>T</span><span>G</span><span>C</span><span>A</span><span>T</span><span>G</span><span>C</span>
+          &nbsp;&nbsp;&nbsp;
+          <span>A</span><span>T</span><span>G</span><span>C</span><span>A</span><span>T</span><span>G</span><span>C</span><span>A</span><span>T</span><span>G</span><span>C</span><span>A</span><span>T</span><span>G</span><span>C</span><span>A</span><span>T</span><span>G</span><span>C</span><span>A</span><span>T</span><span>G</span><span>C</span><span>A</span><span>T</span><span>G</span><span>C</span><span>A</span><span>T</span><span>G</span><span>C</span>
         </div>
-        <div class="row">
-          {{ range $posts }}
-            <div class="md:col-6 lg:col-4 mb-14">
-              {{ partial "components/blog-card" . }}
+      </div>
+
+      <div class="container" style="position:relative;z-index:1">
+        <!-- Section heading -->
+        <h2 class="bio-section-title">
+          <span class="accent">&gt;</span>
+          {{ if eq .Language.Lang `zh-hans` }}最新文章{{ else }}Recent Posts{{ end }}
+        </h2>
+        <div class="bio-section-underline"></div>
+
+        <!-- Blog cards -->
+        <div class="row bio-card-grid">
+          {{ range $index, $post := $posts }}
+            {{ $colorClass := "bio-card-gfp" }}
+            {{ if eq (mod $index 3) 0 }}
+              {{ $colorClass = "bio-card-gfp" }}
+            {{ else if eq (mod $index 3) 1 }}
+              {{ $colorClass = "bio-card-dapi" }}
+            {{ else }}
+              {{ $colorClass = "bio-card-mcherry" }}
+            {{ end }}
+
+            <div class="md:col-6 lg:col-4 mb-10">
+              <article class="bio-card {{ $colorClass }}" style="animation-delay: {{ mul $index 0.15 }}s">
+                <!-- Post image -->
+                {{ $image := .Params.image }}
+                {{ if $image }}
+                  <div class="mb-5 rounded-lg overflow-hidden" style="border: 1px solid var(--border-subtle)">
+                    {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full" "DisplayXL" "600x" ) }}
+                  </div>
+                {{ end }}
+
+                <!-- Title -->
+                <h3 class="bio-card-title">
+                  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </h3>
+
+                <!-- Meta -->
+                <div class="bio-card-meta">
+                  {{ with .Params.author }}
+                    <a href="{{ `authors/` | relLangURL }}{{ . | urlize }}/">
+                      <span style="color:var(--gfp)">@</span>{{ . }}
+                    </a>
+                  {{ end }}
+                  {{ $categories := .Params.categories }}
+                  {{ if $categories }}
+                    <span class="meta-sep">|</span>
+                    {{ range $i, $c := $categories }}
+                      <a href="{{ `categories/` | relLangURL }}{{ $c | urlize | lower }}/">
+                        {{ $c | humanize }}{{ if ne $i (sub (len $categories) 1) }},{{ end }}
+                      </a>
+                    {{ end }}
+                  {{ end }}
+                </div>
+
+                <!-- Summary -->
+                <p class="bio-card-summary">{{ .Summary | truncate 120 }}</p>
+
+                <!-- Read more -->
+                <a class="bio-card-link" href="{{ .RelPermalink }}">
+                  {{ T "read_more" }} <span class="arrow">&rarr;</span>
+                </a>
+              </article>
             </div>
           {{ end }}
         </div>
-        <div class="text-center mt-4">
-          <a class="btn btn-outline-primary" href="{{ `blog` | relLangURL }}">
-            {{ if eq .Language.Lang `zh-hans` }}查看全部{{ else }}View All Posts{{ end }}
+
+        <!-- View All button -->
+        <div class="text-center mt-6">
+          <a class="btn-bio" href="{{ `blog` | relLangURL }}">
+            {{ if eq .Language.Lang `zh-hans` }}查看全部文章{{ else }}View All Posts{{ end }}
+            <span class="btn-arrow">&rarr;</span>
           </a>
         </div>
+
+        <!-- Gel divider below -->
+        <div class="gel-divider mt-12" aria-hidden="true">
+          <div class="gel-band"></div><div class="gel-band"></div><div class="gel-band"></div>
+          <div class="gel-band"></div><div class="gel-band"></div><div class="gel-band"></div>
+          <div class="gel-band"></div><div class="gel-band"></div><div class="gel-band"></div>
+          <div class="gel-band"></div>
+        </div>
+
       </div>
     </section>
   {{ end }}
