@@ -723,6 +723,11 @@ html {
   text-indent: 2em;
 }
 
+// Chinese blog post paragraphs only — first-line indent
+:lang(zh-hans) .prose p {
+  text-indent: 2em;
+}
+
 .callout {
   margin: 1.5rem 0;
   padding: 1rem 1.25rem;

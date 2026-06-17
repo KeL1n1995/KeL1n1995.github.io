@@ -10,6 +10,10 @@ tags: ["文学", "小说", "异地恋", "爱情", "原创"]
 draft: false
 ---
 
+<audio src="/audio/爱的代价.mp3" autoplay loop controls style="width:100%;margin-bottom:1.5rem;border-radius:4px">
+  您的浏览器不支持 audio 标签。
+</audio>
+
 他和她之间，隔着一千五百公里。深圳到成都的距离。不是周末买张票就能跨越的距离，而是另一种距离：你在屏幕上看到她，她也在屏幕上看到你，但你们的视线永远不会在同一个空间里交汇。像两束光从不同的方向射向同一个点，它们永远只会擦肩而过，朝各自的方向继续飞驰。
 
 <p align="center">
